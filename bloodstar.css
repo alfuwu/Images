@@ -204,10 +204,10 @@ ol.nav > li {
 .traveller .team,
 .traveller .overview > p:nth-child(1)::first-letter,
 .traveller .overview > p + p::before {
-    color: #553412;
+    color: #4a1255;
 }
 .traveller hr {
-    border-color: #553412;
+    border-color: #4a1255;
 }
 .nav > li.traveller {
     background: linear-gradient(90deg, rgba(31, 101, 255, 0.35) 49%, rgba(206, 1, 0, 0.35) 51%);
