@@ -101,7 +101,7 @@ body > * {
     font-size: 14px
 }
 .c li a {
-    font-family: 'papyrus','Papyrus','Garamond',Inter,system-ui,Avenir,Helvetica,Arial,sans-serif;
+    font-family: 'papyrus', 'Papyrus', 'Garamond', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     text-decoration: none;
     color: #f4df77;
     transition: color .3s;
@@ -132,10 +132,10 @@ ol li a:hover {
 
 ol.nav {
     flex: 0 0 140px;
-    font-family: 'Cinzel', serif;
+    font-family: 'papyrus', 'Papyrus', 'Garamond', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     font-size: 16px;
     list-style: none;
-    margin: 5px 5px 5px 5px;
+    margin: 5px;
     padding: 1vh 0 0 0;
     overflow-x: hidden;
     overflow-y: auto;
@@ -149,9 +149,9 @@ ol.nav {
 
 ol.nav > li {
     padding-left: 0.5rem;
-    margin: 5px 0;
+    margin: 2px 7px;
     border-radius: 6px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .nav a {
@@ -162,7 +162,13 @@ ol.nav > li {
     font-weight: bold;
     /*padding: 0.5rem;*/
     border-radius: 6px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav a:hover {
+    text-decoration: none;
+    box-shadow: none;
+    color: #fff;
 }
 
 .nav > li:hover {
@@ -201,7 +207,7 @@ ol.nav > li {
 .traveller .team,
 .traveller .overview > p:nth-child(1)::first-letter,
 .traveller .overview > p + p::before {
-    color: linear-gradient(90deg, rgba(31, 101, 255, 0.35) 49%, rgba(206, 1, 0, 0.35) 51%)/*#553412*/;
+    color: #553412;
 }
 .traveller hr {
     border-color: #553412;
