@@ -1,0 +1,247 @@
+h2, h3{
+    font-family: 'papyrus', 'Papyrus', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    text-shadow: 1px 1px 2px #000,
+                -1px 1px 2px #000,
+                -1px -1px 0 #000,
+                1px -1px 0 #000;
+    -webkit-text-stroke: 0.1px black;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index:1;
+}
+
+.page-contents.townsfolk::after,
+.page-contents.outsider::after,
+.page-contents.minion::after,
+.page-contents.demon::after,
+.page-contents.fabled::after,
+.page-contents.jinx::after {
+    content: "";
+    position: absolute;
+    top: 18.6rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: transparent;
+    pointer-events: auto;
+}
+
+body {
+    font-size:0;
+}
+body > * {
+    font-size:16px;
+}
+
+.page-contents img {
+    will-change: filter;
+    transition: filter 300ms;
+}
+.townsfolk img:hover {
+    filter: drop-shadow(0 0 2em #367ab7ee);
+}
+.outsider img:hover {
+    filter: drop-shadow(0 0 2em #53b7b7ee);
+}
+.minion img:hover {
+    filter: drop-shadow(0 0 2em #d96e2aee);
+}
+.demon img:hover {
+    filter: drop-shadow(0 0 2em #ed002aee);
+}
+.traveller img:hover {
+    filter: drop-shadow(-1em 0 1em linear-gradient(90deg, #646cff99 49%, #d9002a99 51%)); /*drop-shadow(1em 0 1em #d9002a99);*/
+}
+.fabled img:hover, .l:hover {
+    filter: drop-shadow(-1em 0 1em #c3aa15aa) drop-shadow(1em 0 1em #8c5d06aa);
+}
+.jinx img:hover {
+    filter: drop-shadow(0 0 2em #888888aa);
+}
+
+.emoji {
+    transform: translateY(25%);
+}
+
+.c {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: li
+}
+.c li {
+    position: relative;
+    padding: 8px 16px 8px 40px;
+    margin: 8px 0;
+    background: rgba(0,0,0,0.2);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    color: #ddd;
+    font-family: 'Garamond', serif;
+    font-size: 18px;
+    transition: all .3s
+}
+.c li::before {
+    content: counter(li, upper-roman);
+    counter-increment: li;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #7a4c32;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 14px
+}
+.c li a {
+    font-family: 'papyrus','Papyrus','Garamond',Inter,system-ui,Avenir,Helvetica,Arial,sans-serif;
+    text-decoration: none;
+    color: #f4df77;
+    transition: color .3s;
+    font-weight: bold
+}
+ol li a:hover {
+    color: #fff;
+    text-shadow: 0 0 8px rgba(255,215,0,0.8)
+}
+
+::-webkit-scrollbar {
+    width:10px;
+}
+::-webkit-scrollbar-track {
+    background: #000;
+    border: 3px solid transparent;
+    background-clip: content-box;
+}
+::-webkit-scrollbar-thumb {
+    background: #666;
+    border-top: 20px;
+    border-radius: 15px;
+    filter: drop-shadow(0 0 2em #000);
+}
+::-webkit-scrollbar-thumb:hover{
+    background:#555;
+}
+
+ol.nav {
+    flex: 0 0 140px;
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 1vh 0 0 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    height: 100vh;
+    z-index: 10;
+    background: linear-gradient(180deg, #2b1a1a, #3a2a2a);
+    border-right: 3px solid rgba(255, 223, 186, 0.2);
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+ol.nav > li {
+    padding-left: 0.5rem;
+    margin: 5px 0;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav a {
+    display: block;
+    text-align: center;
+    vertical-align: bottom;
+    text-decoration: none;
+    color: #eee;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav a:hover {
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(255, 223, 186, 0.4);
+    transform: scale(1.05);
+    color: #fff;
+}
+
+.nav > li.townsfolk {
+    background: rgba(31, 101, 255, 0.35);
+    box-shadow: 0 0 10px rgba(31, 101, 255, 0.3);
+}
+
+.nav > li.outsider {
+    background: rgba(70, 213, 255, 0.35);
+    box-shadow: 0 0 10px rgba(70, 213, 255, 0.3);
+}
+
+.nav > li.minion {
+    background: rgba(255, 105, 0, 0.35);
+    box-shadow: 0 0 10px rgba(255, 105, 0, 0.3);
+}
+
+.nav > li.demon {
+    background: rgba(206, 1, 0, 0.35);
+    box-shadow: 0 0 15px rgba(206, 1, 0, 0.4);
+}
+
+.traveler h1,
+.traveler h2,
+.traveler h3,
+.traveler h4,
+.traveler h5,
+.traveler h6,
+.traveler .ability,
+.traveler .team,
+.traveler .overview > p:nth-child(1)::first-letter,
+.traveler .overview > p + p::before {
+    color: linear-gradient(90deg, rgba(31, 101, 255, 0.35) 49%, rgba(206, 1, 0, 0.35) 51%);
+}
+.traveler hr {
+    border-color: linear-gradient(90deg, rgba(31, 101, 255, 0.35) 49%, rgba(206, 1, 0, 0.35) 51%);
+}
+.nav > li.traveller {
+    background: linear-gradient(90deg, rgba(31, 101, 255, 0.35) 49%, rgba(206, 1, 0, 0.35) 51%);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.nav > li.fabled {
+    background: rgba(255, 233, 31, 0.35);
+    box-shadow: 0 0 10px rgba(255, 233, 31, 0.3);
+}
+
+@media only screen and (max-width: 650px) {
+    ol.nav {
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 100%;
+        display: flex;
+        height: unset;
+        padding: 0.5rem 0;
+        border-bottom: 3px solid rgba(255, 223, 186, 0.2);
+        border-right: none;
+        box-shadow: none;
+    }
+    
+    .nav li {
+        flex: 1 0 auto;
+        margin: 0 5px;
+    }
+
+    .nav a {
+        padding: 0.75rem;
+    }
+}
+
+@font-face{
+    font-family:'papyrus';
+    src: url('https://raw.githubusercontent.com/alfuwu/Images/master/papyrus.woff') format('woff'),
+        url('https://raw.githubusercontent.com/alfuwu/Images/master/papyrus.ttf')format('truetype');
+}
