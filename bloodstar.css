@@ -51,7 +51,7 @@ body > * {
     filter: drop-shadow(0 0 2em #ed002aee);
 }
 .traveller img:hover {
-    filter: drop-shadow(-1em 0 1em linear-gradient(90deg, #646cff99 49%, #d9002a99 51%)); /*drop-shadow(1em 0 1em #d9002a99);*/
+    filter: drop-shadow(-1em 0 1em #646cff99) drop-shadow(1em 0 1em #d9002a99);
 }
 .fabled img:hover, .l:hover {
     filter: drop-shadow(-1em 0 1em #c3aa15aa) drop-shadow(1em 0 1em #8c5d06aa);
@@ -132,7 +132,6 @@ ol li a:hover {
 ol.nav {
     flex: 0 0 140px;
     font-family: 'Cinzel', serif;
-    font-size: 1rem;
     list-style: none;
     margin: 0;
     padding: 1vh 0 0 0;
@@ -156,7 +155,6 @@ ol.nav > li {
 .nav a {
     display: block;
     text-align: center;
-    vertical-align: bottom;
     text-decoration: none;
     color: #eee;
     font-weight: bold;
@@ -172,22 +170,21 @@ ol.nav > li {
     color: #fff;
 }
 
-.nav > li.townsfolk {
+.nav > li.townsfolk > a {
     background: rgba(31, 101, 255, 0.35);
     box-shadow: 0 0 10px rgba(31, 101, 255, 0.3);
 }
-
-.nav > li.outsider {
+.nav > li.outsider > a {
     background: rgba(70, 213, 255, 0.35);
     box-shadow: 0 0 10px rgba(70, 213, 255, 0.3);
 }
 
-.nav > li.minion {
+.nav > li.minion > a {
     background: rgba(255, 105, 0, 0.35);
     box-shadow: 0 0 10px rgba(255, 105, 0, 0.3);
 }
 
-.nav > li.demon {
+.nav > li.demon > a {
     background: rgba(206, 1, 0, 0.35);
     box-shadow: 0 0 15px rgba(206, 1, 0, 0.4);
 }
@@ -202,17 +199,17 @@ ol.nav > li {
 .traveler .team,
 .traveler .overview > p:nth-child(1)::first-letter,
 .traveler .overview > p + p::before {
-    color: linear-gradient(90deg, rgba(31, 101, 255, 0.35) 49%, rgba(206, 1, 0, 0.35) 51%);
+    color: #553412;
 }
 .traveler hr {
-    border-color: linear-gradient(90deg, rgba(31, 101, 255, 0.35) 49%, rgba(206, 1, 0, 0.35) 51%);
+    border-color: #553412;
 }
-.nav > li.traveller {
+.nav > li.traveller > a {
     background: linear-gradient(90deg, rgba(31, 101, 255, 0.35) 49%, rgba(206, 1, 0, 0.35) 51%);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
-.nav > li.fabled {
+.nav > li.fabled > a {
     background: rgba(255, 233, 31, 0.35);
     box-shadow: 0 0 10px rgba(255, 233, 31, 0.3);
 }
@@ -243,5 +240,5 @@ ol.nav > li {
 @font-face{
     font-family:'papyrus';
     src: url('https://raw.githubusercontent.com/alfuwu/Images/master/papyrus.woff') format('woff'),
-        url('https://raw.githubusercontent.com/alfuwu/Images/master/papyrus.ttf')format('truetype');
+        url('https://raw.githubusercontent.com/alfuwu/Images/master/papyrus.ttf') format('truetype');
 }
