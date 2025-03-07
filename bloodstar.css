@@ -101,7 +101,6 @@ body > * {
     font-family: 'papyrus', 'Papyrus', 'Garamond', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     text-decoration: none;
     color: #000;
-    transition: color 0.3s;
     font-weight: bold;
     display: inline-block;
 }
@@ -109,20 +108,21 @@ body > * {
     content: attr(data-text);
     position: absolute;
     left: 0;
-    top: 0;
-    width: 100%;
+    top: 0%;
+    width: fit-content;
+    width: calc-size(fit-content, size + 2px);
     height: 100%;
     color: #fff;
     text-shadow: 0 0 8px rgba(255, 215, 0, 0.8);
     clip-path: inset(0 100% 0 0);
-    transition: clip-path 0.5s ease-in-out;
+    transition: clip-path 0.2s ease-in-out;
 }
 .c li a:hover::after {
     clip-path: inset(0 0 0 0);
 }
 
 ::-webkit-scrollbar {
-    width:10px;
+    width: 10px;
 }
 ::-webkit-scrollbar-track {
     background: #000;
