@@ -97,14 +97,14 @@ body > * {
     font-weight: bold;
     font-size: 14px
 }
-.c li a {
+.c li a, .ability a {
     font-family: 'papyrus', 'Papyrus', 'Garamond', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     text-decoration: none;
     color: #000;
     font-weight: bold;
     display: inline-block;
 }
-.c li a::after {
+.c li a::after, .ability a::after {
     content: attr(data-text);
     position: absolute;
     left: 47px;
@@ -117,8 +117,34 @@ body > * {
     clip-path: inset(0 100% 0 0);
     transition: clip-path 0.2s ease-in-out;
 }
-.c li a:hover::after {
+.c li a:hover::after, .ability a:hover::after {
     clip-path: inset(0 0 0 0);
+}
+
+.ability a {
+    position: relative;
+    z-index: 1;
+}
+.ability a.t {
+    color: rgb(15, 59, 156);
+}
+.ability a.o {
+    color: rgb(46, 155, 153);
+}
+.ability a.m {
+    color: rgb(131, 69, 25);
+}
+.ability a.d {
+    color:rgb(102, 0, 0);
+}
+.ability a.tr {
+    color: #4a1255;
+}
+.ability a.f {
+    color: rgb(148, 104, 7);
+}
+.ability a.j {
+    color: rgb(73, 73, 73)
 }
 
 ::-webkit-scrollbar {
