@@ -11,13 +11,13 @@ h2, h3 {
     z-index: 1;
 }
 
-.page-contents.townsfolk::after,
-.page-contents.outsider::after,
-.page-contents.minion::after,
-.page-contents.demon::after,
-.page-contents.traveller::after,
-.page-contents.fabled::after,
-.page-contents.jinx::after {
+.page-contents.townsfolk > h2::after,
+.page-contents.outsider > h2::after,
+.page-contents.minion > h2::after,
+.page-contents.demon > h2::after,
+.page-contents.traveller > h2::after,
+.page-contents.fabled > h2::after,
+.page-contents.jinx > h2::after {
     content: "";
     position: absolute;
     top: 18.6rem;
@@ -102,11 +102,23 @@ body > * {
     text-decoration: none;
     color: #000;
     transition: color 0.3s;
-    font-weight: bold
+    font-weight: bold;
+    display: inline-block;
 }
-ol li a:hover {
+.c li a::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
     color: #fff;
-    text-shadow: 0 0 8px rgba(255,215,0,0.8)
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.8);
+    clip-path: inset(0 100% 0 0);
+    transition: clip-path 0.5s ease-in-out;
+}
+.c li a:hover::after {
+    clip-path: inset(0 0 0 0);
 }
 
 ::-webkit-scrollbar {
@@ -148,7 +160,7 @@ ol.nav > li {
     padding: 0 0.5rem;
     margin: 3px 7px;
     border-radius: 6px;
-    transition: box-shadow transform color 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .nav a {
