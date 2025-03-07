@@ -107,7 +107,7 @@ body > * {
 .c li a::after {
     content: attr(data-text);
     position: absolute;
-    left: 0;
+    left: 47px;
     top: 0%;
     width: fit-content;
     width: calc-size(fit-content, size + 2px);
