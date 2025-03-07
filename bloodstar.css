@@ -100,11 +100,30 @@ body > * {
 .c li a, .ability a {
     font-family: 'papyrus', 'Papyrus', 'Garamond', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     text-decoration: none;
+    color: #000;
     font-weight: bold;
     display: inline-block;
 }
-.c li a {
-    color: #000;
+.page-contents.townsfolk .ability a {
+    color: #003fb2;
+}
+.page-contents.outsider .ability a {
+    color: #006893;
+}
+.page-contents.minion .ability a {
+    color: #9f0000;
+}
+.page-contents.demon .ability a {
+    color: #940000;
+}
+.page-contents.traveller .ability a {
+    color: #4a1255;
+}
+.page-contents.fabled .ability a {
+    color: #553412;
+}
+.page-contents.jinx .ability a {
+    color: #333;
 }
 .c li a::after, .ability a::after {
     content: attr(data-text);
@@ -123,7 +142,7 @@ body > * {
     width: calc-size(fit-content, size + 2px);
 }
 .c li a:hover::after, .ability a:hover::after {
-    clip-path: inset(0 0 0 0);
+    clip-path: inset(-100% -100% -100% -100%);
 }
 
 .ability a {
