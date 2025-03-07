@@ -100,17 +100,17 @@ body > * {
 .c li a, .ability a {
     font-family: 'papyrus', 'Papyrus', 'Garamond', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     text-decoration: none;
-    color: #000;
     font-weight: bold;
     display: inline-block;
+}
+.c li a {
+    color: #000;
 }
 .c li a::after, .ability a::after {
     content: attr(data-text);
     position: absolute;
     top: 0;
     left: 0;
-    width: fit-content;
-    width: calc-size(fit-content, size + 2px);
     height: 100%;
     color: #fff;
     text-shadow: 0 0 8px rgba(255, 215, 0, 0.8);
@@ -119,6 +119,8 @@ body > * {
 }
 .c li a::after {
     left: 47px;
+    width: fit-content;
+    width: calc-size(fit-content, size + 2px);
 }
 .c li a:hover::after, .ability a:hover::after {
     clip-path: inset(0 0 0 0);
