@@ -9,7 +9,7 @@
 */
 
 /* import theme modules */
-@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
+@import url("https://refact0r.github.io/midnight-discord/build/midnight.css");
 @import url("https://discord-mica.pages.dev/src/main.css");
 @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css");
 @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SupporterBadge.css");
@@ -77,6 +77,9 @@ body {
 
 /* color options */
 :root {
+	/* home icon thing */
+	--home-image: url('https://i.imgur.com/233d55Y.gif');
+	
     --colors: off; /* off: discord default colors, on: midnight custom colors */
 
     /* text colors */
@@ -188,6 +191,9 @@ body {
     .subtitleContainer_f75fb0 /* that title bar thing that has the channel name, desc, threads, pins, search bar, etc */ {
         background: none !important; /* compatability with mica */
     }
+    .peopleColumn__133bf /* friends list background thing in home tab */ {
+        background: none !important; /* compatability with mica */
+    }
 
     .ephemeral__5126c /* ephemeral messages */ {
         background: var(--mention) !important;
@@ -279,6 +285,19 @@ body {
     .standardSidebarView__23e6b > .sidebarRegion__23e6b /* settings modal sidebar */ {
         background-color: hsla(0, 0%, 10%, 0.666) !important;
     }
+	
+    /* change discord icon */
+    div[data-list-item-id="guildsnav___home"] {
+        background: var(--home-image) top center/110% no-repeat;
+    }
+    /* hide default discord icons */
+    div[data-list-item-id="guildsnav___home"] img {
+        display: none;
+    }
+    div[data-list-item-id="guildsnav___home"] > div {
+        color: transparent;
+        background-color: transparent;
+    }
 }
 
 ::selection,
@@ -347,4 +366,5 @@ button[aria-label="Send a gift"] {
     height: 22px;
     background-image: url("https://alfuwu.github.io/Images/new%20hyleus%20hc%20shadowed.png");
     background-size: cover;
+
 }
