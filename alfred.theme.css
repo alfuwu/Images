@@ -1,0 +1,350 @@
+/**
+ * @name alfred
+ * @description customized discord theme using windows 11 mica (not light-mode friendly)
+ * @author alfred (@a.l.f.y)
+ * @authorLink https://github.com/alfuwu/
+ * @version :3
+ * @invite G3Hu56qbVf
+ * @authorId 1038466644353232967
+*/
+
+/* import theme modules */
+@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
+@import url("https://discord-mica.pages.dev/src/main.css");
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css");
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SupporterBadge.css");
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/ThemeDevBadge.css");
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css");
+
+body {
+    /* font options */
+    --font: ''; /* change to '' for default discord font */
+    --code-font: ''; /* change to '' for default discord font */
+    font-weight: 400; /* normal text font weight. DOES NOT AFFECT BOLD TEXT */
+
+    /* sizes */
+    --gap: 12px; /* spacing between panels */
+    --divider-thickness: 4px; /* thickness of unread messages divider and highlighted message borders */
+    --border-thickness: 1px; /* thickness of borders around main panels. DOES NOT AFFECT OTHER BORDERS */
+
+    /* animation/transition options */
+    --animations: on; /* off: disable animations/transitions, on: enable animations/transitions */
+    --list-item-transition: 0.2s ease; /* transition for list items */
+    --dms-icon-svg-transition: 0.4s ease; /* transition for the dms icon */
+    --border-hover-transition: 0.2s ease; /* transition for borders when hovered */
+
+    /* top bar options */
+    --top-bar-height: var(--gap); /* height of the top bar (discord default is 36px, old discord style is 24px, var(--gap) recommended if button position is set to titlebar) */
+    --top-bar-button-position: titlebar; /* off: default position, hide: hide buttons completely, serverlist: move inbox button to server list, titlebar: move inbox button to channel titlebar (will hide title) */
+    --top-bar-title-position: off; /* off: default centered position, hide: hide title completely, left: left align title (like old discord) */
+    --subtle-top-bar-title: off; /* off: default, on: hide the icon and use subtle text color (like old discord) */
+
+    /* window controls */
+    --custom-window-controls: off; /* off: default window controls, on: custom window controls */
+    --window-control-size: 14px; /* size of custom window controls */
+
+    /* dms button options */
+    --custom-dms-icon: off; /* off: use default discord icon, hide: remove icon entirely, custom: use custom icon */
+    --dms-icon-svg-url: url('https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg'); /* icon svg url. MUST BE A SVG. */
+    --dms-icon-svg-size: 90%; /* size of the svg (css mask-size property) */
+    --dms-icon-color-before: var(--icon-secondary); /* normal icon color */
+    --dms-icon-color-after: var(--white); /* icon color when button is hovered/selected */
+    --custom-dms-background: off; /* off to disable, image to use a background image (must set url variable below), color to use a custom color/gradient */
+    --dms-background-image-url: url(''); /* url of the background image */
+    --dms-background-image-size: cover; /* size of the background image (css background-size property) */
+    --dms-background-color: linear-gradient(70deg, var(--blue-2), var(--purple-2), var(--red-2)); /* fixed color/gradient (css background property) */
+
+    /* background image options */
+    --background-image: off; /* off: no background image, on: enable background image (must set url variable below) */
+    --background-image-url: url(''); /* url of the background image */
+
+    /* transparency/blur options */
+    /* NOTE: TO USE TRANSPARENCY/BLUR, YOU MUST HAVE TRANSPARENT BG COLORS. FOR EXAMPLE: --bg-4: hsla(220, 15%, 10%, 0.7); */
+    --transparency-tweaks: off; /* off: no changes, on: remove some elements for better transparency */
+    --remove-bg-layer: off; /* off: no changes, on: remove the base --bg-3 layer for use with window transparency (WILL OVERRIDE BACKGROUND IMAGE) */
+    --panel-blur: off; /* off: no changes, on: blur the background of panels */
+    --blur-amount: 12px; /* amount of blur */
+    --bg-floating: var(--bg-3); /* set this to a more opaque color if floating panels look too transparent. only applies if panel blur is on  */
+
+    /* chatbar options */
+    --custom-chatbar: aligned; /* off: default chatbar, aligned: chatbar aligned with the user panel, separated: chatbar separated from chat */
+    --chatbar-height: 47px; /* height of the chatbar (52px by default, 47px recommended for aligned, 56px recommended for separated) */
+    --chatbar-padding: 8px; /* padding of the chatbar. only applies in aligned mode. */
+
+    /* other options */
+    --small-user-panel: off; /* off: default user panel, on: smaller user panel like in old discord */
+}
+
+/* color options */
+:root {
+    --colors: off; /* off: discord default colors, on: midnight custom colors */
+
+    /* text colors */
+    --text-0: var(--bg-4); /* text on colored elements */
+    --text-1: hsl(0, 0%, 100%); /* other normally white text */
+    --text-2: hsl(0, 0%, 100%); /* headings and important text */
+    --text-3: hsl(0, 0%, 100%); /* normal text */
+    --text-4: hsl(221, 14%, 70%); /* icon buttons and channels */
+    --text-5: hsl(0, 0%, 50%); /* muted channels/chats and timestamps */
+
+    /* background and dark colors */
+    --bg-1: hsla(220, 15%, 20%, 1); /* dark buttons when clicked */
+    --bg-2: hsla(220, 15%, 16%, 1); /* dark buttons */
+    --bg-3: hsla(220, 15%, 13%, 1); /* spacing, secondary elements */
+    --bg-4: hsla(220, 15%, 10%, 1); /* main background color */
+    --hover: hsla(221, 19%, 40%, 0.1); /* channels and buttons when hovered */
+    --active: hsla(220, 19%, 40%, 0.2); /* channels and buttons when clicked or selected */
+    --active-2: hsla(220, 19%, 40%, 0.3); /* extra state for transparent buttons */
+    --message-hover: hsla(220, 0%, 0%, 0.1); /* messages when hovered */
+
+    /* accent colors */
+    --accent-1: var(--red-1); /* links and other accent text */
+    --accent-2: var(--red-2); /* small accent elements */
+    --accent-3: var(--red-3); /* accent buttons */
+    --accent-4: var(--red-4); /* accent buttons when hovered */
+    --accent-5: var(--red-5); /* accent buttons when clicked */
+    --accent-new: var(--accent-2); /* stuff that's normally red like mute/deafen buttons */
+    --mention: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 90%) 40%, transparent); /* background of messages that mention you */
+    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 95%) 40%, transparent); /* background of messages that mention you when hovered */
+    --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 90%) 40%, transparent); /* background of messages that reply to you */
+    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 40%, transparent); /* background of messages that reply to you when hovered */
+    --accent-reaction: color-mix(in hsl, var(--accent-1), white 30%); /* reaction count accent */
+
+    /* status indicator colors */
+    --online: var(--green-2); /* change to #40a258 for default */
+    --dnd: var(--red-2); /* change to #d83a41 for default */
+    --idle: var(--yellow-2); /* change to #cc954c for default */
+    --streaming: var(--purple-2); /* change to ##9147ff for default */
+    --offline: var(--text-4); /* change to #82838b for default offline color */
+
+    /* border colors */
+    --border-light: var(--hover); /* general light border color */
+    --border: var(--active); /* general normal border color */
+    --border-hover: var(--active); /* border color of panels when hovered */
+    --button-border: hsl(220, 0%, 100%, 0.1); /* neutral border color of buttons */
+
+    /* base colors */
+    --red-1: oklch(75% 0.12 0);
+    --red-2: oklch(70% 0.12 0);
+    --red-3: oklch(65% 0.12 0);
+    --red-4: oklch(60% 0.12 0);
+    --red-5: oklch(55% 0.12 0);
+
+    --green-1: oklch(75% 0.11 170);
+    --green-2: oklch(70% 0.11 170);
+    --green-3: oklch(65% 0.11 170);
+    --green-4: oklch(60% 0.11 170);
+    --green-5: oklch(55% 0.11 160);
+
+    --blue-1: oklch(75% 0.1 215);
+    --blue-2: oklch(70% 0.1 215);
+    --blue-3: oklch(65% 0.1 215);
+    --blue-4: oklch(60% 0.1 215);
+    --blue-5: oklch(55% 0.1 215);
+
+    --yellow-1: oklch(80% 0.11 90);
+    --yellow-2: oklch(75% 0.11 90);
+    --yellow-3: oklch(70% 0.11 90);
+    --yellow-4: oklch(65% 0.11 90);
+    --yellow-5: oklch(60% 0.11 90);
+
+    --purple-1: oklch(75% 0.11 310);
+    --purple-2: oklch(70% 0.11 310);
+    --purple-3: oklch(65% 0.11 310);
+    --purple-4: oklch(60% 0.11 310);
+    --purple-5: oklch(55% 0.11 310);
+
+    /* mica */
+    /* dark mode */
+    --dark-bg: transparent; /* rgba(240,185,190,0.113); to achieve a screenshot-like effect */
+    --dark-flyout: rgba(30, 30, 30);
+    --dark-accent: rgb(88, 101, 242);
+    --dark-accent-hovered: rgb(70, 84, 192); /* also disabled button */
+    --dark-accent-font-color: white;
+    --dark-button: rgb(45, 45, 45);
+    --dark-button-border: rgb(60, 60, 60);
+    --dark-button-font-color: white;
+    --dark-background-accent: rgba(50, 50, 50, 0.9);
+    --dark-status-panel: rgba(30, 30, 30, 0.4);
+
+    /* light mode */
+    --light-bg: transparent;
+    --light-flyout: rgb(255, 255, 255);
+    --light-accent: rgb(88, 101, 242);
+    --light-accent-hovered: rgb(70, 84, 192); /* also disabled button */
+    --light-accent-font-color: white;
+    --light-button: rgb(251, 251, 251);
+    --light-button-border: rgb(204, 204, 231);
+    --light-button-font-color: black;
+    --light-background-accent: rgba(160, 160, 160, 0.9);
+    --light-status-panel: rgba(255, 255, 255, 0.4);
+
+    /* titlebar */
+    --custom-app-top-bar-height: calc(24px + var(--space-sm)); /* set to 0 if you don't want the discord titlebar */
+    --title-bar-icon: flex; /* set to none to remove icons */
+}
+
+.visual-refresh {
+    .subtitleContainer_f75fb0 /* that title bar thing that has the channel name, desc, threads, pins, search bar, etc */ {
+        background: none !important; /* compatability with mica */
+    }
+
+    .ephemeral__5126c /* ephemeral messages */ {
+        background: var(--mention) !important;
+    }
+    .ephemeral__5126c:hover {
+        background: var(--mention-hover) !important;
+    }
+
+    /*.reaction_f8896c /forum post reaction/ { }(*/
+    .reactionMe_f8896c /* forum post reaction (reacted to) */ {
+        background-color: var(--mention-background);
+    }
+    .reactionMe_f8896c .reactionCount_f8896c /* forum post reaction text (reacted to) */ {
+        color: var(--accent-reaction);
+    }
+
+    /* fix weird scroll bar thing showing in the folder color picker */
+    .body__8a031.auto_d125d2.scrollerBase_d125d2 .bodyInner__8a031 {
+        overflow: hidden;
+    }
+
+    .colorPickerSwatch__459fb[style="background-color: rgb(88, 101, 242);"] /* folder color picker swatch */,
+    .newBadge_faa96b /* forum post new badge */,
+    .mentioned__5126c:before /* mention message left edge */ {
+        background-color: var(--accent-2) !important;
+    }
+
+    .visual-refresh .voiceBar__7aaec .barText__7aaec, .visual-refresh .voiceChannelsIcon__7aaec /* x in voice bar text */ {
+        color: var(--accent-2);
+    }
+
+    .container__3f21e.checked__3f21e /* settings checkbutton background */ {
+        background-color: var(--accent-2) !important;
+    }
+
+    .container__3f21e.checked__3f21e .slider__3f21e > svg > path /* settings checkbutton check */ {
+        fill: var(--accent-2) !important;
+    }
+
+    .newMessagesBar__0f481 /* unread bar */ {
+        background-color: var(--accent-3);
+    }
+    .barButtonAlt__0f481 /* unread bar mark as read button */ {
+        --button-secondary-background: var(--accent-3);
+        --button-secondary-background-hover: var(--accent-4);
+    }
+
+    .result__2dc39:hover /* gif hover */ {
+        outline: 2px solid var(--accent-2);
+    }
+
+    #vc-spotify-player /* better discord plugin thing (i think) */ {
+        --vc-spotify-green: var(--green-4);
+    }
+    .barFill_a562c8 /* spotify progress bar (idk if this affects anything else) */ {
+        background-color: var(--green-4) !important;
+    }
+    /* don't think these are needed anymore */
+    /*.theme-dark .footer__5be3e .button_a22cb0.sm_a22cb0.primary_a22cb0 {
+        --control-background-primary-default: var(--profile-gradient-button-color);
+        --control-background-primary-hover: color-mix(in srgb,var(--profile-gradient-button-color) 90%,var(--black));
+        --control-background-primary-active: color-mix(in srgb,var(--profile-gradient-button-color) 80%,var(--black));
+        --control-background-secondary-default: var(--opacity-white-24);
+        --control-background-secondary-hover: var(--opacity-white-36);
+        --control-background-secondary-active: var(--opacity-white-32);
+    }
+    .theme-light .footer__5be3e .button_a22cb0.sm_a22cb0.primary_a22cb0 {
+        --control-background-primary-default: var(--profile-gradient-button-color);
+        --control-background-primary-hover: color-mix(in srgb,var(--profile-gradient-button-color) 90%,var(--white));
+        --control-background-primary-active: color-mix(in srgb,var(--profile-gradient-button-color) 80%,var(--white));
+        --control-background-secondary-default: var(--opacity-white-72);
+        --control-background-secondary-hover: var(--opacity-white-92);
+        --control-background-secondary-active: var(--opacity-white-84);
+    }*/
+    .button_a22cb0.primary_a22cb0 /* store button */,
+    .botTagRegular__82f07:not(.botTagOP__82f07) /* bot tag */ {
+        background-color: hsl(var(--blurple-50-hsl));
+    }
+
+    /* fix loading circle thing */
+    svg > * /* all svg children */ {
+        --brand-500: default !important;
+    }
+
+    /* change setttings modal colors */
+    .standardSidebarView__23e6b /* main settings modal wrapper */ {
+        background-color: hsla(0, 0%, 10%, 0.567) !important;
+    }
+    .standardSidebarView__23e6b > .sidebarRegion__23e6b /* settings modal sidebar */ {
+        background-color: hsla(0, 0%, 10%, 0.666) !important;
+    }
+}
+
+::selection,
+.highlight {
+    background: var(--accent-3);
+}
+
+.visual-refresh body,
+.visual-refresh .theme-dark:not(.custom-user-profile-theme),
+.visual-refresh .theme-light:not(.custom-user-profile-theme) {
+    --background-mentioned: var(--mention);
+    --background-mentioned-hover: var(--mention-hover);
+    
+    /*--text-brand: var(--accent-1); /* text button stuff */
+    /*--text-link: var(--accent-1); /* links */
+
+    --mention-foreground: var(--accent-1);
+    --mention-background: color-mix(in hsl, var(--accent-2), transparent 90%);
+
+    --message-reacted-text: var(--accent-reaction);
+    --message-reacted-background: color-mix(in hsl, var(--accent-2), transparent 80%);
+
+    --brand-360: var(--accent-2);
+    --brand-500: var(--accent-2);
+    --blurple-50: var(--accent-2);
+}
+
+/* align the settings window buttons (minimize, maximize, close) to their normal position */
+#app-mount > .bar_c38106 > .trailing_c38106 > .winButtons_c38106 {
+    margin-top: 30px;
+}
+
+/* fix the darkening layer in the settings modal screen */
+#app-mount .layer__960e4.stop-animations:first-child::after,
+#app-mount .BA__layerContainer .BA__layer--hidden:first-child::after {
+	opacity: 0.5 !important;
+	z-index: 1000 !important;
+	pointer-events: none !important;
+}
+
+/* hide nitro section of friends list */
+.link__972a0[href="/store"] {
+    display: none;
+}
+/* hide "quest" advertisements */
+.mask__0d616 {
+    display: none;
+}
+/* hide the "play again" section in DMs */
+.container__675e5 {
+    display: none !important;
+}
+/* hide Nitro gift button */
+div[aria-label="Send a gift"] {
+    display: none;
+}
+button[aria-label="Send a gift"] {
+    display: none;
+}
+
+/* custom profile badge for professional hyleusians (pop out) */
+.inner_c0bea0:has(img[src*="cdn.discordapp.com/avatars/1038466644353232967"]) .container__63ed3 .tags__63ed3 div[aria-label="User Badges"]::after {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-image: url("https://alfuwu.github.io/Images/new%20hyleus%20hc%20shadowed.png");
+    background-size: cover;
+}
