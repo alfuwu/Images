@@ -337,6 +337,10 @@ body {
 	z-index: 1000 !important;
 	pointer-events: none !important;
 }
+#app-mount .layer__960e4.stop-animations:first-child,
+#app-mount .BA__layerContainer .BA__layer--hidden:first-child {
+    filter: blur(5px) !important;
+}
 
 /* hide nitro section of friends list */
 .link__972a0[href="/store"] {
