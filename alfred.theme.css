@@ -298,6 +298,16 @@ body {
         color: transparent !important;
         background-color: transparent !important;
     }
+
+    .messagesWrapper__36d07:has(.chatTypingGradientAtBottom__36d07),
+    .messagesWrapper__36d07:has(.chatTypingGradientNotAtBottom__36d07) {
+        .scrollerSpacer__36d07 {
+            height: 8px; /* originally 40px, needs to be 32px smaller since the scroller is being moved 32px up */
+        }
+        .scroller__36d07 {
+            bottom: 32px; /* move 32px up so that the typing indicator doesn't get overlayed over message content */
+        }
+    }
 }
 
 ::selection,
@@ -361,3 +371,4 @@ div[aria-label="Send a gift"] {
 button[aria-label="Send a gift"] {
     display: none;
 }
+
