@@ -1,0 +1,32 @@
+/**
+ * @name usernames
+ * @description changes the color of various accounts in DMs
+ * @author alfred (@a.l.f.y)
+ * @authorLink https://github.com/alfuwu/
+ * @version :3
+ * @invite G3Hu56qbVf
+ * @authorId 1038466644353232967
+*/
+
+/* afaict only dm channels have an aria label of " (channel)" */
+.chatContent_f75fb0[aria-label=" (channel)"],
+.chat_f75fb0:has(.children__9293f .avatar_f75fb0) .chatContent_f75fb0, /* detect dms properly in case discord fixes the aria-label for dm channels */
+.chat_f75fb0:has(.gdm_f75fb0) .chatContent_f75fb0 /* group dms have a proper channel aria-label, so we need to use another method of detection */ {
+    /* alfred */
+    /* normal messages */
+    .message__5126c .contents_c19a55:has(img[src*="cdn.discordapp.com/avatars/1038466644353232967"]) .username_c19a55 {
+        color: rgb(255, 173, 173) !important;
+    }
+    /* replies */
+    .message__5126c .repliedMessage_c19a55:has(img[src*="cdn.discordapp.com/avatars/1038466644353232967"]) .username_c19a55 {
+        color: rgb(255, 173, 173) !important;
+    }
+
+    /* tarik */
+    .message__5126c .contents_c19a55:has(img[src*="cdn.discordapp.com/avatars/1112561208873193472"]) .username_c19a55 {
+        color: rgb(18, 138, 28) !important;
+    }
+    .message__5126c .repliedMessage_c19a55:has(img[src*="cdn.discordapp.com/avatars/1112561208873193472"]) .username_c19a55 {
+        color: rgb(18, 138, 28) !important;
+    }
+}
