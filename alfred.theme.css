@@ -295,8 +295,8 @@ body {
         display: none;
     }
     div[data-list-item-id="guildsnav___home"] > div {
-        color: transparent;
-        background-color: transparent;
+        color: transparent !important;
+        background-color: transparent !important;
     }
 }
 
@@ -368,3 +368,4 @@ button[aria-label="Send a gift"] {
     background-size: cover;
 
 }
+
