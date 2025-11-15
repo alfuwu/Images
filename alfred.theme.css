@@ -357,15 +357,3 @@ div[aria-label="Send a gift"] {
 button[aria-label="Send a gift"] {
     display: none;
 }
-
-/* custom profile badge for professional hyleusians (pop out) */
-.inner_c0bea0:has(img[src*="cdn.discordapp.com/avatars/1038466644353232967"]) .container__63ed3 .tags__63ed3 div[aria-label="User Badges"]::after {
-    content: "";
-    display: inline-block;
-    width: 22px;
-    height: 22px;
-    background-image: url("https://alfuwu.github.io/Images/new%20hyleus%20hc%20shadowed.png");
-    background-size: cover;
-
-}
-
