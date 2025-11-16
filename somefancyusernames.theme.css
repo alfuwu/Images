@@ -1,0 +1,328 @@
+/**
+ * @name some fancy usernames
+ * @description changes the color of a select few accounts' names in DMs (fancy edition)
+ * @author alfred (@a.l.f.y)
+ * @authorLink https://github.com/alfuwu/
+ * @version :3
+ * @invite G3Hu56qbVf
+ * @authorId 1038466644353232967
+*/
+
+:root {
+  /* not possible with current CSS capabilities afaict */
+  /*--chat-mentions: on;*/ /* colors in chat mentions       | can be set to on or off */
+  --member-list: on; /* colors in the member list           | can be set to on or off */
+  --reactors-list: on; /* colors in the reactions list      | can be set to on or off */
+  --poll-results: on; /* colors in the poll results         | can be set to on or off */
+
+  /* colors */
+  --alfred-color: linear-gradient(
+    to right,
+    rgb(255, 107, 137),
+    rgb(255, 209, 209),
+    rgb(255, 148, 60) 50%,
+    rgb(255, 107, 137)
+  );
+  --tarik-color: linear-gradient(
+    to right,
+    rgb(18, 138, 28),
+    rgb(27, 199, 0),
+    rgb(25, 228, 214),
+    rgb(18, 138, 28)
+  );
+  --ezkli-color: linear-gradient(
+    to right,
+    rgb(255, 158, 158),
+    rgb(233, 136, 219),
+    rgb(25, 228, 214),
+    rgb(255, 158, 158)
+  );
+  --pep-color: linear-gradient(
+    to right,
+    rgb(71, 67, 165),
+    rgb(120, 145, 255),
+    rgb(225, 163, 254),
+    rgb(71, 67, 165)
+  );
+  --lilly-color: linear-gradient(
+    to right,
+    rgb(255, 107, 137),
+    rgb(255, 59, 59),
+    rgb(245, 100, 255),
+    rgb(255, 107, 137)
+  );
+}
+
+.chatContent_f75fb0[aria-label=" (channel)"] .message__5126c,
+.chat_f75fb0:has(.children__9293f .avatar_f75fb0) .chatContent_f75fb0 .message__5126c, /* detect dms properly in case discord fixes the aria-label for dm channels */
+.chat_f75fb0:has(.gdm_f75fb0) .chatContent_f75fb0 .message__5126c /* group dms have a proper channel aria-label, so we need to use another method of detection */ {
+  /* ew hardcoded */
+  .contents_c19a55:has(> img[src*="s/1038466644353232967"]) > h3 > span, /* alfred */
+  .contents_c19a55:has(> img[src*="s/1112561208873193472"]) > h3 > span, /* tarik */
+  .contents_c19a55:has(> img[src*="s/1037170273897689189"]) > h3 > span, /* ezkli */
+  .contents_c19a55:has(> img[src*="s/1338654892641751060"]) > h3 > span, /* pep */
+  .contents_c19a55:has(> img[src*="s/718453321727475792"]) > h3 > span,  /* lilly */
+
+  .repliedMessage_c19a55:has(> img[src*="s/1038466644353232967"]), /* alfred */
+  .repliedMessage_c19a55:has(> img[src*="s/1112561208873193472"]), /* tarik */
+  .repliedMessage_c19a55:has(> img[src*="s/1037170273897689189"]), /* ezkli */
+  .repliedMessage_c19a55:has(> img[src*="s/1338654892641751060"]), /* pep */
+  .repliedMessage_c19a55:has(> img[src*="s/718453321727475792"])   /* lilly */ {
+    > .username_c19a55 {
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-size: 100px auto;
+      -webkit-text-fill-color: transparent;
+
+      --display-name: attr(data-text); /* yoink */
+
+      &::after {
+        background: inherit;
+        content: var(--display-name);
+        inset: 0;
+        position: absolute;
+        filter: blur(4px);
+        opacity: 0;
+        text-indent: 0;
+        transition: opacity .1s ease-in-out;
+        z-index: -1;
+      }
+    }
+  }
+
+  &:hover {
+    .contents_c19a55 > h3 > span > .username_c19a55,
+    .repliedMessage_c19a55 > .username_c19a55 {
+      /* animate gradient when hovering */
+      animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+
+      &::after {
+        opacity: 0.7 !important;
+        transition: opacity .1s ease-in-out;
+        animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+      }
+    }
+  }
+
+  /* alfred */
+  .contents_c19a55:has(> img[src*="s/1038466644353232967"]) > h3 > span > .username_c19a55, /* normal messages */
+  .repliedMessage_c19a55:has(> img[src*="s/1038466644353232967"]) > .username_c19a55 /* replies */ {
+    background-image: var(--alfred-color);
+  }
+  /* tarik */
+  .contents_c19a55:has(> img[src*="s/1112561208873193472"]) > h3 > span > .username_c19a55,
+  .repliedMessage_c19a55:has(> img[src*="s/1112561208873193472"]) > .username_c19a55 {
+    background-image: var(--tarik-color);
+  }
+  /* ezkli */
+  .contents_c19a55:has(> img[src*="s/1037170273897689189"]) > h3 > span > .username_c19a55,
+  .repliedMessage_c19a55:has(> img[src*="s/1037170273897689189"]) > .username_c19a55 {
+    background-size: 4em auto;
+    background-image: var(--ezkli-color);
+  }
+  /* pep */
+  .contents_c19a55:has(> img[src*="s/1338654892641751060"]) > h3 > span > .username_c19a55,
+  .repliedMessage_c19a55:has(> img[src*="s/1338654892641751060"]) > .username_c19a55 {
+    background-image: var(--pep-color);
+  }
+  /* lilly */
+  .contents_c19a55:has(> img[src*="s/718453321727475792"]) > h3 > span > .username_c19a55,
+  .repliedMessage_c19a55:has(> img[src*="s/718453321727475792"]) > .username_c19a55 {
+    background-image: var(--lilly-color);
+  }
+}
+
+@container style(--member-list: on) {
+/* group dm member list */
+.chat_f75fb0:has(.children__9293f .avatar_f75fb0) .container_c8ffbb .member__5d473,
+.chat_f75fb0:has(.gdm_f75fb0) .container_c8ffbb .member__5d473 {
+  /* yes this is ugly and will probably break with any slight redesign of discord's ui but reduces lag a lot ok */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1038466644353232967"]), /* alfred */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1112561208873193472"]), /* tarik */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1037170273897689189"]), /* ezkli */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1338654892641751060"]), /* pep */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/718453321727475792"])   /* lilly */ {
+    .username__703b9 {
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-size: 100px auto;
+      -webkit-text-fill-color: transparent;
+
+      &::after {
+        background: inherit;
+        content: "alfred"; /* there's no data-text attribute to yoink this time soooo.... */
+        inset: 0;
+        position: absolute;
+        filter: blur(4px);
+        opacity: 0;
+        text-indent: 0;
+        transition: opacity .1s ease-in-out;
+        z-index: -1;
+      }
+    }
+  }
+
+  &:hover .memberInner__5d473 .username__703b9 {
+    /* animate gradient when hovering */
+    animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+
+    &::after {
+      opacity: 0.7 !important;
+      transition: opacity .1s ease-in-out;
+      animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+    }
+  }
+
+  /* alfred */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1038466644353232967"]) .username__703b9 {
+    background-image: var(--alfred-color);
+  }
+  /* tarik */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1112561208873193472"]) .username__703b9 {
+    background-image: var(--tarik-color);
+  }
+  /* ezkli */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1037170273897689189"]) .username__703b9 {
+    background-image: var(--ezkli-color);
+  }
+  /* pep */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1338654892641751060"]) .username__703b9 {
+    background-image: var(--pep-color);
+  }
+  /* lilly */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/718453321727475792"]) .username__703b9 {
+    background-image: var(--lilly-color);
+  }
+}
+}
+
+@container style(--reactors-list: on) {
+.reactorsContainer_b7f4b4 {
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]), /* alfred */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]), /* tarik */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]), /* ezkli */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]), /* pep */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/718453321727475792"])   /* lilly */ {
+    > .defaultColor__4bd52 > span {
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-size: 100px auto;
+      -webkit-text-fill-color: transparent;
+
+      &::after {
+        background: inherit;
+        content: "alfred"; /* no data-text attribute here either 💔 */
+        inset: 0;
+        position: absolute;
+        filter: blur(4px);
+        opacity: 0;
+        text-indent: 0;
+        transition: opacity .1s ease-in-out;
+        z-index: -1;
+      }
+    }
+
+    &:hover > .defaultColor__4bd52 > span {
+      /* animate gradient when hovering */
+      animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+  
+      &::after {
+        opacity: 0.7 !important;
+        transition: opacity .1s ease-in-out;
+        animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+      }
+    }
+  }
+
+  /* alfred */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]) > .defaultColor__4bd52 > span {
+    background-image: var(--alfred-color);
+  }
+  /* tarik */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]) > .defaultColor__4bd52 > span {
+    background-image: var(--tarik-color);
+  }
+  /* ezkli */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) > .defaultColor__4bd52 > span {
+    background-image: var(--ezkli-color);
+  }
+  /* pep */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]) > .defaultColor__4bd52 > span {
+    background-image: var(--pep-color);
+  }
+  /* lilly */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/718453321727475792"]) > .defaultColor__4bd52 > span {
+    background-image: var(--lilly-color);
+  }
+}
+}
+
+@container style(--poll-results: on) {
+.votersListContainer__01c8c {
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]), /* alfred */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]), /* tarik */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]), /* ezkli */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]), /* pep */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/718453321727475792"])   /* lilly */ {
+    > .defaultColor__4bd52 {
+      --display-name: attr(aria-label); /* yoink */
+
+      > span {
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-size: 100px auto;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+
+        &::after {
+          background: inherit;
+          content: var(--display-name);
+          inset: 0;
+          position: absolute;
+          filter: blur(4px);
+          opacity: 0;
+          text-indent: 0;
+          transition: opacity .1s ease-in-out;
+          z-index: -1;
+        }
+      }
+    }
+
+    &:hover > .defaultColor__4bd52 > span {
+      /* animate gradient when hovering */
+      animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+  
+      &::after {
+        opacity: 0.7 !important;
+        transition: opacity .1s ease-in-out;
+        animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+      }
+    }
+  }
+
+  /* alfred */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]) > .defaultColor__4bd52 > span {
+    background-image: var(--alfred-color);
+  }
+  /* tarik */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]) > .defaultColor__4bd52 > span {
+    background-image: var(--tarik-color);
+  }
+  /* ezkli */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) > .defaultColor__4bd52 > span {
+    background-image: var(--ezkli-color);
+  }
+  /* pep */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]) > .defaultColor__4bd52 > span {
+    background-image: var(--pep-color);
+  }
+  /* narox */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/589545486374010884"]) > .defaultColor__4bd52 > span {
+    background-image: var(--narox-color);
+  }
+  /* lilly */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/718453321727475792"]) > .defaultColor__4bd52 > span {
+    background-image: var(--lilly-color);
+  }
+}
+}
