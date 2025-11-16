@@ -1,0 +1,855 @@
+/**
+ * @name fancy usernames
+ * @description changes the color of various accounts' names in DMs (fancy edition)
+ * @author alfred (@a.l.f.y)
+ * @authorLink https://github.com/alfuwu/
+ * @version :3
+ * @invite G3Hu56qbVf
+ * @authorId 1038466644353232967
+*/
+
+:root {
+  /* not possible with current CSS capabilities afaict */
+  /*--chat-mentions: on;*/ /* colors in chat mentions       | can be set to on or off */
+  --member-list: on; /* colors in the member list           | can be set to on or off */
+  --reactors-list: on; /* colors in the reactions list      | can be set to on or off */
+  --poll-results: on; /* colors in the poll results         | can be set to on or off */
+  /* unfortunately, there's no good way to get this to work in gcs */
+  --typing-indicator: on; /* colors in the typing indicator | can be set to on or off */
+
+  /* colors */
+  --alfred-color: linear-gradient(
+    to right,
+    rgb(255, 107, 137),
+    rgb(255, 209, 209),
+    rgb(255, 148, 60) 50%,
+    rgb(255, 107, 137)
+  );
+  --tarik-color: linear-gradient(
+    to right,
+    rgb(18, 138, 28),
+    rgb(27, 199, 0),
+    rgb(25, 228, 214),
+    rgb(18, 138, 28)
+  );
+  --ezkli-color: linear-gradient(
+    to right,
+    rgb(255, 127, 127),
+    rgb(255, 193, 117),
+    rgb(253, 255, 123),
+    rgb(127, 208, 103),
+    rgb(140, 131, 237),
+    rgb(213, 124, 255),
+    rgb(255, 127, 127)
+  );
+  --pep-color: linear-gradient(
+    to right,
+    rgb(71, 67, 165),
+    rgb(120, 145, 255),
+    rgb(225, 163, 254),
+    rgb(71, 67, 165)
+  );
+  --narox-color: linear-gradient(
+    to right,
+    rgb(255, 132, 44),
+    rgb(253, 255, 155),
+    rgb(255, 135, 253),
+    rgb(255, 132, 44)
+  );
+  --zarzz-color: linear-gradient(
+    to right,
+    rgb(255, 34, 34),
+    rgb(255, 255, 255),
+    rgb(5, 197, 255),
+    rgb(255, 34, 34)
+  );
+  --lilly-color: linear-gradient(
+    to right,
+    rgb(255, 107, 137),
+    rgb(255, 59, 59),
+    rgb(245, 100, 255),
+    rgb(255, 107, 137)
+  );
+  --rina-color: linear-gradient(
+    to right,
+    rgb(255, 91, 236) 20%,
+    rgb(255, 70, 60),
+    rgb(255, 91, 236)
+  );
+  --bazzy-color: linear-gradient(
+    to right,
+    rgb(9, 117, 241),
+    rgb(169, 201, 255),
+    rgb(9, 117, 241)
+  );
+  --nakhi-color: linear-gradient(
+    to right,
+    rgb(9, 117, 241),
+    rgb(169, 201, 255),
+    rgb(9, 117, 241)
+  );
+  --salvation-color: linear-gradient(
+    to right,
+    rgb(255, 234, 154),
+    rgb(255, 255, 255),
+    rgb(255, 154, 71),
+    rgb(255, 215, 154)
+  );
+  --hyleus-color: linear-gradient(
+    to right,
+    rgb(0, 134, 18),
+    rgb(39, 177, 14),
+    rgb(192, 117, 92) 50% 80%,
+    rgb(0, 134, 18)
+  );
+  --miu-color: linear-gradient(
+    to right,
+    rgb(255, 175, 191) 20%,
+    rgb(169, 215, 255),
+    rgb(255, 107, 137),
+    rgb(255, 175, 191)
+  );
+  --alfred-doppel-color: linear-gradient(
+    to right,
+    rgb(255, 0, 0),
+    rgb(255, 118, 21),
+    rgb(255, 0, 0)
+  );
+  --pukicho-color: linear-gradient(
+    to right,
+    rgb(255, 145, 50),
+    rgb(255, 39, 169),
+    rgb(255, 145, 50)
+  );
+  --tay-color: linear-gradient(
+    to right,
+    rgb(255, 213, 0),
+    rgb(255, 127, 0),
+    rgb(255, 213, 0)
+  );
+  --tarik-doppel-color: linear-gradient(
+    to right,
+    rgb(36, 171, 56),
+    rgb(255, 213, 0),
+    rgb(36, 171, 56)
+  );
+  --vaporeon-color: linear-gradient(
+    to right,
+    rgb(64, 105, 219),
+    rgb(189, 159, 255),
+    rgb(64, 105, 219)
+  );
+  --ezkli-doppel-color: linear-gradient(
+    to right,
+    rgb(164, 18, 215),
+    rgb(226, 159, 255),
+    rgb(164, 18, 215)
+  );
+  --dolutan-color: linear-gradient(
+    to right,
+    rgb(134, 134, 134),
+    rgb(210, 195, 195),
+    rgb(134, 134, 134)
+  );
+  --contore-color: linear-gradient(
+    to right,
+    rgb(57, 94, 93),
+    rgb(57, 94, 93),
+    rgb(187, 103, 196) 33%,
+    rgb(228, 116, 25) 40%,
+    rgb(228, 116, 25),
+    rgb(57, 94, 93)
+  );
+}
+
+.chatContent_f75fb0[aria-label=" (channel)"] .message__5126c,
+.chat_f75fb0:has(.children__9293f .avatar_f75fb0) .chatContent_f75fb0 .message__5126c, /* detect dms properly in case discord fixes the aria-label for dm channels */
+.chat_f75fb0:has(.gdm_f75fb0) .chatContent_f75fb0 .message__5126c /* group dms have a proper channel aria-label, so we need to use another method of detection */ {
+  /* ew hardcoded */
+  .contents_c19a55:has(> img[src*="s/1038466644353232967"]) > h3 > span, /* alfred */
+  .contents_c19a55:has(> img[src*="s/1112561208873193472"]) > h3 > span, /* tarik */
+  .contents_c19a55:has(> img[src*="s/1037170273897689189"]) > h3 > span, /* ezkli */
+  .contents_c19a55:has(> img[src*="s/1338654892641751060"]) > h3 > span, /* pep */
+  .contents_c19a55:has(> img[src*="s/589545486374010884"]) > h3 > span,  /* narox */
+  .contents_c19a55:has(> img[src*="s/801881481173401611"]) > h3 > span,  /* zarzz */
+  .contents_c19a55:has(> img[src*="s/933770995104350258"]) > h3 > span,  /* also zarzz */
+  .contents_c19a55:has(> img[src*="s/718453321727475792"]) > h3 > span,  /* lilly */
+  .contents_c19a55:has(> img[src*="s/894770559295049818"]) > h3 > span,  /* rina */
+  .contents_c19a55:has(> img[src*="s/1408278092161749035"]) > h3 > span, /* bazzy */
+  .contents_c19a55:has(> img[src*="s/1125847724118523925"]) > h3 > span, /* nakhi */
+  .contents_c19a55:has(> img[src*="s/657079914079715329"]) > h3 > span,  /* salvation */
+  .contents_c19a55:has(> img[src*="s/1038469633960857740"]) > h3 > span, /* new hyleus */
+  .contents_c19a55:has(> img[src*="s/1095416117280911511"]) > h3 > span, /* miu */
+  .contents_c19a55:has(> img[src*="s/1094378607046041803"]) > h3 > span, /* alfred doppelganger */
+  .contents_c19a55:has(> img[src*="s/1173046109833285793"]) > h3 > span, /* pukicho */
+  .contents_c19a55:has(> img[src*="s/1094416367228293120"]) > h3 > span, /* tay */
+  .contents_c19a55:has(> img[src*="s/1251505511912702063"]) > h3 > span, /* tarik doppelganger */
+  .contents_c19a55:has(> img[src*="s/1175234197967884288"]) > h3 > span, /* vaporeon */
+  .contents_c19a55:has(> img[src*="s/1095426341354086400"]) > h3 > span, /* ezkli doppelganger */
+  .contents_c19a55:has(> img[src*="s/1175210202518270135"]) > h3 > span, /* dol'utan */
+  .contents_c19a55:has(> img[src*="s/1105545133442740304"]) > h3 > span, /* contore */
+
+  .repliedMessage_c19a55:has(> img[src*="s/1038466644353232967"]), /* alfred */
+  .repliedMessage_c19a55:has(> img[src*="s/1112561208873193472"]), /* tarik */
+  .repliedMessage_c19a55:has(> img[src*="s/1037170273897689189"]), /* ezkli */
+  .repliedMessage_c19a55:has(> img[src*="s/1338654892641751060"]), /* pep */
+  .repliedMessage_c19a55:has(> img[src*="s/589545486374010884"]),  /* narox */
+  .repliedMessage_c19a55:has(> img[src*="s/801881481173401611"]),  /* zarzz */
+  .repliedMessage_c19a55:has(> img[src*="s/933770995104350258"]),  /* also zarzz */
+  .repliedMessage_c19a55:has(> img[src*="s/718453321727475792"]),  /* lilly */
+  .repliedMessage_c19a55:has(> img[src*="s/894770559295049818"]),  /* rina */
+  .repliedMessage_c19a55:has(> img[src*="s/1408278092161749035"]), /* bazzy */
+  .repliedMessage_c19a55:has(> img[src*="s/1125847724118523925"]), /* nakhi */
+  .repliedMessage_c19a55:has(> img[src*="s/657079914079715329"]),  /* salvation */
+  .repliedMessage_c19a55:has(> img[src*="s/1038469633960857740"]), /* new hyleus */
+  .repliedMessage_c19a55:has(> img[src*="s/1095416117280911511"]), /* miu */
+  .repliedMessage_c19a55:has(> img[src*="s/1094378607046041803"]), /* alfred doppelganger */
+  .repliedMessage_c19a55:has(> img[src*="s/1173046109833285793"]), /* pukicho */
+  .repliedMessage_c19a55:has(> img[src*="s/1094416367228293120"]), /* tay */
+  .repliedMessage_c19a55:has(> img[src*="s/1251505511912702063"]), /* tarik doppelganger */
+  .repliedMessage_c19a55:has(> img[src*="s/1175234197967884288"]), /* vaporeon */
+  .repliedMessage_c19a55:has(> img[src*="s/1095426341354086400"]), /* ezkli doppelganger */
+  .repliedMessage_c19a55:has(> img[src*="s/1175210202518270135"]), /* dol'utan */
+  .repliedMessage_c19a55:has(> img[src*="s/1105545133442740304"])  /* contore */ {
+    > .username_c19a55 {
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-size: 100px auto;
+      -webkit-text-fill-color: transparent;
+
+      --display-name: attr(data-text); /* yoink */
+
+      &::after {
+        background: inherit;
+        content: var(--display-name);
+        inset: 0;
+        position: absolute;
+        filter: blur(4px);
+        opacity: 0;
+        text-indent: 0;
+        transition: opacity .1s ease-in-out;
+        z-index: -1;
+      }
+    }
+  }
+
+  &:hover {
+    .contents_c19a55 > h3 > span > .username_c19a55,
+    .repliedMessage_c19a55 > .username_c19a55 {
+      /* animate gradient when hovering */
+      animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+
+      &::after {
+        opacity: 0.7 !important;
+        transition: opacity .1s ease-in-out;
+        animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+      }
+    }
+    .contents_c19a55:has(> img[src*="s/1037170273897689189"]) > h3 > span > .username_c19a55,
+    .repliedMessage_c19a55:has(> img[src*="s/1037170273897689189"]) > .username_c19a55 {
+      animation: ezkliGradientAnim 1.5s linear infinite !important;
+      &::after {
+        animation: ezkliGradientAnim 1.5s linear infinite !important;
+      }
+    }
+  }
+
+  /* alfred */
+  .contents_c19a55:has(> img[src*="s/1038466644353232967"]) > h3 > span > .username_c19a55, /* normal messages */
+  .repliedMessage_c19a55:has(> img[src*="s/1038466644353232967"]) > .username_c19a55 /* replies */ {
+    background-image: var(--alfred-color);
+  }
+  /* tarik */
+  .contents_c19a55:has(> img[src*="s/1112561208873193472"]) > h3 > span > .username_c19a55,
+  .repliedMessage_c19a55:has(> img[src*="s/1112561208873193472"]) > .username_c19a55 {
+    background-image: var(--tarik-color);
+  }
+  /* ezkli */
+  .contents_c19a55:has(> img[src*="s/1037170273897689189"]) > h3 > span > .username_c19a55,
+  .repliedMessage_c19a55:has(> img[src*="s/1037170273897689189"]) > .username_c19a55 {
+    background-size: 4em auto;
+    background-image: var(--ezkli-color);
+  }
+  /* pep */
+  .contents_c19a55:has(> img[src*="s/1338654892641751060"]) > h3 > span > .username_c19a55,
+  .repliedMessage_c19a55:has(> img[src*="s/1338654892641751060"]) > .username_c19a55 {
+    background-image: var(--pep-color);
+  }
+  /* narox */
+  .contents_c19a55:has(> img[src*="s/589545486374010884"]) > h3 > span > .username_c19a55,
+  .repliedMessage_c19a55:has(> img[src*="s/589545486374010884"]) > .username_c19a55 {
+    background-image: var(--narox-color);
+  }
+  /* zarzz */
+  .contents_c19a55:has(> img[src*="s/801881481173401611"]) > h3 > span > .username_c19a55,
+  .repliedMessage_c19a55:has(> img[src*="s/801881481173401611"]) > .username_c19a55 {
+    background-image: var(--zarzz-color);
+  }
+  /* also zarzz */
+  .contents_c19a55:has(> img[src*="s/933770995104350258"]) > h3 > span > .username_c19a55,
+  .repliedMessage_c19a55:has(> img[src*="s/933770995104350258"]) > .username_c19a55 {
+    background-image: var(--zarzz-color);
+  }
+  /* lilly */
+  .contents_c19a55:has(> img[src*="s/718453321727475792"]) > h3 > span > .username_c19a55,
+  .repliedMessage_c19a55:has(> img[src*="s/718453321727475792"]) > .username_c19a55 {
+    background-image: var(--lilly-color);
+  }
+  /* rina */
+  .contents_c19a55:has(> img[src*="s/894770559295049818"]) > h3 > span > .username_c19a55,
+  .repliedMessage_c19a55:has(> img[src*="s/894770559295049818"]) > .username_c19a55 {
+    background-image: var(--rina-color);
+  }
+  /* bazzy */
+  .contents_c19a55:has(> img[src*="s/1408278092161749035"]) > h3 > span > .username_c19a55,
+  .repliedMessage_c19a55:has(> img[src*="s/1408278092161749035"]) > .username_c19a55 {
+    background-image: var(--bazzy-color);
+  }
+  /* nakhi */
+  .contents_c19a55:has(> img[src*="s/1125847724118523925"]) > h3 > span > .username_c19a55,
+  .repliedMessage_c19a55:has(> img[src*="s/1125847724118523925"]) > .username_c19a55 {
+    background-image: var(--nakhi-color);
+  }
+  /* salvation */
+  .contents_c19a55:has(> img[src*="s/657079914079715329"]) > h3 > span > .username_c19a55,
+  .repliedMessage_c19a55:has(> img[src*="s/657079914079715329"]) > .username_c19a55 {
+    background-image: var(--salvation-color);
+  }
+  /* new hyleus */
+  .contents_c19a55:has(> img[src*="s/1038469633960857740"]) > h3 > span > .username_c19a55,
+  .repliedMessage_c19a55:has(> img[src*="s/1038469633960857740"]) > .username_c19a55 {
+    background-image: var(--hyleus-color);
+  }
+
+  /* miu */
+  .contents_c19a55:has(> img[src*="s/1094378607046041803"]) > h3 > span > .username_c19a55,
+  .repliedMessage_c19a55:has(> img[src*="s/1094378607046041803"]) > .username_c19a55 {
+    background-image: var(--miu-color);
+  }
+  /* alfred doppelganger */
+  .contents_c19a55:has(> img[src*="s/1095416117280911511"]) > h3 > span > .username_c19a55,
+  .repliedMessage_c19a55:has(> img[src*="s/1095416117280911511"]) > .username_c19a55 {
+    background-image: var(--alfred-doppel-color);
+  }
+  /* pukicho */
+  .contents_c19a55:has(> img[src*="s/1173046109833285793"]) > h3 > span > .username_c19a55,
+  .repliedMessage_c19a55:has(> img[src*="s/1173046109833285793"]) > .username_c19a55 {
+    background-image: var(--pukicho-color);
+  }
+  /* tay */
+  .contents_c19a55:has(> img[src*="s/1094416367228293120"]) > h3 > span > .username_c19a55,
+  .repliedMessage_c19a55:has(> img[src*="s/1094416367228293120"]) > .username_c19a55 {
+    background-image: var(--tay-color);
+  }
+  /* tarik doppelganger */
+  .contents_c19a55:has(> img[src*="s/1251505511912702063"]) > h3 > span > .username_c19a55,
+  .repliedMessage_c19a55:has(> img[src*="s/1251505511912702063"]) > .username_c19a55 {
+    background-image: var(--tarik-doppel-color);
+  }
+  /* vaporeon */
+  .contents_c19a55:has(> img[src*="s/1175234197967884288"]) > h3 > span > .username_c19a55,
+  .repliedMessage_c19a55:has(> img[src*="s/1175234197967884288"]) > .username_c19a55 {
+    background-image: var(--vaporeon-color);
+  }
+  /* ezkli doppelganger */
+  .contents_c19a55:has(> img[src*="s/1095426341354086400"]) > h3 > span > .username_c19a55,
+  .repliedMessage_c19a55:has(> img[src*="s/1095426341354086400"]) > .username_c19a55 {
+    background-image: var(--ezkli-doppel-color);
+  }
+  /* dol'utan */
+  .contents_c19a55:has(> img[src*="s/1175210202518270135"]) > h3 > span > .username_c19a55,
+  .repliedMessage_c19a55:has(> img[src*="s/1175210202518270135"]) > .username_c19a55 {
+    background-image: var(--dolutan-color);
+  }
+  /* contore */
+  .contents_c19a55:has(> img[src*="s/1105545133442740304"]) > h3 > span > .username_c19a55,
+  .repliedMessage_c19a55:has(> img[src*="s/1105545133442740304"]) > .username_c19a55 {
+    background-image: var(--contore-color);
+  }
+}
+
+@container style(--member-list: on) {
+/* group dm member list */
+.chat_f75fb0:has(.children__9293f .avatar_f75fb0) .container_c8ffbb .member__5d473,
+.chat_f75fb0:has(.gdm_f75fb0) .container_c8ffbb .member__5d473 {
+  /* yes this is ugly and will probably break with any slight redesign of discord's ui but reduces lag a lot ok */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1038466644353232967"]), /* alfred */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1112561208873193472"]), /* tarik */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1037170273897689189"]), /* ezkli */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1338654892641751060"]), /* pep */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/589545486374010884"]),  /* narox */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/801881481173401611"]),  /* zarzz */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/933770995104350258"]),  /* zarzz */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/718453321727475792"]),  /* lilly */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/894770559295049818"]),  /* rina */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1408278092161749035"]), /* bazzy */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1125847724118523925"]), /* nakhi */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/657079914079715329"]),  /* salvation */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1038469633960857740"]), /* new hyleus */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1095416117280911511"]), /* miu */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1094378607046041803"]), /* alfred doppelganger */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1173046109833285793"]), /* pukicho */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1094416367228293120"]), /* tay */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1251505511912702063"]), /* tarik doppelganger */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1175234197967884288"]), /* vaporeon */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1095426341354086400"]), /* ezkli doppelganger */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1175210202518270135"]), /* dol'utan */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1105545133442740304"])  /* contore */ {
+    .username__703b9 {
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-size: 100px auto;
+      -webkit-text-fill-color: transparent;
+
+      &::after {
+        background: inherit;
+        content: "alfred"; /* there's no data-text attribute to yoink this time soooo.... */
+        inset: 0;
+        position: absolute;
+        filter: blur(4px);
+        opacity: 0;
+        text-indent: 0;
+        transition: opacity .1s ease-in-out;
+        z-index: -1;
+      }
+    }
+  }
+
+  &:hover {
+    .memberInner__5d473 .username__703b9 {
+      /* animate gradient when hovering */
+      animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+
+      &::after {
+        opacity: 0.7 !important;
+        transition: opacity .1s ease-in-out;
+        animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+      }
+    }
+    .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1037170273897689189"]) .username__703b9 {
+      animation: ezkliGradientAnim 1.5s linear infinite !important;
+      &::after {
+        animation: ezkliGradientAnim 1.5s linear infinite !important;
+      }
+    }
+  }
+
+  /* alfred */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1038466644353232967"]) .username__703b9 {
+    background-image: var(--alfred-color);
+  }
+  /* tarik */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1112561208873193472"]) .username__703b9 {
+    background-image: var(--tarik-color);
+  }
+  /* ezkli */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1037170273897689189"]) .username__703b9 {
+    background-size: 4em auto;
+    background-image: var(--ezkli-color);
+  }
+  /* pep */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1338654892641751060"]) .username__703b9 {
+    background-image: var(--pep-color);
+  }
+  /* narox */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/589545486374010884"]) .username__703b9 {
+    background-image: var(--narox-color);
+  }
+  /* zarzz */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/801881481173401611"]) .username__703b9 {
+    background-image: var(--zarzz-color);
+  }
+  /* also zarzz */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/933770995104350258"]) .username__703b9 {
+    background-image: var(--zarzz-color);
+  }
+  /* lilly */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/718453321727475792"]) .username__703b9 {
+    background-image: var(--lilly-color);
+  }
+  /* rina */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/894770559295049818"]) .username__703b9 {
+    background-image: var(--rina-color);
+  }
+  /* bazzy */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1408278092161749035"]) .username__703b9 {
+    background-image: var(--bazzy-color);
+  }
+  /* nakhi */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1125847724118523925"]) .username__703b9 {
+    background-image: var(--nakhi-color);
+  }
+  /* salvation */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/657079914079715329"]) .username__703b9 {
+    background-image: var(--salvation-color);
+  }
+  /* new hyleus */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1038469633960857740"]) .username__703b9 {
+    background-image: var(--hyleus-color);
+  }
+
+  /* miu */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1094378607046041803"]) .username__703b9 {
+    background-image: var(--miu-color);
+  }
+  /* alfred doppelganger */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1095416117280911511"]) .username__703b9 {
+    background-image: var(--alfred-doppel-color);
+  }
+  /* pukicho */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1173046109833285793"]) .username__703b9 {
+    background-image: var(--pukicho-color);
+  }
+  /* tay */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1094416367228293120"]) .username__703b9 {
+    background-image: var(--tay-color);
+  }
+  /* tarik doppelganger */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1251505511912702063"]) .username__703b9 {
+    background-image: var(--tarik-doppel-color);
+  }
+  /* vaporeon */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1175234197967884288"]) .username__703b9 {
+    background-image: var(--vaporeon-color);
+  }
+  /* ezkli doppelganger */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1095426341354086400"]) .username__703b9 {
+    background-image: var(--ezkli-doppel-color);
+  }
+  /* dol'utan */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1175210202518270135"]) .username__703b9 {
+    background-image: var(--dolutan-color);
+  }
+  /* contore */
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1105545133442740304"]) .username__703b9 {
+    background-image: var(--contore-color);
+  }
+}
+}
+
+@container style(--reactors-list: on) {
+.reactorsContainer_b7f4b4 {
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]), /* alfred */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]), /* tarik */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]), /* ezkli */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]), /* pep */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/589545486374010884"]),  /* narox */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/801881481173401611"]),  /* zarzz */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/933770995104350258"]),  /* zarzz */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/718453321727475792"]),  /* lilly */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/894770559295049818"]),  /* rina */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1408278092161749035"]), /* bazzy */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1125847724118523925"]), /* nakhi */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/657079914079715329"]),  /* salvation */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1038469633960857740"]), /* new hyleus */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1095416117280911511"]), /* miu */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1094378607046041803"]), /* alfred doppelganger */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1173046109833285793"]), /* pukicho */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1094416367228293120"]), /* tay */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1251505511912702063"]), /* tarik doppelganger */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1175234197967884288"]), /* vaporeon */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1095426341354086400"]), /* ezkli doppelganger */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1175210202518270135"]), /* dol'utan */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1105545133442740304"])  /* contore */ {
+    > .defaultColor__4bd52 > span {
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-size: 100px auto;
+      -webkit-text-fill-color: transparent;
+
+      &::after {
+        background: inherit;
+        content: "alfred"; /* no data-text attribute here either 💔 */
+        inset: 0;
+        position: absolute;
+        filter: blur(4px);
+        opacity: 0;
+        text-indent: 0;
+        transition: opacity .1s ease-in-out;
+        z-index: -1;
+      }
+    }
+
+    &:hover {
+      > .defaultColor__4bd52 > span {
+        /* animate gradient when hovering */
+        animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+    
+        &::after {
+          opacity: 0.7 !important;
+          transition: opacity .1s ease-in-out;
+          animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+        }
+      }
+      &:has(> img[src*="s/1037170273897689189"]) > .defaultColor__4bd52 > span {
+        animation: ezkliGradientAnim 1.5s linear infinite !important;
+        &::after {
+          animation: ezkliGradientAnim 1.5s linear infinite !important;
+        }
+      }
+    }
+  }
+
+  /* alfred */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]) > .defaultColor__4bd52 > span {
+    background-image: var(--alfred-color);
+  }
+  /* tarik */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]) > .defaultColor__4bd52 > span {
+    background-image: var(--tarik-color);
+  }
+  /* ezkli */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) > .defaultColor__4bd52 > span {
+    background-size: 4em auto;
+    background-image: var(--ezkli-color);
+  }
+  /* pep */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]) > .defaultColor__4bd52 > span {
+    background-image: var(--pep-color);
+  }
+  /* narox */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/589545486374010884"]) > .defaultColor__4bd52 > span {
+    background-image: var(--narox-color);
+  }
+  /* zarzz */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/801881481173401611"]) > .defaultColor__4bd52 > span {
+    background-image: var(--zarzz-color);
+  }
+  /* also zarzz */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/933770995104350258"]) > .defaultColor__4bd52 > span {
+    background-image: var(--zarzz-color);
+  }
+  /* lilly */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/718453321727475792"]) > .defaultColor__4bd52 > span {
+    background-image: var(--lilly-color);
+  }
+  /* rina */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/894770559295049818"]) > .defaultColor__4bd52 > span {
+    background-image: var(--rina-color);
+  }
+  /* bazzy */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1408278092161749035"]) > .defaultColor__4bd52 > span {
+    background-image: var(--bazzy-color);
+  }
+  /* nakhi */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1125847724118523925"]) > .defaultColor__4bd52 > span {
+    background-image: var(--nakhi-color);
+  }
+  /* salvation */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/657079914079715329"]) > .defaultColor__4bd52 > span {
+    background-image: var(--salvation-color);
+  }
+  /* new hyleus */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1038469633960857740"]) > .defaultColor__4bd52 > span {
+    background-image: var(--hyleus-color);
+  }
+
+  /* miu */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1094378607046041803"]) > .defaultColor__4bd52 > span {
+    background-image: var(--miu-color);
+  }
+  /* alfred doppelganger */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1095416117280911511"]) > .defaultColor__4bd52 > span {
+    background-image: var(--alfred-doppel-color);
+  }
+  /* pukicho */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1173046109833285793"]) > .defaultColor__4bd52 > span {
+    background-image: var(--pukicho-color);
+  }
+  /* tay */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1094416367228293120"]) > .defaultColor__4bd52 > span {
+    background-image: var(--tay-color);
+  }
+  /* tarik doppelganger */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1251505511912702063"]) > .defaultColor__4bd52 > span {
+    background-image: var(--tarik-doppel-color);
+  }
+  /* vaporeon */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1175234197967884288"]) > .defaultColor__4bd52 > span {
+    background-image: var(--vaporeon-color);
+  }
+  /* ezkli doppelganger */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1095426341354086400"]) > .defaultColor__4bd52 > span {
+    background-image: var(--ezkli-doppel-color);
+  }
+  /* dol'utan */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1175210202518270135"]) > .defaultColor__4bd52 > span {
+    background-image: var(--dolutan-color);
+  }
+  /* contore */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1105545133442740304"]) > .defaultColor__4bd52 > span {
+    background-image: var(--contore-color);
+  }
+}
+}
+
+@container style(--poll-results: on) {
+.votersListContainer__01c8c {
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]), /* alfred */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]), /* tarik */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]), /* ezkli */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]), /* pep */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/589545486374010884"]),  /* narox */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/801881481173401611"]),  /* zarzz */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/933770995104350258"]),  /* zarzz */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/718453321727475792"]),  /* lilly */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/894770559295049818"]),  /* rina */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1408278092161749035"]), /* bazzy */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1125847724118523925"]), /* nakhi */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/657079914079715329"]),  /* salvation */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1038469633960857740"]), /* new hyleus */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1095416117280911511"]), /* miu */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1094378607046041803"]), /* alfred doppelganger */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1173046109833285793"]), /* pukicho */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1094416367228293120"]), /* tay */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1251505511912702063"]), /* tarik doppelganger */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1175234197967884288"]), /* vaporeon */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1095426341354086400"]), /* ezkli doppelganger */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1175210202518270135"]), /* dol'utan */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1105545133442740304"])  /* contore */ {
+    > .defaultColor__4bd52 {
+      --display-name: attr(aria-label); /* yoink */
+
+      > span {
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-size: 100px auto;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+
+        &::after {
+          background: inherit;
+          content: var(--display-name);
+          inset: 0;
+          position: absolute;
+          filter: blur(4px);
+          opacity: 0;
+          text-indent: 0;
+          transition: opacity .1s ease-in-out;
+          z-index: -1;
+        }
+      }
+    }
+
+    &:hover {
+      > .defaultColor__4bd52 > span {
+        /* animate gradient when hovering */
+        animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+    
+        &::after {
+          opacity: 0.7 !important;
+          transition: opacity .1s ease-in-out;
+          animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+        }
+      }
+      &:has(> img[src*="s/1037170273897689189"]) > .defaultColor__4bd52 > span {
+        animation: ezkliGradientAnim 1.5s linear infinite !important;
+        &::after {
+          animation: ezkliGradientAnim 1.5s linear infinite !important;
+        }
+      }
+    }
+  }
+
+  /* alfred */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]) > .defaultColor__4bd52 > span {
+    background-image: var(--alfred-color);
+  }
+  /* tarik */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]) > .defaultColor__4bd52 > span {
+    background-image: var(--tarik-color);
+  }
+  /* ezkli */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) > .defaultColor__4bd52 > span {
+    background-size: 4em auto;
+    background-image: var(--ezkli-color);
+  }
+  /* pep */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]) > .defaultColor__4bd52 > span {
+    background-image: var(--pep-color);
+  }
+  /* narox */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/589545486374010884"]) > .defaultColor__4bd52 > span {
+    background-image: var(--narox-color);
+  }
+  /* zarzz */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/801881481173401611"]) > .defaultColor__4bd52 > span {
+    background-image: var(--zarzz-color);
+  }
+  /* also zarzz */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/933770995104350258"]) > .defaultColor__4bd52 > span {
+    background-image: var(--zarzz-color);
+  }
+  /* lilly */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/718453321727475792"]) > .defaultColor__4bd52 > span {
+    background-image: var(--lilly-color);
+  }
+  /* rina */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/894770559295049818"]) > .defaultColor__4bd52 > span {
+    background-image: var(--rina-color);
+  }
+  /* bazzy */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1408278092161749035"]) > .defaultColor__4bd52 > span {
+    background-image: var(--bazzy-color);
+  }
+  /* nakhi */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1125847724118523925"]) > .defaultColor__4bd52 > span {
+    background-image: var(--nakhi-color);
+  }
+  /* salvation */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/657079914079715329"]) > .defaultColor__4bd52 > span {
+    background-image: var(--salvation-color);
+  }
+  /* new hyleus */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1038469633960857740"]) > .defaultColor__4bd52 > span {
+    background-image: var(--hyleus-color);
+  }
+
+  /* miu */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1094378607046041803"]) > .defaultColor__4bd52 > span {
+    background-image: var(--miu-color);
+  }
+  /* alfred doppelganger */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1095416117280911511"]) > .defaultColor__4bd52 > span {
+    background-image: var(--alfred-doppel-color);
+  }
+  /* pukicho */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1173046109833285793"]) > .defaultColor__4bd52 > span {
+    background-image: var(--pukicho-color);
+  }
+  /* tay */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1094416367228293120"]) > .defaultColor__4bd52 > span {
+    background-image: var(--tay-color);
+  }
+  /* tarik doppelganger */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1251505511912702063"]) > .defaultColor__4bd52 > span {
+    background-image: var(--tarik-doppel-color);
+  }
+  /* vaporeon */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1175234197967884288"]) > .defaultColor__4bd52 > span {
+    background-image: var(--vaporeon-color);
+  }
+  /* ezkli doppelganger */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1095426341354086400"]) > .defaultColor__4bd52 > span {
+    background-image: var(--ezkli-doppel-color);
+  }
+  /* dol'utan */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1175210202518270135"]) > .defaultColor__4bd52 > span {
+    background-image: var(--dolutan-color);
+  }
+  /* contore */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1105545133442740304"]) > .defaultColor__4bd52 > span {
+    background-image: var(--contore-color);
+  }
+}
+}
+
+@keyframes ezkliGradientAnim {
+  0% {
+    background-position: 0;
+  }
+
+  to {
+    background-position: 4em;
+  }
+}
