@@ -1,0 +1,180 @@
+/**
+ * @name american alfred
+ * @description makes alfred american
+ * @author alfred (@a.l.f.y)
+ * @authorLink https://github.com/alfuwu/
+ * @version :3
+ * @invite G3Hu56qbVf
+ * @authorId 1038466644353232967
+*/
+
+:root {
+  /* not possible with current CSS capabilities afaict */
+  /*--chat-mentions: on;*/ /* colors in chat mentions       | can be set to on or off */
+  --member-list: on; /* colors in the member list           | can be set to on or off */
+  --reactors-list: on; /* colors in the reactions list      | can be set to on or off */
+  --poll-results: on; /* colors in the poll results         | can be set to on or off */
+
+  --alfred-color: linear-gradient(
+    to right,
+    rgb(255, 34, 34),
+    rgb(255, 255, 255),
+    rgb(5, 197, 255),
+    rgb(255, 34, 34)
+  );
+}
+
+.chatContent_f75fb0[aria-label=" (channel)"] .message__5126c,
+.chat_f75fb0:has(.children__9293f .avatar_f75fb0) .chatContent_f75fb0 .message__5126c, /* detect dms properly in case discord fixes the aria-label for dm channels */
+.chat_f75fb0:has(.gdm_f75fb0) .chatContent_f75fb0 .message__5126c /* group dms have a proper channel aria-label, so we need to use another method of detection */ {
+  .contents_c19a55:has(> img[src*="s/1038466644353232967"]) > h3 > span, /* alfred */
+  .repliedMessage_c19a55:has(> img[src*="s/1038466644353232967"]) {
+    > .username_c19a55 {
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-size: 100px auto;
+      background-image: var(--alfred-color);
+      -webkit-text-fill-color: transparent;
+
+      --display-name: attr(data-text); /* yoink */
+
+      &::after {
+        background: inherit;
+        content: var(--display-name);
+        inset: 0;
+        position: absolute;
+        filter: blur(4px);
+        opacity: 0;
+        text-indent: 0;
+        transition: opacity .1s ease-in-out;
+        z-index: -1;
+      }
+    }
+  }
+
+  &:hover {
+    .contents_c19a55:has(> img[src*="s/1038466644353232967"]) > h3 > span > .username_c19a55,
+    .repliedMessage_c19a55:has(> img[src*="s/1038466644353232967"]) > .username_c19a55 {
+      animation: gradientUsernameAnimation_e5de78 1.5s linear infinite !important;
+      &::after {
+        opacity: 0.7 !important;
+        transition: opacity .1s ease-in-out;
+        animation: gradientUsernameAnimation_e5de78 1.5s linear infinite !important;
+      }
+    }
+  }
+}
+
+@container style(--member-list: on) {
+/* group dm member list */
+.chat_f75fb0:has(.children__9293f .avatar_f75fb0) .container_c8ffbb .member__5d473,
+.chat_f75fb0:has(.gdm_f75fb0) .container_c8ffbb .member__5d473 {
+  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1038466644353232967"]) /* alfred */ {
+    .username__703b9 {
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-size: 100px auto;
+      background-image: var(--alfred-color);
+      -webkit-text-fill-color: transparent;
+
+      &::after {
+        background: inherit;
+        content: "alfred"; /* there's no data-text attribute to yoink this time soooo.... */
+        inset: 0;
+        position: absolute;
+        filter: blur(4px);
+        opacity: 0;
+        text-indent: 0;
+        transition: opacity .1s ease-in-out;
+        z-index: -1;
+      }
+    }
+  }
+
+  &:hover {
+    .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1038466644353232967"]) .username__703b9 {
+      animation: gradientUsernameAnimation_e5de78 1.5s linear infinite !important;
+      &::after {
+        opacity: 0.7 !important;
+        transition: opacity .1s ease-in-out;
+        animation: gradientUsernameAnimation_e5de78 1.5s linear infinite !important;
+      }
+    }
+  }
+}
+}
+
+@container style(--reactors-list: on) {
+.reactorsContainer_b7f4b4 {
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]) /* alfred */ {
+    > .defaultColor__4bd52 > span {
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-size: 100px auto;
+      background-image: var(--alfred-color);
+      -webkit-text-fill-color: transparent;
+
+      &::after {
+        background: inherit;
+        content: "alfred"; /* no data-text attribute here either 💔 */
+        inset: 0;
+        position: absolute;
+        filter: blur(4px);
+        opacity: 0;
+        text-indent: 0;
+        transition: opacity .1s ease-in-out;
+        z-index: -1;
+      }
+    }
+
+    &:has(> img[src*="s/1038466644353232967"]):hover > .defaultColor__4bd52 > span {
+      animation: gradientUsernameAnimation_e5de78 1.5s linear infinite !important;
+      &::after {
+        opacity: 0.7 !important;
+        transition: opacity .1s ease-in-out;
+        animation: gradientUsernameAnimation_e5de78 1.5s linear infinite !important;
+      }
+    }
+  }
+}
+}
+
+@container style(--poll-results: on) {
+.votersListContainer__01c8c {
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]) /* alfred */ {
+    > .defaultColor__4bd52 {
+      --display-name: attr(aria-label); /* yoink */
+
+      > span {
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-size: 100px auto;
+        background-image: var(--alfred-color);
+        -webkit-text-fill-color: transparent;
+        position: relative;
+
+        &::after {
+          background: inherit;
+          content: var(--display-name);
+          inset: 0;
+          position: absolute;
+          filter: blur(4px);
+          opacity: 0;
+          text-indent: 0;
+          transition: opacity .1s ease-in-out;
+          z-index: -1;
+        }
+      }
+    }
+
+    &:has(> img[src*="s/1038466644353232967"]):hover > .defaultColor__4bd52 > span {
+      animation: gradientUsernameAnimation_e5de78 1.5s linear infinite !important;
+      &::after {
+        opacity: 0.7 !important;
+        transition: opacity .1s ease-in-out;
+        animation: gradientUsernameAnimation_e5de78 1.5s linear infinite !important;
+      }
+    }
+  }
+}
+}
