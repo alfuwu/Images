@@ -14,8 +14,6 @@
   --member-list: on; /* colors in the member list           | can be set to on or off */
   --reactors-list: on; /* colors in the reactions list      | can be set to on or off */
   --poll-results: on; /* colors in the poll results         | can be set to on or off */
-  /* unfortunately, there's no good way to get this to work in gcs */
-  --typing-indicator: on; /* colors in the typing indicator | can be set to on or off */
 
   /* colors */
   --alfred-color: linear-gradient(
@@ -267,7 +265,7 @@
   /* ezkli */
   .contents_c19a55:has(> img[src*="s/1037170273897689189"]) > h3 > span > .username_c19a55,
   .repliedMessage_c19a55:has(> img[src*="s/1037170273897689189"]) > .username_c19a55 {
-    background-size: 4em auto;
+    background-size: 4em auto !important;
     background-image: var(--ezkli-color);
   }
   /* pep */
