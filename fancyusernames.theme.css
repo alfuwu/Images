@@ -579,7 +579,7 @@
           animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
         }
       }
-      &:has(> .marginReset_fd297e > div > svg > foreignObject > div > > img[src*="s/1037170273897689189"]) > .defaultColor__4bd52 > span {
+      &:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) > .defaultColor__4bd52 > span {
         animation: ezkliGradientAnim 1.5s linear infinite !important;
         &::after {
           animation: ezkliGradientAnim 1.5s linear infinite !important;
