@@ -389,3 +389,8 @@ button[aria-label="Send a gift"] {
 .bannerImage_f37cb1::before {
 	display: none;
 }
+
+/* fix orbs */
+.headerBarContent__1a9ce {
+    padding-inline-end: var(--top-bar-right-margin);
+}
