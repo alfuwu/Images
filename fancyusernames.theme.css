@@ -8,12 +8,16 @@
  * @authorId 1038466644353232967
 */
 
+/* import theme module */
+@import url("https://alfuwu.github.io/Images/fancyusernames.theme.css");
+
 :root {
   /* not possible with current CSS capabilities afaict */
-  /*--chat-mentions: on;*/ /* colors in chat mentions       | can be set to on or off */
-  --member-list: on; /* colors in the member list           | can be set to on or off */
-  --reactors-list: on; /* colors in the reactions list      | can be set to on or off */
-  --poll-results: on; /* colors in the poll results         | can be set to on or off */
+  /*--chat-mentions: on;*/ /* colors in chat mentions                     | can be set to on or off */
+  --member-list: on; /* colors in the member list                         | can be set to on or off */
+  --reactors-list: on; /* colors in the reactions list                    | can be set to on or off */
+  --poll-results: on; /* colors in the poll results                       | can be set to on or off */
+  --low-perf: off; /* removes expensive :has selectors, increasing perf   | can be set to on or off */
 
   /* colors */
   --alfred-color: linear-gradient(
@@ -525,7 +529,326 @@
 }
 }
 
-@container style(--reactors-list: on) {
+@container style(--reactors-list: on) and style(--low-perf: off) {
+.notAppAsidePanel_a3002d:has(> [class*="app"] > div > .layers__960e4 > .layer__960e4 > .container__5e434 > .base__5e434 > .content__5e434 > .page__5e434 > div > .chat_f75fb0 .children__9293f .avatar_f75fb0) .reactorsContainer_b7f4b4,
+.notAppAsidePanel_a3002d:has(> [class*="app"] > div > .layers__960e4 > .layer__960e4 > .container__5e434 > .base__5e434 > .content__5e434 > .page__5e434 > div > .chat_f75fb0 .gdm_f75fb0) .reactorsContainer_b7f4b4 {
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]), /* alfred */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]), /* tarik */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]), /* ezkli */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]), /* pep */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/589545486374010884"]),  /* narox */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/801881481173401611"]),  /* zarzz */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/933770995104350258"]),  /* zarzz */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/718453321727475792"]),  /* lilly */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/894770559295049818"]),  /* rina */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1408278092161749035"]), /* bazzy */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1125847724118523925"]), /* nakhi */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/657079914079715329"]),  /* salvation */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1038469633960857740"]), /* new hyleus */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1095416117280911511"]), /* miu */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1094378607046041803"]), /* alfred doppelganger */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1173046109833285793"]), /* pukicho */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1094416367228293120"]), /* tay */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1251505511912702063"]), /* tarik doppelganger */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1175234197967884288"]), /* vaporeon */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1095426341354086400"]), /* ezkli doppelganger */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1175210202518270135"]), /* dol'utan */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1105545133442740304"])  /* contore */ {
+    > .defaultColor__4bd52 > span {
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-size: 100px auto;
+      -webkit-text-fill-color: transparent;
+
+      &::after {
+        background: inherit;
+        content: "alfred"; /* no data-text attribute here either 💔 */
+        inset: 0;
+        position: absolute;
+        filter: blur(4px);
+        opacity: 0;
+        text-indent: 0;
+        transition: opacity .1s ease-in-out;
+        z-index: -1;
+      }
+    }
+
+    &:hover {
+      > .defaultColor__4bd52 > span {
+        /* animate gradient when hovering */
+        animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+    
+        &::after {
+          opacity: 0.7 !important;
+          transition: opacity .1s ease-in-out;
+          animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+        }
+      }
+      &:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) > .defaultColor__4bd52 > span {
+        animation: ezkliGradientAnim 1.5s linear infinite !important;
+        &::after {
+          animation: ezkliGradientAnim 1.5s linear infinite !important;
+        }
+      }
+    }
+  }
+
+  /* alfred */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]) > .defaultColor__4bd52 > span {
+    background-image: var(--alfred-color);
+  }
+  /* tarik */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]) > .defaultColor__4bd52 > span {
+    background-image: var(--tarik-color);
+  }
+  /* ezkli */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) > .defaultColor__4bd52 > span {
+    background-size: 4em auto;
+    background-image: var(--ezkli-color);
+  }
+  /* pep */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]) > .defaultColor__4bd52 > span {
+    background-image: var(--pep-color);
+  }
+  /* narox */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/589545486374010884"]) > .defaultColor__4bd52 > span {
+    background-image: var(--narox-color);
+  }
+  /* zarzz */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/801881481173401611"]) > .defaultColor__4bd52 > span {
+    background-image: var(--zarzz-color);
+  }
+  /* also zarzz */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/933770995104350258"]) > .defaultColor__4bd52 > span {
+    background-image: var(--zarzz-color);
+  }
+  /* lilly */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/718453321727475792"]) > .defaultColor__4bd52 > span {
+    background-image: var(--lilly-color);
+  }
+  /* rina */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/894770559295049818"]) > .defaultColor__4bd52 > span {
+    background-image: var(--rina-color);
+  }
+  /* bazzy */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1408278092161749035"]) > .defaultColor__4bd52 > span {
+    background-image: var(--bazzy-color);
+  }
+  /* nakhi */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1125847724118523925"]) > .defaultColor__4bd52 > span {
+    background-image: var(--nakhi-color);
+  }
+  /* salvation */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/657079914079715329"]) > .defaultColor__4bd52 > span {
+    background-image: var(--salvation-color);
+  }
+  /* new hyleus */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1038469633960857740"]) > .defaultColor__4bd52 > span {
+    background-image: var(--hyleus-color);
+  }
+
+  /* miu */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1094378607046041803"]) > .defaultColor__4bd52 > span {
+    background-image: var(--miu-color);
+  }
+  /* alfred doppelganger */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1095416117280911511"]) > .defaultColor__4bd52 > span {
+    background-image: var(--alfred-doppel-color);
+  }
+  /* pukicho */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1173046109833285793"]) > .defaultColor__4bd52 > span {
+    background-image: var(--pukicho-color);
+  }
+  /* tay */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1094416367228293120"]) > .defaultColor__4bd52 > span {
+    background-image: var(--tay-color);
+  }
+  /* tarik doppelganger */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1251505511912702063"]) > .defaultColor__4bd52 > span {
+    background-image: var(--tarik-doppel-color);
+  }
+  /* vaporeon */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1175234197967884288"]) > .defaultColor__4bd52 > span {
+    background-image: var(--vaporeon-color);
+  }
+  /* ezkli doppelganger */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1095426341354086400"]) > .defaultColor__4bd52 > span {
+    background-image: var(--ezkli-doppel-color);
+  }
+  /* dol'utan */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1175210202518270135"]) > .defaultColor__4bd52 > span {
+    background-image: var(--dolutan-color);
+  }
+  /* contore */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1105545133442740304"]) > .defaultColor__4bd52 > span {
+    background-image: var(--contore-color);
+  }
+}
+}
+
+@container style(--poll-results: on) and style(--low-perf: off) {
+.notAppAsidePanel_a3002d:has(> [class*="app"] > div > .layers__960e4 > .layer__960e4 > .container__5e434 > .base__5e434 > .content__5e434 > .page__5e434 > div > .chat_f75fb0 .children__9293f .avatar_f75fb0) .votersListContainer__01c8c,
+.notAppAsidePanel_a3002d:has(> [class*="app"] > div > .layers__960e4 > .layer__960e4 > .container__5e434 > .base__5e434 > .content__5e434 > .page__5e434 > div > .chat_f75fb0 .gdm_f75fb0) .votersListContainer__01c8c {
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]), /* alfred */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]), /* tarik */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]), /* ezkli */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]), /* pep */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/589545486374010884"]),  /* narox */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/801881481173401611"]),  /* zarzz */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/933770995104350258"]),  /* zarzz */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/718453321727475792"]),  /* lilly */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/894770559295049818"]),  /* rina */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1408278092161749035"]), /* bazzy */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1125847724118523925"]), /* nakhi */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/657079914079715329"]),  /* salvation */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1038469633960857740"]), /* new hyleus */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1095416117280911511"]), /* miu */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1094378607046041803"]), /* alfred doppelganger */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1173046109833285793"]), /* pukicho */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1094416367228293120"]), /* tay */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1251505511912702063"]), /* tarik doppelganger */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1175234197967884288"]), /* vaporeon */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1095426341354086400"]), /* ezkli doppelganger */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1175210202518270135"]), /* dol'utan */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1105545133442740304"])  /* contore */ {
+    > .defaultColor__4bd52 {
+      --display-name: attr(aria-label); /* yoink */
+
+      > span {
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-size: 100px auto;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+
+        &::after {
+          background: inherit;
+          content: var(--display-name);
+          inset: 0;
+          position: absolute;
+          filter: blur(4px);
+          opacity: 0;
+          text-indent: 0;
+          transition: opacity .1s ease-in-out;
+          z-index: -1;
+        }
+      }
+    }
+
+    &:hover {
+      > .defaultColor__4bd52 > span {
+        /* animate gradient when hovering */
+        animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+    
+        &::after {
+          opacity: 0.7 !important;
+          transition: opacity .1s ease-in-out;
+          animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+        }
+      }
+      &:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) > .defaultColor__4bd52 > span {
+        animation: ezkliGradientAnim 1.5s linear infinite !important;
+        &::after {
+          animation: ezkliGradientAnim 1.5s linear infinite !important;
+        }
+      }
+    }
+  }
+
+  /* alfred */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]) > .defaultColor__4bd52 > span {
+    background-image: var(--alfred-color);
+  }
+  /* tarik */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]) > .defaultColor__4bd52 > span {
+    background-image: var(--tarik-color);
+  }
+  /* ezkli */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) > .defaultColor__4bd52 > span {
+    background-size: 4em auto;
+    background-image: var(--ezkli-color);
+  }
+  /* pep */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]) > .defaultColor__4bd52 > span {
+    background-image: var(--pep-color);
+  }
+  /* narox */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/589545486374010884"]) > .defaultColor__4bd52 > span {
+    background-image: var(--narox-color);
+  }
+  /* zarzz */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/801881481173401611"]) > .defaultColor__4bd52 > span {
+    background-image: var(--zarzz-color);
+  }
+  /* also zarzz */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/933770995104350258"]) > .defaultColor__4bd52 > span {
+    background-image: var(--zarzz-color);
+  }
+  /* lilly */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/718453321727475792"]) > .defaultColor__4bd52 > span {
+    background-image: var(--lilly-color);
+  }
+  /* rina */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/894770559295049818"]) > .defaultColor__4bd52 > span {
+    background-image: var(--rina-color);
+  }
+  /* bazzy */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1408278092161749035"]) > .defaultColor__4bd52 > span {
+    background-image: var(--bazzy-color);
+  }
+  /* nakhi */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1125847724118523925"]) > .defaultColor__4bd52 > span {
+    background-image: var(--nakhi-color);
+  }
+  /* salvation */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/657079914079715329"]) > .defaultColor__4bd52 > span {
+    background-image: var(--salvation-color);
+  }
+  /* new hyleus */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1038469633960857740"]) > .defaultColor__4bd52 > span {
+    background-image: var(--hyleus-color);
+  }
+
+  /* miu */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1094378607046041803"]) > .defaultColor__4bd52 > span {
+    background-image: var(--miu-color);
+  }
+  /* alfred doppelganger */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1095416117280911511"]) > .defaultColor__4bd52 > span {
+    background-image: var(--alfred-doppel-color);
+  }
+  /* pukicho */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1173046109833285793"]) > .defaultColor__4bd52 > span {
+    background-image: var(--pukicho-color);
+  }
+  /* tay */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1094416367228293120"]) > .defaultColor__4bd52 > span {
+    background-image: var(--tay-color);
+  }
+  /* tarik doppelganger */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1251505511912702063"]) > .defaultColor__4bd52 > span {
+    background-image: var(--tarik-doppel-color);
+  }
+  /* vaporeon */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1175234197967884288"]) > .defaultColor__4bd52 > span {
+    background-image: var(--vaporeon-color);
+  }
+  /* ezkli doppelganger */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1095426341354086400"]) > .defaultColor__4bd52 > span {
+    background-image: var(--ezkli-doppel-color);
+  }
+  /* dol'utan */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1175210202518270135"]) > .defaultColor__4bd52 > span {
+    background-image: var(--dolutan-color);
+  }
+  /* contore */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1105545133442740304"]) > .defaultColor__4bd52 > span {
+    background-image: var(--contore-color);
+  }
+}
+}
+
+@container style(--reactors-list: on) and style(--low-perf: on) {
 .reactorsContainer_b7f4b4 {
   .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]), /* alfred */
   .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]), /* tarik */
@@ -681,7 +1004,7 @@
 }
 }
 
-@container style(--poll-results: on) {
+@container style(--poll-results: on) and style(--low-perf: on) {
 .votersListContainer__01c8c {
   .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]), /* alfred */
   .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]), /* tarik */
