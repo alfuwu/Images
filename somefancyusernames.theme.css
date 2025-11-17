@@ -10,10 +10,11 @@
 
 :root {
   /* not possible with current CSS capabilities afaict */
-  /*--chat-mentions: on;*/ /* colors in chat mentions       | can be set to on or off */
-  --member-list: on; /* colors in the member list           | can be set to on or off */
-  --reactors-list: on; /* colors in the reactions list      | can be set to on or off */
-  --poll-results: on; /* colors in the poll results         | can be set to on or off */
+  /*--chat-mentions: on;*/ /* colors in chat mentions                     | can be set to on or off */
+  --member-list: on; /* colors in the member list                         | can be set to on or off */
+  --reactors-list: on; /* colors in the reactions list                    | can be set to on or off */
+  --poll-results: on; /* colors in the poll results                       | can be set to on or off */
+  --low-perf: off; /* removes expensive :has selectors, increasing perf   | can be set to on or off */
 
   /* colors */
   --alfred-color: linear-gradient(
@@ -196,7 +197,140 @@
 }
 }
 
-@container style(--reactors-list: on) {
+@container style(--reactors-list: on) and style(--low-perf: off) {
+.notAppAsidePanel_a3002d:has(> [class*="app"] > div > .layers__960e4 > .layer__960e4 > .container__5e434 > .base__5e434 > .content__5e434 > .page__5e434 > div > .chat_f75fb0 .children__9293f .avatar_f75fb0) .reactorsContainer_b7f4b4,
+.notAppAsidePanel_a3002d:has(> [class*="app"] > div > .layers__960e4 > .layer__960e4 > .container__5e434 > .base__5e434 > .content__5e434 > .page__5e434 > div > .chat_f75fb0 .gdm_f75fb0) .reactorsContainer_b7f4b4 {
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]), /* alfred */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]), /* tarik */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]), /* ezkli */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]), /* pep */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/718453321727475792"])   /* lilly */ {
+    > .defaultColor__4bd52 > span {
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-size: 100px auto;
+      -webkit-text-fill-color: transparent;
+
+      &::after {
+        background: inherit;
+        content: "alfred"; /* no data-text attribute here either 💔 */
+        inset: 0;
+        position: absolute;
+        filter: blur(4px);
+        opacity: 0;
+        text-indent: 0;
+        transition: opacity .1s ease-in-out;
+        z-index: -1;
+      }
+    }
+
+    &:hover > .defaultColor__4bd52 > span {
+      /* animate gradient when hovering */
+      animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+  
+      &::after {
+        opacity: 0.7 !important;
+        transition: opacity .1s ease-in-out;
+        animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+      }
+    }
+  }
+
+  /* alfred */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]) > .defaultColor__4bd52 > span {
+    background-image: var(--alfred-color);
+  }
+  /* tarik */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]) > .defaultColor__4bd52 > span {
+    background-image: var(--tarik-color);
+  }
+  /* ezkli */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) > .defaultColor__4bd52 > span {
+    background-image: var(--ezkli-color);
+  }
+  /* pep */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]) > .defaultColor__4bd52 > span {
+    background-image: var(--pep-color);
+  }
+  /* lilly */
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/718453321727475792"]) > .defaultColor__4bd52 > span {
+    background-image: var(--lilly-color);
+  }
+}
+}
+
+@container style(--poll-results: on) and style(--low-perf: off) {
+.notAppAsidePanel_a3002d:has(> [class*="app"] > div > .layers__960e4 > .layer__960e4 > .container__5e434 > .base__5e434 > .content__5e434 > .page__5e434 > div > .chat_f75fb0 .children__9293f .avatar_f75fb0) .votersListContainer__01c8c,
+.notAppAsidePanel_a3002d:has(> [class*="app"] > div > .layers__960e4 > .layer__960e4 > .container__5e434 > .base__5e434 > .content__5e434 > .page__5e434 > div > .chat_f75fb0 .gdm_f75fb0) .votersListContainer__01c8c {
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]), /* alfred */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]), /* tarik */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]), /* ezkli */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]), /* pep */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/718453321727475792"])   /* lilly */ {
+    > .defaultColor__4bd52 {
+      --display-name: attr(aria-label); /* yoink */
+
+      > span {
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-size: 100px auto;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+
+        &::after {
+          background: inherit;
+          content: var(--display-name);
+          inset: 0;
+          position: absolute;
+          filter: blur(4px);
+          opacity: 0;
+          text-indent: 0;
+          transition: opacity .1s ease-in-out;
+          z-index: -1;
+        }
+      }
+    }
+
+    &:hover > .defaultColor__4bd52 > span {
+      /* animate gradient when hovering */
+      animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+  
+      &::after {
+        opacity: 0.7 !important;
+        transition: opacity .1s ease-in-out;
+        animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+      }
+    }
+  }
+
+  /* alfred */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]) > .defaultColor__4bd52 > span {
+    background-image: var(--alfred-color);
+  }
+  /* tarik */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]) > .defaultColor__4bd52 > span {
+    background-image: var(--tarik-color);
+  }
+  /* ezkli */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) > .defaultColor__4bd52 > span {
+    background-image: var(--ezkli-color);
+  }
+  /* pep */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]) > .defaultColor__4bd52 > span {
+    background-image: var(--pep-color);
+  }
+  /* narox */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/589545486374010884"]) > .defaultColor__4bd52 > span {
+    background-image: var(--narox-color);
+  }
+  /* lilly */
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/718453321727475792"]) > .defaultColor__4bd52 > span {
+    background-image: var(--lilly-color);
+  }
+}
+}
+
+@container style(--reactors-list: on) and style(--low-perf: on) {
 .reactorsContainer_b7f4b4 {
   .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]), /* alfred */
   .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]), /* tarik */
@@ -257,7 +391,7 @@
 }
 }
 
-@container style(--poll-results: on) {
+@container style(--poll-results: on) and style(--low-perf: on) {
 .votersListContainer__01c8c {
   .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]), /* alfred */
   .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]), /* tarik */
