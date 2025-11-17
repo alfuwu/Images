@@ -10,10 +10,11 @@
 
 :root {
   /* not possible with current CSS capabilities afaict */
-  /*--chat-mentions: on;*/ /* colors in chat mentions       | can be set to on or off */
-  --member-list: on; /* colors in the member list           | can be set to on or off */
-  --reactors-list: on; /* colors in the reactions list      | can be set to on or off */
-  --poll-results: on; /* colors in the poll results         | can be set to on or off */
+  /*--chat-mentions: on;*/ /* colors in chat mentions                     | can be set to on or off */
+  --member-list: on; /* colors in the member list                         | can be set to on or off */
+  --reactors-list: on; /* colors in the reactions list                    | can be set to on or off */
+  --poll-results: on; /* colors in the poll results                       | can be set to on or off */
+  --low-perf: off; /* removes expensive :has selectors, increasing perf   | can be set to on or off */
 
   --ezkli-color: linear-gradient(
     to right,
@@ -107,7 +108,84 @@
 }
 }
 
-@container style(--reactors-list: on) {
+@container style(--reactors-list: on) and stlye(--low-perf: off) {
+.notAppAsidePanel_a3002d:has(> [class*="app"] > div > .layers__960e4 > .layer__960e4 > .container__5e434 > .base__5e434 > .content__5e434 > .page__5e434 > div > .chat_f75fb0 .children__9293f .avatar_f75fb0) .reactorsContainer_b7f4b4,
+.notAppAsidePanel_a3002d:has(> [class*="app"] > div > .layers__960e4 > .layer__960e4 > .container__5e434 > .base__5e434 > .content__5e434 > .page__5e434 > div > .chat_f75fb0 .gdm_f75fb0) .reactorsContainer_b7f4b4 {
+  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) /* ezkli */ {
+    > .defaultColor__4bd52 > span {
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-size: 4em auto;
+      background-image: var(--ezkli-color);
+      -webkit-text-fill-color: transparent;
+
+      &::after {
+        background: inherit;
+        content: "EZKLI"; /* no data-text attribute here either 💔 */
+        inset: 0;
+        position: absolute;
+        filter: blur(4px);
+        opacity: 0;
+        text-indent: 0;
+        transition: opacity .1s ease-in-out;
+        z-index: -1;
+      }
+    }
+
+    &:hover > .defaultColor__4bd52 > span {
+      animation: ezkliGradientAnim 1.5s linear infinite !important;
+      &::after {
+        opacity: 0.7 !important;
+        transition: opacity .1s ease-in-out;
+        animation: ezkliGradientAnim 1.5s linear infinite !important;
+      }
+    }
+  }
+}
+}
+
+@container style(--poll-results: on) and stlye(--low-perf: off) {
+.notAppAsidePanel_a3002d:has(> [class*="app"] > div > .layers__960e4 > .layer__960e4 > .container__5e434 > .base__5e434 > .content__5e434 > .page__5e434 > div > .chat_f75fb0 .children__9293f .avatar_f75fb0) .votersListContainer__01c8c,
+.notAppAsidePanel_a3002d:has(> [class*="app"] > div > .layers__960e4 > .layer__960e4 > .container__5e434 > .base__5e434 > .content__5e434 > .page__5e434 > div > .chat_f75fb0 .gdm_f75fb0) .votersListContainer__01c8c {
+  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) /* ezkli */ {
+    > .defaultColor__4bd52 {
+      --display-name: attr(aria-label); /* yoink */
+
+      > span {
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-size: 4em auto;
+        background-image: var(--ezkli-color);
+        -webkit-text-fill-color: transparent;
+        position: relative;
+
+        &::after {
+          background: inherit;
+          content: var(--display-name);
+          inset: 0;
+          position: absolute;
+          filter: blur(4px);
+          opacity: 0;
+          text-indent: 0;
+          transition: opacity .1s ease-in-out;
+          z-index: -1;
+        }
+      }
+    }
+
+    &:hover > .defaultColor__4bd52 > span {
+      animation: ezkliGradientAnim 1.5s linear infinite !important;
+      &::after {
+        opacity: 0.7 !important;
+        transition: opacity .1s ease-in-out;
+        animation: ezkliGradientAnim 1.5s linear infinite !important;
+      }
+    }
+  }
+}
+}
+
+@container style(--reactors-list: on) and stlye(--low-perf: on) {
 .reactorsContainer_b7f4b4 {
   .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) /* ezkli */ {
     > .defaultColor__4bd52 > span {
@@ -142,7 +220,7 @@
 }
 }
 
-@container style(--poll-results: on) {
+@container style(--poll-results: on) and stlye(--low-perf: on) {
 .votersListContainer__01c8c {
   .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) /* ezkli */ {
     > .defaultColor__4bd52 {
