@@ -10,12 +10,13 @@
 
 :root {
   /* not possible with current CSS capabilities afaict */
-  /*--chat-mentions: on;*/ /* colors in chat mentions       | can be set to on or off */
-  --member-list: on; /* colors in the member list           | can be set to on or off */
-  --reactors-list: on; /* colors in the reactions list      | can be set to on or off */
-  --poll-results: on; /* colors in the poll results         | can be set to on or off */
+  /*--chat-mentions: on;*/ /* colors in chat mentions                     | can be set to on or off */
+  --member-list: on; /* colors in the member list                         | can be set to on or off */
+  --reactors-list: on; /* colors in the reactions list                    | can be set to on or off */
+  --poll-results: on; /* colors in the poll results                       | can be set to on or off */
   /* unfortunately, there's no good way to get this to work in gcs */
-  --typing-indicator: on; /* colors in the typing indicator | can be set to on or off */
+  --typing-indicator: on; /* colors in the typing indicator               | can be set to on or off */
+  --low-perf: off; /* removes expensive :has selectors, increasing perf   | can be set to on or off */
 }
 
 /* afaict only dm channels have an aria label of " (channel)" */
@@ -226,7 +227,191 @@
 }
 }
 
-@container style(--reactors-list: on) {
+@container style(--reactors-list: on) and style(--low-perf: off) {
+.notAppAsidePanel_a3002d:has(> [class*="app"] > div > .layers__960e4 > .layer__960e4 > .container__5e434 > .base__5e434 > .content__5e434 > .page__5e434 > div > .chat_f75fb0 .children__9293f .avatar_f75fb0) .reactorsContainer_b7f4b4,
+.notAppAsidePanel_a3002d:has(> [class*="app"] > div > .layers__960e4 > .layer__960e4 > .container__5e434 > .base__5e434 > .content__5e434 > .page__5e434 > div > .chat_f75fb0 .gdm_f75fb0) .reactorsContainer_b7f4b4 {
+  /* alfred */
+  .reactor_b7f4b4:has(img[src*="s/1038466644353232967"]) .defaultColor__4bd52 {
+    color: rgb(255, 0, 0) !important;
+  }
+  /* tarik */
+  .reactor_b7f4b4:has(img[src*="s/1112561208873193472"]) .defaultColor__4bd52 {
+    color: rgb(18, 138, 28) !important;
+  }
+  /* ezkli */
+  .reactor_b7f4b4:has(img[src*="s/1037170273897689189"]) .defaultColor__4bd52 {
+    color: rgb(180, 20, 238) !important;
+  }
+  /* pep */
+  .reactor_b7f4b4:has(img[src*="s/1338654892641751060"]) .defaultColor__4bd52 {
+    color: rgb(28, 109, 232) !important;
+  }
+  /* narox */
+  .reactor_b7f4b4:has(img[src*="s/589545486374010884"]) .defaultColor__4bd52 {
+    color: rgb(255, 162, 0) !important;
+  }
+  /* zarzz */
+  .reactor_b7f4b4:has(img[src*="s/801881481173401611"]) .defaultColor__4bd52,
+  .reactor_b7f4b4:has(img[src*="s/933770995104350258"]) .defaultColor__4bd52 {
+    color: rgb(255, 0, 0) !important;
+  }
+  /* lilly */
+  .reactor_b7f4b4:has(img[src*="s/718453321727475792"]) .defaultColor__4bd52 {
+    color: rgb(255, 156, 222) !important;
+  }
+  /* rina */
+  .reactor_b7f4b4:has(img[src*="s/894770559295049818"]) .defaultColor__4bd52 {
+    color: rgb(255, 91, 236) !important;
+  }
+  /* bazzy */
+  .reactor_b7f4b4:has(img[src*="s/1408278092161749035"]) .defaultColor__4bd52 {
+    color: rgb(171, 251, 255) !important;
+  }
+  /* nakhi */
+  .reactor_b7f4b4:has(img[src*="s/1125847724118523925"]) .defaultColor__4bd52 {
+    color: rgb(209, 108, 96) !important;
+  }
+  /* salvation */
+  .reactor_b7f4b4:has(img[src*="s/657079914079715329"]) .defaultColor__4bd52 {
+    color: rgb(255, 234, 154) !important;
+  }
+  /* new hyleus */
+  .reactor_b7f4b4:has(img[src*="s/1038469633960857740"]) .defaultColor__4bd52 {
+    color: rgb(255, 156, 64) !important;
+  }
+  
+  /* miu */
+  .reactor_b7f4b4:has(img[src*="s/1094378607046041803"]) .defaultColor__4bd52 {
+    color: rgb(255, 173, 173) !important;
+  }
+  /* alfred doppelganger */
+  .reactor_b7f4b4:has(img[src*="s/1095416117280911511"]) .defaultColor__4bd52 {
+    color: rgb(255, 0, 0) !important;
+  }
+  /* pukicho */
+  .reactor_b7f4b4:has(img[src*="s/1173046109833285793"]) .defaultColor__4bd52 {
+    color: rgb(255, 145, 50) !important;
+  }
+  /* tay */
+  .reactor_b7f4b4:has(img[src*="s/1094416367228293120"]) .defaultColor__4bd52 {
+    color: rgb(255, 213, 0) !important;
+  }
+  /* tarik doppelganger */
+  .reactor_b7f4b4:has(img[src*="s/1251505511912702063"]) .defaultColor__4bd52 {
+    color: rgb(14, 123, 33) !important;
+  }
+  /* vaporeon */
+  .reactor_b7f4b4:has(img[src*="s/1175234197967884288"]) .defaultColor__4bd52 {
+    color: rgb(64, 105, 219) !important;
+  }
+  /* ezkli doppelganger */
+  .reactor_b7f4b4:has(img[src*="s/1095426341354086400"]) .defaultColor__4bd52 {
+    color: rgb(180, 20, 238) !important;
+  }
+  /* dol'utan */
+  .reactor_b7f4b4:has(img[src*="s/1175210202518270135"]) .defaultColor__4bd52 {
+    color: rgb(134, 134, 134) !important;
+  }
+  /* contore */
+  .reactor_b7f4b4:has(img[src*="s/1105545133442740304"]) .defaultColor__4bd52 {
+    color: rgb(57, 94, 93) !important;
+  }
+}
+}
+  
+@container style(--poll-results: on) and style(--low-perf: off) {
+.notAppAsidePanel_a3002d:has(> [class*="app"] > div > .layers__960e4 > .layer__960e4 > .container__5e434 > .base__5e434 > .content__5e434 > .page__5e434 > div > .chat_f75fb0 .children__9293f .avatar_f75fb0) .votersListContainer__01c8c,
+.notAppAsidePanel_a3002d:has(> [class*="app"] > div > .layers__960e4 > .layer__960e4 > .container__5e434 > .base__5e434 > .content__5e434 > .page__5e434 > div > .chat_f75fb0 .gdm_f75fb0) .votersListContainer__01c8c {
+  /* alfred */
+  .voter__01c8c:has(img[src*="s/1038466644353232967"]) .defaultColor__4bd52 {
+    color: rgb(255, 0, 0) !important;
+  }
+  /* tarik */
+  .voter__01c8c:has(img[src*="s/1112561208873193472"]) .defaultColor__4bd52 {
+    color: rgb(18, 138, 28) !important;
+  }
+  /* ezkli */
+  .voter__01c8c:has(img[src*="s/1037170273897689189"]) .defaultColor__4bd52 {
+    color: rgb(180, 20, 238) !important;
+  }
+  /* pep */
+  .voter__01c8c:has(img[src*="s/1338654892641751060"]) .defaultColor__4bd52 {
+    color: rgb(28, 109, 232) !important;
+  }
+  /* narox */
+  .voter__01c8c:has(img[src*="s/589545486374010884"]) .defaultColor__4bd52 {
+    color: rgb(255, 162, 0) !important;
+  }
+  /* zarzz */
+  .voter__01c8c:has(img[src*="s/801881481173401611"]) .defaultColor__4bd52,
+  .voter__01c8c:has(img[src*="s/933770995104350258"]) .defaultColor__4bd52 {
+    color: rgb(255, 0, 0) !important;
+  }
+  /* lilly */
+  .voter__01c8c:has(img[src*="s/718453321727475792"]) .defaultColor__4bd52 {
+    color: rgb(255, 156, 222) !important;
+  }
+  /* rina */
+  .voter__01c8c:has(img[src*="s/894770559295049818"]) .defaultColor__4bd52 {
+    color: rgb(255, 91, 236) !important;
+  }
+  /* bazzy */
+  .voter__01c8c:has(img[src*="s/1408278092161749035"]) .defaultColor__4bd52 {
+    color: rgb(171, 251, 255) !important;
+  }
+  /* nakhi */
+  .voter__01c8c:has(img[src*="s/1125847724118523925"]) .defaultColor__4bd52 {
+    color: rgb(209, 108, 96) !important;
+  }
+  /* salvation */
+  .voter__01c8c:has(img[src*="s/657079914079715329"]) .defaultColor__4bd52 {
+    color: rgb(255, 234, 154) !important;
+  }
+  /* new hyleus */
+  .voter__01c8c:has(img[src*="s/1038469633960857740"]) .defaultColor__4bd52 {
+    color: rgb(255, 156, 64) !important;
+  }
+  
+  /* miu */
+  .voter__01c8c:has(img[src*="s/1094378607046041803"]) .defaultColor__4bd52 {
+    color: rgb(255, 173, 173) !important;
+  }
+  /* alfred doppelganger */
+  .voter__01c8c:has(img[src*="s/1095416117280911511"]) .defaultColor__4bd52 {
+    color: rgb(255, 0, 0) !important;
+  }
+  /* pukicho */
+  .voter__01c8c:has(img[src*="s/1173046109833285793"]) .defaultColor__4bd52 {
+    color: rgb(255, 145, 50) !important;
+  }
+  /* tay */
+  .voter__01c8c:has(img[src*="s/1094416367228293120"]) .defaultColor__4bd52 {
+    color: rgb(255, 213, 0) !important;
+  }
+  /* tarik doppelganger */
+  .voter__01c8c:has(img[src*="s/1251505511912702063"]) .defaultColor__4bd52 {
+    color: rgb(14, 123, 33) !important;
+  }
+  /* vaporeon */
+  .voter__01c8c:has(img[src*="s/1175234197967884288"]) .defaultColor__4bd52 {
+    color: rgb(64, 105, 219) !important;
+  }
+  /* ezkli doppelganger */
+  .voter__01c8c:has(img[src*="s/1095426341354086400"]) .defaultColor__4bd52 {
+    color: rgb(180, 20, 238) !important;
+  }
+  /* dol'utan */
+  .voter__01c8c:has(img[src*="s/1175210202518270135"]) .defaultColor__4bd52 {
+    color: rgb(134, 134, 134) !important;
+  }
+  /* contore */
+  .voter__01c8c:has(img[src*="s/1105545133442740304"]) .defaultColor__4bd52 {
+    color: rgb(57, 94, 93) !important;
+  }
+}
+}
+
+@container style(--reactors-list: on) and style(--low-perf: on) {
 .reactorsContainer_b7f4b4 {
   /* alfred */
   .reactor_b7f4b4:has(img[src*="s/1038466644353232967"]) .defaultColor__4bd52 {
@@ -317,7 +502,7 @@
 }
 }
   
-@container style(--poll-results: on) {
+@container style(--poll-results: on) and style(--low-perf: on) {
 .votersListContainer__01c8c {
   /* alfred */
   .voter__01c8c:has(img[src*="s/1038466644353232967"]) .defaultColor__4bd52 {
