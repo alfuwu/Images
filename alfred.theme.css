@@ -75,8 +75,8 @@ body {
 
 /* color options */
 :root {
-	/* home icon thing */
-	--home-image: url('https://i.imgur.com/233d55Y.gif');
+    /* home icon thing */
+    --home-image: url('https://i.imgur.com/233d55Y.gif');
 	
     --colors: off; /* off: discord default colors, on: midnight custom colors */
 
@@ -292,10 +292,6 @@ body {
     div[data-list-item-id="guildsnav___home"] img {
         display: none;
     }
-    div[data-list-item-id="guildsnav___home"] > div {
-        color: transparent !important;
-        background-color: transparent !important;
-    }
 
     .messagesWrapper__36d07:has(.chatTypingGradientAtBottom__36d07),
     .messagesWrapper__36d07:has(.chatTypingGradientNotAtBottom__36d07) {
@@ -393,4 +389,11 @@ button[aria-label="Send a gift"] {
 /* fix orbs */
 .headerBarContent__1a9ce {
     padding-inline-end: var(--top-bar-right-margin);
+}
+
+@container not style(--home-image: none) {
+    .visual-refresh div[data-list-item-id="guildsnav___home"] > div {
+        color: transparent !important;
+        background-color: transparent !important;
+    }
 }
