@@ -269,6 +269,11 @@ body {
     .button_a22cb0.primary_a22cb0 /* store button */,
     .botTagRegular__82f07:not(.botTagOP__82f07) /* bot tag */ {
         background-color: hsl(var(--blurple-50-hsl));
+        color: white !important;
+        
+        svg > path {
+            fill: white !important;
+        }
     }
 
     /* fix loading circle thing */
@@ -305,6 +310,23 @@ body {
 
     .embedFull__623de /* fix embeds */ {
         border-radius: 0;
+    }
+
+	
+    /* fix the pins buttons being ugly and white */
+	.overlay-primary_a22cb0 {
+        --control-text-overlay-primary-default: var(--accent-font) !important;
+        --control-background-overlay-primary-default: hsl(var(--blurple-50-hsl)) !important;
+    
+        &:hover {
+            --control-text-overlay-primary-hover: var(--accent-font) !important;
+            --control-background-overlay-primary-hover: hsl(var(--blurple-60-hsl)) !important;
+        }
+    }
+
+    /* fix skeleton loading background */
+	.wrapper_d852db {
+        background-color: transparent !important;
     }
 }
 
@@ -397,3 +419,4 @@ button[aria-label="Send a gift"] {
         background-color: transparent !important;
     }
 }
+
