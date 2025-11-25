@@ -186,11 +186,10 @@ body {
 }
 
 .visual-refresh {
-    .subtitleContainer_f75fb0 /* that title bar thing that has the channel name, desc, threads, pins, search bar, etc */ {
-        background: none !important; /* compatability with mica */
-    }
-    .peopleColumn__133bf /* friends list background thing in home tab */ {
-        background: none !important; /* compatability with mica */
+    .subtitleContainer_f75fb0 /* that title bar thing that has the channel name, desc, threads, pins, search bar, etc */,
+    .peopleColumn__133bf /* friends list background thing in home tab */,
+	.scroller__53543 /* roles/members list in the channel permissions tab */ {
+        background-color: transparent !important; /* compatability with mica */
     }
 
     .ephemeral__5126c /* ephemeral messages */ {
@@ -419,4 +418,5 @@ button[aria-label="Send a gift"] {
         background-color: transparent !important;
     }
 }
+
 
