@@ -11,8 +11,8 @@
 /* import theme modules */
 @import url("https://refact0r.github.io/midnight-discord/build/midnight.css");
 @import url("https://discord-mica.pages.dev/src/main.css");
-@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css");
-@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css");
+/*@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css");
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css");*/
 
 body {
     /* font options */
@@ -418,5 +418,6 @@ button[aria-label="Send a gift"] {
         background-color: transparent !important;
     }
 }
+
 
 
