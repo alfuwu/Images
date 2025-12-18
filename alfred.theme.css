@@ -284,7 +284,7 @@ div[data-list-item-id="guildsnav___home"] img {
         height: 8px; /* originally 40px, needs to be 32px smaller since the scroller is being moved 32px up */
     }
     ._36d072eab2b2e737-scroller {
-        bottom: 32px; /* move 32px up so that the typing indicator doesn't get overlayed over message content */
+        bottom: 40px; /* move 40px up so that the typing indicator doesn't get overlayed over message content */
     }
 }
 ._623de82e76ad7f82-embedFull /* fix embeds */ {
@@ -446,9 +446,23 @@ button[aria-label="Send a gift"] {
     display: none;
 }
 
+article {
+    border-radius: 0 10px 10px 0 !important;
+}
+
+._36d072eab2b2e737-chatGradientBase {
+    background: transparent;
+}
+
+.b8880176888cc928-base {
+    height: 40px !important;
+    top: -30px !important;
+}
+
 @container not style(--home-image: none) {
     div[data-list-item-id="guildsnav___home"] > div {
         color: transparent !important;
         background-color: transparent !important;
     }
 }
+
