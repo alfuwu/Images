@@ -246,9 +246,10 @@ body {
 }
 .vc-btn-primary,
 ._201d5e8a3c09670a-button,
-.a22cb0c66246f5d3-button.a22cb0c66246f5d3-primary /* store button */,
-._82f0793afa59e5dc-botTagRegular:not(._82f0793afa59e5dc-botTagOP) /* bot tag */ {
+[class*="button"][class*="primary"] /* store button */,
+[class*="botTagRegular"]:not([class*="botTagOP"]) /* bot tag */ {
     --control-primary-background-default: hsl(var(--blurple-50-hsl)) !important;
+    --control-primary-background-hover: hsl(var(--blurple-60-hsl)) !important;
     color: white !important;
     
     svg > path {
@@ -426,12 +427,13 @@ button[aria-label="Send a gift"] {
 ._2ea32c412048f708-typeThread ._2ea32c412048f708-name {
     font-size: unset;
 }
-._23977d5b7cef7361-reaction._23977d5b7cef7361-reactionMe,
-.a2c9e80f6531ccc2-pill.a2c9e80f6531ccc2-selected {
+[class*="reactionMe"],
+[class*="pill"][class*="selected"] {
     --message-reacted-background-default: var(--message-reacted-background);
     --message-reacted-text-default: var(--message-reacted-text);
     --brand-15a: var(--message-reacted-background-default);
     --opacity-blurple-32: color-mix(in hsl, var(--accent-2), transparent 60%);
+    --opacity-blurple-24: color-mix(in hsl, var(--accent-5), transparent 80%);
 }
 .e29cd7b93c4f1266-titleContainer.e29cd7b93c4f1266-titleElevated,
 .c6bf1b7af480dfda-header,
@@ -459,11 +461,16 @@ article {
     top: -30px !important;
 }
 
+[class*="wishlistBreadcrumb"] {
+    display: none;
+}
+
 @container not style(--home-image: none) {
     div[data-list-item-id="guildsnav___home"] > div {
         color: transparent !important;
         background-color: transparent !important;
     }
 }
+
 
 
