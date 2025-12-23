@@ -164,56 +164,56 @@
   );
 }
 
-.chatContent_f75fb0[aria-label=" (channel)"] .message__5126c,
-.chat_f75fb0:has(.children__9293f .avatar_f75fb0) .chatContent_f75fb0 .message__5126c, /* detect dms properly in case discord fixes the aria-label for dm channels */
-.chat_f75fb0:has(.gdm_f75fb0) .chatContent_f75fb0 .message__5126c /* group dms have a proper channel aria-label, so we need to use another method of detection */ {
+.f75fb00fb7356cbe-chatContent[aria-label=" (channel)"] ._5126c0cd07f243a0-message,
+.f75fb00fb7356cbe-chat:has(._9293f6b2fc12398a-children .f75fb00fb7356cbe-avatar) .f75fb00fb7356cbe-chatContent ._5126c0cd07f243a0-message, /* detect dms properly in case discord fixes the aria-label for dm channels */
+.f75fb00fb7356cbe-chat:has(.f75fb00fb7356cbe-gdm) .f75fb00fb7356cbe-chatContent ._5126c0cd07f243a0-message /* group dms have a proper channel aria-label, so we need to use another method of detection */ {
   /* ew hardcoded */
-  .contents_c19a55:has(> img[src*="s/1038466644353232967"]) > h3 > span, /* alfred */
-  .contents_c19a55:has(> img[src*="s/1112561208873193472"]) > h3 > span, /* tarik */
-  .contents_c19a55:has(> img[src*="s/1037170273897689189"]) > h3 > span, /* ezkli */
-  .contents_c19a55:has(> img[src*="s/1338654892641751060"]) > h3 > span, /* pep */
-  .contents_c19a55:has(> img[src*="s/589545486374010884"]) > h3 > span,  /* narox */
-  .contents_c19a55:has(> img[src*="s/801881481173401611"]) > h3 > span,  /* zarzz */
-  .contents_c19a55:has(> img[src*="s/933770995104350258"]) > h3 > span,  /* also zarzz */
-  .contents_c19a55:has(> img[src*="s/718453321727475792"]) > h3 > span,  /* lilly */
-  .contents_c19a55:has(> img[src*="s/894770559295049818"]) > h3 > span,  /* rina */
-  .contents_c19a55:has(> img[src*="s/1408278092161749035"]) > h3 > span, /* bazzy */
-  .contents_c19a55:has(> img[src*="s/1125847724118523925"]) > h3 > span, /* nakhi */
-  .contents_c19a55:has(> img[src*="s/657079914079715329"]) > h3 > span,  /* salvation */
-  .contents_c19a55:has(> img[src*="s/1038469633960857740"]) > h3 > span, /* new hyleus */
-  .contents_c19a55:has(> img[src*="s/1095416117280911511"]) > h3 > span, /* miu */
-  .contents_c19a55:has(> img[src*="s/1094378607046041803"]) > h3 > span, /* alfred doppelganger */
-  .contents_c19a55:has(> img[src*="s/1173046109833285793"]) > h3 > span, /* pukicho */
-  .contents_c19a55:has(> img[src*="s/1094416367228293120"]) > h3 > span, /* tay */
-  .contents_c19a55:has(> img[src*="s/1251505511912702063"]) > h3 > span, /* tarik doppelganger */
-  .contents_c19a55:has(> img[src*="s/1175234197967884288"]) > h3 > span, /* vaporeon */
-  .contents_c19a55:has(> img[src*="s/1095426341354086400"]) > h3 > span, /* ezkli doppelganger */
-  .contents_c19a55:has(> img[src*="s/1175210202518270135"]) > h3 > span, /* dol'utan */
-  .contents_c19a55:has(> img[src*="s/1105545133442740304"]) > h3 > span, /* contore */
+  .c19a557985eb7793-contents:has(> img[src*="s/1038466644353232967"]) > h3 > span, /* alfred */
+  .c19a557985eb7793-contents:has(> img[src*="s/1112561208873193472"]) > h3 > span, /* tarik */
+  .c19a557985eb7793-contents:has(> img[src*="s/1037170273897689189"]) > h3 > span, /* ezkli */
+  .c19a557985eb7793-contents:has(> img[src*="s/1338654892641751060"]) > h3 > span, /* pep */
+  .c19a557985eb7793-contents:has(> img[src*="s/589545486374010884"]) > h3 > span,  /* narox */
+  .c19a557985eb7793-contents:has(> img[src*="s/801881481173401611"]) > h3 > span,  /* zarzz */
+  .c19a557985eb7793-contents:has(> img[src*="s/933770995104350258"]) > h3 > span,  /* also zarzz */
+  .c19a557985eb7793-contents:has(> img[src*="s/718453321727475792"]) > h3 > span,  /* lilly */
+  .c19a557985eb7793-contents:has(> img[src*="s/894770559295049818"]) > h3 > span,  /* rina */
+  .c19a557985eb7793-contents:has(> img[src*="s/1408278092161749035"]) > h3 > span, /* bazzy */
+  .c19a557985eb7793-contents:has(> img[src*="s/1125847724118523925"]) > h3 > span, /* nakhi */
+  .c19a557985eb7793-contents:has(> img[src*="s/657079914079715329"]) > h3 > span,  /* salvation */
+  .c19a557985eb7793-contents:has(> img[src*="s/1038469633960857740"]) > h3 > span, /* new hyleus */
+  .c19a557985eb7793-contents:has(> img[src*="s/1095416117280911511"]) > h3 > span, /* miu */
+  .c19a557985eb7793-contents:has(> img[src*="s/1094378607046041803"]) > h3 > span, /* alfred doppelganger */
+  .c19a557985eb7793-contents:has(> img[src*="s/1173046109833285793"]) > h3 > span, /* pukicho */
+  .c19a557985eb7793-contents:has(> img[src*="s/1094416367228293120"]) > h3 > span, /* tay */
+  .c19a557985eb7793-contents:has(> img[src*="s/1251505511912702063"]) > h3 > span, /* tarik doppelganger */
+  .c19a557985eb7793-contents:has(> img[src*="s/1175234197967884288"]) > h3 > span, /* vaporeon */
+  .c19a557985eb7793-contents:has(> img[src*="s/1095426341354086400"]) > h3 > span, /* ezkli doppelganger */
+  .c19a557985eb7793-contents:has(> img[src*="s/1175210202518270135"]) > h3 > span, /* dol'utan */
+  .c19a557985eb7793-contents:has(> img[src*="s/1105545133442740304"]) > h3 > span, /* contore */
 
-  .repliedMessage_c19a55:has(> img[src*="s/1038466644353232967"]), /* alfred */
-  .repliedMessage_c19a55:has(> img[src*="s/1112561208873193472"]), /* tarik */
-  .repliedMessage_c19a55:has(> img[src*="s/1037170273897689189"]), /* ezkli */
-  .repliedMessage_c19a55:has(> img[src*="s/1338654892641751060"]), /* pep */
-  .repliedMessage_c19a55:has(> img[src*="s/589545486374010884"]),  /* narox */
-  .repliedMessage_c19a55:has(> img[src*="s/801881481173401611"]),  /* zarzz */
-  .repliedMessage_c19a55:has(> img[src*="s/933770995104350258"]),  /* also zarzz */
-  .repliedMessage_c19a55:has(> img[src*="s/718453321727475792"]),  /* lilly */
-  .repliedMessage_c19a55:has(> img[src*="s/894770559295049818"]),  /* rina */
-  .repliedMessage_c19a55:has(> img[src*="s/1408278092161749035"]), /* bazzy */
-  .repliedMessage_c19a55:has(> img[src*="s/1125847724118523925"]), /* nakhi */
-  .repliedMessage_c19a55:has(> img[src*="s/657079914079715329"]),  /* salvation */
-  .repliedMessage_c19a55:has(> img[src*="s/1038469633960857740"]), /* new hyleus */
-  .repliedMessage_c19a55:has(> img[src*="s/1095416117280911511"]), /* miu */
-  .repliedMessage_c19a55:has(> img[src*="s/1094378607046041803"]), /* alfred doppelganger */
-  .repliedMessage_c19a55:has(> img[src*="s/1173046109833285793"]), /* pukicho */
-  .repliedMessage_c19a55:has(> img[src*="s/1094416367228293120"]), /* tay */
-  .repliedMessage_c19a55:has(> img[src*="s/1251505511912702063"]), /* tarik doppelganger */
-  .repliedMessage_c19a55:has(> img[src*="s/1175234197967884288"]), /* vaporeon */
-  .repliedMessage_c19a55:has(> img[src*="s/1095426341354086400"]), /* ezkli doppelganger */
-  .repliedMessage_c19a55:has(> img[src*="s/1175210202518270135"]), /* dol'utan */
-  .repliedMessage_c19a55:has(> img[src*="s/1105545133442740304"])  /* contore */ {
-    > .username_c19a55 {
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1038466644353232967"]), /* alfred */
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1112561208873193472"]), /* tarik */
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1037170273897689189"]), /* ezkli */
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1338654892641751060"]), /* pep */
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/589545486374010884"]),  /* narox */
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/801881481173401611"]),  /* zarzz */
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/933770995104350258"]),  /* also zarzz */
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/718453321727475792"]),  /* lilly */
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/894770559295049818"]),  /* rina */
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1408278092161749035"]), /* bazzy */
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1125847724118523925"]), /* nakhi */
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/657079914079715329"]),  /* salvation */
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1038469633960857740"]), /* new hyleus */
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1095416117280911511"]), /* miu */
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1094378607046041803"]), /* alfred doppelganger */
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1173046109833285793"]), /* pukicho */
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1094416367228293120"]), /* tay */
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1251505511912702063"]), /* tarik doppelganger */
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1175234197967884288"]), /* vaporeon */
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1095426341354086400"]), /* ezkli doppelganger */
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1175210202518270135"]), /* dol'utan */
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1105545133442740304"])  /* contore */ {
+    > .c19a557985eb7793-username {
       -webkit-background-clip: text;
       background-clip: text;
       background-size: 100px auto;
@@ -236,19 +236,19 @@
   }
 
   &:hover {
-    .contents_c19a55 > h3 > span > .username_c19a55,
-    .repliedMessage_c19a55 > .username_c19a55 {
+    .c19a557985eb7793-contents > h3 > span > .c19a557985eb7793-username,
+    .c19a557985eb7793-repliedMessage > .c19a557985eb7793-username {
       /* animate gradient when hovering */
-      animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+      animation: e5de7811b2777bfa-gradientUsernameAnimation 1.5s linear infinite;
 
       &::after {
         opacity: 0.7 !important;
         transition: opacity .1s ease-in-out;
-        animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+        animation: e5de7811b2777bfa-gradientUsernameAnimation 1.5s linear infinite;
       }
     }
-    .contents_c19a55:has(> img[src*="s/1037170273897689189"]) > h3 > span > .username_c19a55,
-    .repliedMessage_c19a55:has(> img[src*="s/1037170273897689189"]) > .username_c19a55 {
+    .c19a557985eb7793-contents:has(> img[src*="s/1037170273897689189"]) > h3 > span > .c19a557985eb7793-username,
+    .c19a557985eb7793-repliedMessage:has(> img[src*="s/1037170273897689189"]) > .c19a557985eb7793-username {
       animation: ezkliGradientAnim 1.5s linear infinite !important;
       &::after {
         animation: ezkliGradientAnim 1.5s linear infinite !important;
@@ -257,147 +257,147 @@
   }
 
   /* alfred */
-  .contents_c19a55:has(> img[src*="s/1038466644353232967"]) > h3 > span > .username_c19a55, /* normal messages */
-  .repliedMessage_c19a55:has(> img[src*="s/1038466644353232967"]) > .username_c19a55 /* replies */ {
+  .c19a557985eb7793-contents:has(> img[src*="s/1038466644353232967"]) > h3 > span > .c19a557985eb7793-username, /* normal messages */
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1038466644353232967"]) > .c19a557985eb7793-username /* replies */ {
     background-image: var(--alfred-color);
   }
   /* tarik */
-  .contents_c19a55:has(> img[src*="s/1112561208873193472"]) > h3 > span > .username_c19a55,
-  .repliedMessage_c19a55:has(> img[src*="s/1112561208873193472"]) > .username_c19a55 {
+  .c19a557985eb7793-contents:has(> img[src*="s/1112561208873193472"]) > h3 > span > .c19a557985eb7793-username,
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1112561208873193472"]) > .c19a557985eb7793-username {
     background-image: var(--tarik-color);
   }
   /* ezkli */
-  .contents_c19a55:has(> img[src*="s/1037170273897689189"]) > h3 > span > .username_c19a55,
-  .repliedMessage_c19a55:has(> img[src*="s/1037170273897689189"]) > .username_c19a55 {
+  .c19a557985eb7793-contents:has(> img[src*="s/1037170273897689189"]) > h3 > span > .c19a557985eb7793-username,
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1037170273897689189"]) > .c19a557985eb7793-username {
     background-size: 4em auto !important;
     background-image: var(--ezkli-color);
   }
   /* pep */
-  .contents_c19a55:has(> img[src*="s/1338654892641751060"]) > h3 > span > .username_c19a55,
-  .repliedMessage_c19a55:has(> img[src*="s/1338654892641751060"]) > .username_c19a55 {
+  .c19a557985eb7793-contents:has(> img[src*="s/1338654892641751060"]) > h3 > span > .c19a557985eb7793-username,
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1338654892641751060"]) > .c19a557985eb7793-username {
     background-image: var(--pep-color);
   }
   /* narox */
-  .contents_c19a55:has(> img[src*="s/589545486374010884"]) > h3 > span > .username_c19a55,
-  .repliedMessage_c19a55:has(> img[src*="s/589545486374010884"]) > .username_c19a55 {
+  .c19a557985eb7793-contents:has(> img[src*="s/589545486374010884"]) > h3 > span > .c19a557985eb7793-username,
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/589545486374010884"]) > .c19a557985eb7793-username {
     background-image: var(--narox-color);
   }
   /* zarzz */
-  .contents_c19a55:has(> img[src*="s/801881481173401611"]) > h3 > span > .username_c19a55,
-  .repliedMessage_c19a55:has(> img[src*="s/801881481173401611"]) > .username_c19a55 {
+  .c19a557985eb7793-contents:has(> img[src*="s/801881481173401611"]) > h3 > span > .c19a557985eb7793-username,
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/801881481173401611"]) > .c19a557985eb7793-username {
     background-image: var(--zarzz-color);
   }
   /* also zarzz */
-  .contents_c19a55:has(> img[src*="s/933770995104350258"]) > h3 > span > .username_c19a55,
-  .repliedMessage_c19a55:has(> img[src*="s/933770995104350258"]) > .username_c19a55 {
+  .c19a557985eb7793-contents:has(> img[src*="s/933770995104350258"]) > h3 > span > .c19a557985eb7793-username,
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/933770995104350258"]) > .c19a557985eb7793-username {
     background-image: var(--zarzz-color);
   }
   /* lilly */
-  .contents_c19a55:has(> img[src*="s/718453321727475792"]) > h3 > span > .username_c19a55,
-  .repliedMessage_c19a55:has(> img[src*="s/718453321727475792"]) > .username_c19a55 {
+  .c19a557985eb7793-contents:has(> img[src*="s/718453321727475792"]) > h3 > span > .c19a557985eb7793-username,
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/718453321727475792"]) > .c19a557985eb7793-username {
     background-image: var(--lilly-color);
   }
   /* rina */
-  .contents_c19a55:has(> img[src*="s/894770559295049818"]) > h3 > span > .username_c19a55,
-  .repliedMessage_c19a55:has(> img[src*="s/894770559295049818"]) > .username_c19a55 {
+  .c19a557985eb7793-contents:has(> img[src*="s/894770559295049818"]) > h3 > span > .c19a557985eb7793-username,
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/894770559295049818"]) > .c19a557985eb7793-username {
     background-image: var(--rina-color);
   }
   /* bazzy */
-  .contents_c19a55:has(> img[src*="s/1408278092161749035"]) > h3 > span > .username_c19a55,
-  .repliedMessage_c19a55:has(> img[src*="s/1408278092161749035"]) > .username_c19a55 {
+  .c19a557985eb7793-contents:has(> img[src*="s/1408278092161749035"]) > h3 > span > .c19a557985eb7793-username,
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1408278092161749035"]) > .c19a557985eb7793-username {
     background-image: var(--bazzy-color);
   }
   /* nakhi */
-  .contents_c19a55:has(> img[src*="s/1125847724118523925"]) > h3 > span > .username_c19a55,
-  .repliedMessage_c19a55:has(> img[src*="s/1125847724118523925"]) > .username_c19a55 {
+  .c19a557985eb7793-contents:has(> img[src*="s/1125847724118523925"]) > h3 > span > .c19a557985eb7793-username,
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1125847724118523925"]) > .c19a557985eb7793-username {
     background-image: var(--nakhi-color);
   }
   /* salvation */
-  .contents_c19a55:has(> img[src*="s/657079914079715329"]) > h3 > span > .username_c19a55,
-  .repliedMessage_c19a55:has(> img[src*="s/657079914079715329"]) > .username_c19a55 {
+  .c19a557985eb7793-contents:has(> img[src*="s/657079914079715329"]) > h3 > span > .c19a557985eb7793-username,
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/657079914079715329"]) > .c19a557985eb7793-username {
     background-image: var(--salvation-color);
   }
   /* new hyleus */
-  .contents_c19a55:has(> img[src*="s/1038469633960857740"]) > h3 > span > .username_c19a55,
-  .repliedMessage_c19a55:has(> img[src*="s/1038469633960857740"]) > .username_c19a55 {
+  .c19a557985eb7793-contents:has(> img[src*="s/1038469633960857740"]) > h3 > span > .c19a557985eb7793-username,
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1038469633960857740"]) > .c19a557985eb7793-username {
     background-image: var(--hyleus-color);
   }
 
   /* miu */
-  .contents_c19a55:has(> img[src*="s/1094378607046041803"]) > h3 > span > .username_c19a55,
-  .repliedMessage_c19a55:has(> img[src*="s/1094378607046041803"]) > .username_c19a55 {
+  .c19a557985eb7793-contents:has(> img[src*="s/1094378607046041803"]) > h3 > span > .c19a557985eb7793-username,
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1094378607046041803"]) > .c19a557985eb7793-username {
     background-image: var(--miu-color);
   }
   /* alfred doppelganger */
-  .contents_c19a55:has(> img[src*="s/1095416117280911511"]) > h3 > span > .username_c19a55,
-  .repliedMessage_c19a55:has(> img[src*="s/1095416117280911511"]) > .username_c19a55 {
+  .c19a557985eb7793-contents:has(> img[src*="s/1095416117280911511"]) > h3 > span > .c19a557985eb7793-username,
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1095416117280911511"]) > .c19a557985eb7793-username {
     background-image: var(--alfred-doppel-color);
   }
   /* pukicho */
-  .contents_c19a55:has(> img[src*="s/1173046109833285793"]) > h3 > span > .username_c19a55,
-  .repliedMessage_c19a55:has(> img[src*="s/1173046109833285793"]) > .username_c19a55 {
+  .c19a557985eb7793-contents:has(> img[src*="s/1173046109833285793"]) > h3 > span > .c19a557985eb7793-username,
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1173046109833285793"]) > .c19a557985eb7793-username {
     background-image: var(--pukicho-color);
   }
   /* tay */
-  .contents_c19a55:has(> img[src*="s/1094416367228293120"]) > h3 > span > .username_c19a55,
-  .repliedMessage_c19a55:has(> img[src*="s/1094416367228293120"]) > .username_c19a55 {
+  .c19a557985eb7793-contents:has(> img[src*="s/1094416367228293120"]) > h3 > span > .c19a557985eb7793-username,
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1094416367228293120"]) > .c19a557985eb7793-username {
     background-image: var(--tay-color);
   }
   /* tarik doppelganger */
-  .contents_c19a55:has(> img[src*="s/1251505511912702063"]) > h3 > span > .username_c19a55,
-  .repliedMessage_c19a55:has(> img[src*="s/1251505511912702063"]) > .username_c19a55 {
+  .c19a557985eb7793-contents:has(> img[src*="s/1251505511912702063"]) > h3 > span > .c19a557985eb7793-username,
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1251505511912702063"]) > .c19a557985eb7793-username {
     background-image: var(--tarik-doppel-color);
   }
   /* vaporeon */
-  .contents_c19a55:has(> img[src*="s/1175234197967884288"]) > h3 > span > .username_c19a55,
-  .repliedMessage_c19a55:has(> img[src*="s/1175234197967884288"]) > .username_c19a55 {
+  .c19a557985eb7793-contents:has(> img[src*="s/1175234197967884288"]) > h3 > span > .c19a557985eb7793-username,
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1175234197967884288"]) > .c19a557985eb7793-username {
     background-image: var(--vaporeon-color);
   }
   /* ezkli doppelganger */
-  .contents_c19a55:has(> img[src*="s/1095426341354086400"]) > h3 > span > .username_c19a55,
-  .repliedMessage_c19a55:has(> img[src*="s/1095426341354086400"]) > .username_c19a55 {
+  .c19a557985eb7793-contents:has(> img[src*="s/1095426341354086400"]) > h3 > span > .c19a557985eb7793-username,
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1095426341354086400"]) > .c19a557985eb7793-username {
     background-image: var(--ezkli-doppel-color);
   }
   /* dol'utan */
-  .contents_c19a55:has(> img[src*="s/1175210202518270135"]) > h3 > span > .username_c19a55,
-  .repliedMessage_c19a55:has(> img[src*="s/1175210202518270135"]) > .username_c19a55 {
+  .c19a557985eb7793-contents:has(> img[src*="s/1175210202518270135"]) > h3 > span > .c19a557985eb7793-username,
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1175210202518270135"]) > .c19a557985eb7793-username {
     background-image: var(--dolutan-color);
   }
   /* contore */
-  .contents_c19a55:has(> img[src*="s/1105545133442740304"]) > h3 > span > .username_c19a55,
-  .repliedMessage_c19a55:has(> img[src*="s/1105545133442740304"]) > .username_c19a55 {
+  .c19a557985eb7793-contents:has(> img[src*="s/1105545133442740304"]) > h3 > span > .c19a557985eb7793-username,
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1105545133442740304"]) > .c19a557985eb7793-username {
     background-image: var(--contore-color);
   }
 }
 
 @container style(--member-list: on) {
 /* group dm member list */
-.chat_f75fb0:has(.children__9293f .avatar_f75fb0) .container_c8ffbb .member__5d473,
-.chat_f75fb0:has(.gdm_f75fb0) .container_c8ffbb .member__5d473 {
+.f75fb00fb7356cbe-chat:has(._9293f6b2fc12398a-children .f75fb00fb7356cbe-avatar) .c8ffbb79449f399c-container ._5d473ecff348c314-member,
+.f75fb00fb7356cbe-chat:has(.f75fb00fb7356cbe-gdm) .c8ffbb79449f399c-container ._5d473ecff348c314-member {
   /* yes this is ugly and will probably break with any slight redesign of discord's ui but reduces lag a lot ok */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1038466644353232967"]), /* alfred */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1112561208873193472"]), /* tarik */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1037170273897689189"]), /* ezkli */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1338654892641751060"]), /* pep */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/589545486374010884"]),  /* narox */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/801881481173401611"]),  /* zarzz */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/933770995104350258"]),  /* zarzz */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/718453321727475792"]),  /* lilly */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/894770559295049818"]),  /* rina */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1408278092161749035"]), /* bazzy */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1125847724118523925"]), /* nakhi */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/657079914079715329"]),  /* salvation */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1038469633960857740"]), /* new hyleus */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1095416117280911511"]), /* miu */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1094378607046041803"]), /* alfred doppelganger */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1173046109833285793"]), /* pukicho */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1094416367228293120"]), /* tay */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1251505511912702063"]), /* tarik doppelganger */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1175234197967884288"]), /* vaporeon */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1095426341354086400"]), /* ezkli doppelganger */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1175210202518270135"]), /* dol'utan */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1105545133442740304"])  /* contore */ {
-    .username__703b9 {
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1038466644353232967"]), /* alfred */
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1112561208873193472"]), /* tarik */
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1037170273897689189"]), /* ezkli */
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1338654892641751060"]), /* pep */
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/589545486374010884"]),  /* narox */
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/801881481173401611"]),  /* zarzz */
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/933770995104350258"]),  /* zarzz */
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/718453321727475792"]),  /* lilly */
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/894770559295049818"]),  /* rina */
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1408278092161749035"]), /* bazzy */
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1125847724118523925"]), /* nakhi */
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/657079914079715329"]),  /* salvation */
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1038469633960857740"]), /* new hyleus */
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1095416117280911511"]), /* miu */
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1094378607046041803"]), /* alfred doppelganger */
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1173046109833285793"]), /* pukicho */
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1094416367228293120"]), /* tay */
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1251505511912702063"]), /* tarik doppelganger */
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1175234197967884288"]), /* vaporeon */
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1095426341354086400"]), /* ezkli doppelganger */
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1175210202518270135"]), /* dol'utan */
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1105545133442740304"])  /* contore */ {
+    ._703b91fc872193e8-username {
       -webkit-background-clip: text;
       background-clip: text;
       background-size: 100px auto;
@@ -418,17 +418,17 @@
   }
 
   &:hover {
-    .memberInner__5d473 .username__703b9 {
+    ._5d473ecff348c314-memberInner ._703b91fc872193e8-username {
       /* animate gradient when hovering */
-      animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+      animation: e5de7811b2777bfa-gradientUsernameAnimation 1.5s linear infinite;
 
       &::after {
         opacity: 0.7 !important;
         transition: opacity .1s ease-in-out;
-        animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+        animation: e5de7811b2777bfa-gradientUsernameAnimation 1.5s linear infinite;
       }
     }
-    .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1037170273897689189"]) .username__703b9 {
+    ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1037170273897689189"]) ._703b91fc872193e8-username {
       animation: ezkliGradientAnim 1.5s linear infinite !important;
       &::after {
         animation: ezkliGradientAnim 1.5s linear infinite !important;
@@ -437,124 +437,124 @@
   }
 
   /* alfred */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1038466644353232967"]) .username__703b9 {
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1038466644353232967"]) ._703b91fc872193e8-username {
     background-image: var(--alfred-color);
   }
   /* tarik */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1112561208873193472"]) .username__703b9 {
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1112561208873193472"]) ._703b91fc872193e8-username {
     background-image: var(--tarik-color);
   }
   /* ezkli */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1037170273897689189"]) .username__703b9 {
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1037170273897689189"]) ._703b91fc872193e8-username {
     background-size: 4em auto;
     background-image: var(--ezkli-color);
   }
   /* pep */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1338654892641751060"]) .username__703b9 {
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1338654892641751060"]) ._703b91fc872193e8-username {
     background-image: var(--pep-color);
   }
   /* narox */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/589545486374010884"]) .username__703b9 {
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/589545486374010884"]) ._703b91fc872193e8-username {
     background-image: var(--narox-color);
   }
   /* zarzz */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/801881481173401611"]) .username__703b9 {
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/801881481173401611"]) ._703b91fc872193e8-username {
     background-image: var(--zarzz-color);
   }
   /* also zarzz */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/933770995104350258"]) .username__703b9 {
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/933770995104350258"]) ._703b91fc872193e8-username {
     background-image: var(--zarzz-color);
   }
   /* lilly */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/718453321727475792"]) .username__703b9 {
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/718453321727475792"]) ._703b91fc872193e8-username {
     background-image: var(--lilly-color);
   }
   /* rina */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/894770559295049818"]) .username__703b9 {
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/894770559295049818"]) ._703b91fc872193e8-username {
     background-image: var(--rina-color);
   }
   /* bazzy */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1408278092161749035"]) .username__703b9 {
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1408278092161749035"]) ._703b91fc872193e8-username {
     background-image: var(--bazzy-color);
   }
   /* nakhi */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1125847724118523925"]) .username__703b9 {
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1125847724118523925"]) ._703b91fc872193e8-username {
     background-image: var(--nakhi-color);
   }
   /* salvation */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/657079914079715329"]) .username__703b9 {
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/657079914079715329"]) ._703b91fc872193e8-username {
     background-image: var(--salvation-color);
   }
   /* new hyleus */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1038469633960857740"]) .username__703b9 {
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1038469633960857740"]) ._703b91fc872193e8-username {
     background-image: var(--hyleus-color);
   }
 
   /* miu */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1094378607046041803"]) .username__703b9 {
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1094378607046041803"]) ._703b91fc872193e8-username {
     background-image: var(--miu-color);
   }
   /* alfred doppelganger */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1095416117280911511"]) .username__703b9 {
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1095416117280911511"]) ._703b91fc872193e8-username {
     background-image: var(--alfred-doppel-color);
   }
   /* pukicho */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1173046109833285793"]) .username__703b9 {
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1173046109833285793"]) ._703b91fc872193e8-username {
     background-image: var(--pukicho-color);
   }
   /* tay */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1094416367228293120"]) .username__703b9 {
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1094416367228293120"]) ._703b91fc872193e8-username {
     background-image: var(--tay-color);
   }
   /* tarik doppelganger */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1251505511912702063"]) .username__703b9 {
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1251505511912702063"]) ._703b91fc872193e8-username {
     background-image: var(--tarik-doppel-color);
   }
   /* vaporeon */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1175234197967884288"]) .username__703b9 {
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1175234197967884288"]) ._703b91fc872193e8-username {
     background-image: var(--vaporeon-color);
   }
   /* ezkli doppelganger */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1095426341354086400"]) .username__703b9 {
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1095426341354086400"]) ._703b91fc872193e8-username {
     background-image: var(--ezkli-doppel-color);
   }
   /* dol'utan */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1175210202518270135"]) .username__703b9 {
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1175210202518270135"]) ._703b91fc872193e8-username {
     background-image: var(--dolutan-color);
   }
   /* contore */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1105545133442740304"]) .username__703b9 {
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1105545133442740304"]) ._703b91fc872193e8-username {
     background-image: var(--contore-color);
   }
 }
 }
 
 @container style(--reactors-list: on) and style(--low-perf: off) {
-.notAppAsidePanel_a3002d:has(> [class*="app"] > div > .layers__960e4 > .layer__960e4 > .container__5e434 > .base__5e434 > .content__5e434 > .page__5e434 > div > .chat_f75fb0 .children__9293f .avatar_f75fb0) .reactorsContainer_b7f4b4,
-.notAppAsidePanel_a3002d:has(> [class*="app"] > div > .layers__960e4 > .layer__960e4 > .container__5e434 > .base__5e434 > .content__5e434 > .page__5e434 > div > .chat_f75fb0 .gdm_f75fb0) .reactorsContainer_b7f4b4 {
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]), /* alfred */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]), /* tarik */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]), /* ezkli */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]), /* pep */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/589545486374010884"]),  /* narox */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/801881481173401611"]),  /* zarzz */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/933770995104350258"]),  /* zarzz */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/718453321727475792"]),  /* lilly */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/894770559295049818"]),  /* rina */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1408278092161749035"]), /* bazzy */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1125847724118523925"]), /* nakhi */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/657079914079715329"]),  /* salvation */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1038469633960857740"]), /* new hyleus */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1095416117280911511"]), /* miu */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1094378607046041803"]), /* alfred doppelganger */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1173046109833285793"]), /* pukicho */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1094416367228293120"]), /* tay */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1251505511912702063"]), /* tarik doppelganger */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1175234197967884288"]), /* vaporeon */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1095426341354086400"]), /* ezkli doppelganger */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1175210202518270135"]), /* dol'utan */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1105545133442740304"])  /* contore */ {
-    > .defaultColor__4bd52 > span {
+.a3002d7de5be5280-notAppAsidePanel:has(> [class*="app"] > div > ._960e4207cea8323e-layers > ._960e4207cea8323e-layer > ._5e434347c823b592-container > ._5e434347c823b592-base > ._5e434347c823b592-content > ._5e434347c823b592-page > div > .f75fb00fb7356cbe-chat ._9293f6b2fc12398a-children .f75fb00fb7356cbe-avatar) .b7f4b43fe1b6e285-reactorsContainer,
+.a3002d7de5be5280-notAppAsidePanel:has(> [class*="app"] > div > ._960e4207cea8323e-layers > ._960e4207cea8323e-layer > ._5e434347c823b592-container > ._5e434347c823b592-base > ._5e434347c823b592-content > ._5e434347c823b592-page > div > .f75fb00fb7356cbe-chat .f75fb00fb7356cbe-gdm) .b7f4b43fe1b6e285-reactorsContainer {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]), /* alfred */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]), /* tarik */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]), /* ezkli */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]), /* pep */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/589545486374010884"]),  /* narox */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/801881481173401611"]),  /* zarzz */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/933770995104350258"]),  /* zarzz */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/718453321727475792"]),  /* lilly */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/894770559295049818"]),  /* rina */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1408278092161749035"]), /* bazzy */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1125847724118523925"]), /* nakhi */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/657079914079715329"]),  /* salvation */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1038469633960857740"]), /* new hyleus */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1095416117280911511"]), /* miu */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1094378607046041803"]), /* alfred doppelganger */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1173046109833285793"]), /* pukicho */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1094416367228293120"]), /* tay */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1251505511912702063"]), /* tarik doppelganger */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1175234197967884288"]), /* vaporeon */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1095426341354086400"]), /* ezkli doppelganger */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1175210202518270135"]), /* dol'utan */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1105545133442740304"])  /* contore */ {
+    > ._4bd5201c86a2042b-defaultColor > span {
       -webkit-background-clip: text;
       background-clip: text;
       background-size: 100px auto;
@@ -574,17 +574,17 @@
     }
 
     &:hover {
-      > .defaultColor__4bd52 > span {
+      > ._4bd5201c86a2042b-defaultColor > span {
         /* animate gradient when hovering */
-        animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+        animation: e5de7811b2777bfa-gradientUsernameAnimation 1.5s linear infinite;
     
         &::after {
           opacity: 0.7 !important;
           transition: opacity .1s ease-in-out;
-          animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+          animation: e5de7811b2777bfa-gradientUsernameAnimation 1.5s linear infinite;
         }
       }
-      &:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) > .defaultColor__4bd52 > span {
+      &:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) > ._4bd5201c86a2042b-defaultColor > span {
         animation: ezkliGradientAnim 1.5s linear infinite !important;
         &::after {
           animation: ezkliGradientAnim 1.5s linear infinite !important;
@@ -594,124 +594,124 @@
   }
 
   /* alfred */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--alfred-color);
   }
   /* tarik */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--tarik-color);
   }
   /* ezkli */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-size: 4em auto;
     background-image: var(--ezkli-color);
   }
   /* pep */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--pep-color);
   }
   /* narox */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/589545486374010884"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/589545486374010884"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--narox-color);
   }
   /* zarzz */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/801881481173401611"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/801881481173401611"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--zarzz-color);
   }
   /* also zarzz */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/933770995104350258"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/933770995104350258"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--zarzz-color);
   }
   /* lilly */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/718453321727475792"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/718453321727475792"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--lilly-color);
   }
   /* rina */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/894770559295049818"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/894770559295049818"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--rina-color);
   }
   /* bazzy */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1408278092161749035"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1408278092161749035"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--bazzy-color);
   }
   /* nakhi */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1125847724118523925"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1125847724118523925"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--nakhi-color);
   }
   /* salvation */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/657079914079715329"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/657079914079715329"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--salvation-color);
   }
   /* new hyleus */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1038469633960857740"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1038469633960857740"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--hyleus-color);
   }
 
   /* miu */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1094378607046041803"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1094378607046041803"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--miu-color);
   }
   /* alfred doppelganger */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1095416117280911511"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1095416117280911511"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--alfred-doppel-color);
   }
   /* pukicho */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1173046109833285793"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1173046109833285793"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--pukicho-color);
   }
   /* tay */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1094416367228293120"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1094416367228293120"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--tay-color);
   }
   /* tarik doppelganger */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1251505511912702063"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1251505511912702063"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--tarik-doppel-color);
   }
   /* vaporeon */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1175234197967884288"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1175234197967884288"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--vaporeon-color);
   }
   /* ezkli doppelganger */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1095426341354086400"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1095426341354086400"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--ezkli-doppel-color);
   }
   /* dol'utan */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1175210202518270135"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1175210202518270135"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--dolutan-color);
   }
   /* contore */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1105545133442740304"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1105545133442740304"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--contore-color);
   }
 }
 }
 
 @container style(--poll-results: on) and style(--low-perf: off) {
-.notAppAsidePanel_a3002d:has(> [class*="app"] > div > .layers__960e4 > .layer__960e4 > .container__5e434 > .base__5e434 > .content__5e434 > .page__5e434 > div > .chat_f75fb0 .children__9293f .avatar_f75fb0) .votersListContainer__01c8c,
-.notAppAsidePanel_a3002d:has(> [class*="app"] > div > .layers__960e4 > .layer__960e4 > .container__5e434 > .base__5e434 > .content__5e434 > .page__5e434 > div > .chat_f75fb0 .gdm_f75fb0) .votersListContainer__01c8c {
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]), /* alfred */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]), /* tarik */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]), /* ezkli */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]), /* pep */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/589545486374010884"]),  /* narox */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/801881481173401611"]),  /* zarzz */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/933770995104350258"]),  /* zarzz */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/718453321727475792"]),  /* lilly */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/894770559295049818"]),  /* rina */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1408278092161749035"]), /* bazzy */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1125847724118523925"]), /* nakhi */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/657079914079715329"]),  /* salvation */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1038469633960857740"]), /* new hyleus */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1095416117280911511"]), /* miu */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1094378607046041803"]), /* alfred doppelganger */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1173046109833285793"]), /* pukicho */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1094416367228293120"]), /* tay */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1251505511912702063"]), /* tarik doppelganger */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1175234197967884288"]), /* vaporeon */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1095426341354086400"]), /* ezkli doppelganger */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1175210202518270135"]), /* dol'utan */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1105545133442740304"])  /* contore */ {
-    > .defaultColor__4bd52 {
+.a3002d7de5be5280-notAppAsidePanel:has(> [class*="app"] > div > ._960e4207cea8323e-layers > ._960e4207cea8323e-layer > ._5e434347c823b592-container > ._5e434347c823b592-base > ._5e434347c823b592-content > ._5e434347c823b592-page > div > .f75fb00fb7356cbe-chat ._9293f6b2fc12398a-children .f75fb00fb7356cbe-avatar) .votersListContainer__01c8c,
+.a3002d7de5be5280-notAppAsidePanel:has(> [class*="app"] > div > ._960e4207cea8323e-layers > ._960e4207cea8323e-layer > ._5e434347c823b592-container > ._5e434347c823b592-base > ._5e434347c823b592-content > ._5e434347c823b592-page > div > .f75fb00fb7356cbe-chat .f75fb00fb7356cbe-gdm) .votersListContainer__01c8c {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]), /* alfred */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]), /* tarik */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]), /* ezkli */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]), /* pep */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/589545486374010884"]),  /* narox */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/801881481173401611"]),  /* zarzz */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/933770995104350258"]),  /* zarzz */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/718453321727475792"]),  /* lilly */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/894770559295049818"]),  /* rina */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1408278092161749035"]), /* bazzy */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1125847724118523925"]), /* nakhi */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/657079914079715329"]),  /* salvation */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1038469633960857740"]), /* new hyleus */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1095416117280911511"]), /* miu */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1094378607046041803"]), /* alfred doppelganger */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1173046109833285793"]), /* pukicho */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1094416367228293120"]), /* tay */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1251505511912702063"]), /* tarik doppelganger */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1175234197967884288"]), /* vaporeon */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1095426341354086400"]), /* ezkli doppelganger */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1175210202518270135"]), /* dol'utan */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1105545133442740304"])  /* contore */ {
+    > ._4bd5201c86a2042b-defaultColor {
       --display-name: attr(aria-label); /* yoink */
 
       > span {
@@ -736,17 +736,17 @@
     }
 
     &:hover {
-      > .defaultColor__4bd52 > span {
+      > ._4bd5201c86a2042b-defaultColor > span {
         /* animate gradient when hovering */
-        animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+        animation: e5de7811b2777bfa-gradientUsernameAnimation 1.5s linear infinite;
     
         &::after {
           opacity: 0.7 !important;
           transition: opacity .1s ease-in-out;
-          animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+          animation: e5de7811b2777bfa-gradientUsernameAnimation 1.5s linear infinite;
         }
       }
-      &:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) > .defaultColor__4bd52 > span {
+      &:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) > ._4bd5201c86a2042b-defaultColor > span {
         animation: ezkliGradientAnim 1.5s linear infinite !important;
         &::after {
           animation: ezkliGradientAnim 1.5s linear infinite !important;
@@ -756,123 +756,123 @@
   }
 
   /* alfred */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--alfred-color);
   }
   /* tarik */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--tarik-color);
   }
   /* ezkli */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-size: 4em auto;
     background-image: var(--ezkli-color);
   }
   /* pep */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--pep-color);
   }
   /* narox */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/589545486374010884"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/589545486374010884"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--narox-color);
   }
   /* zarzz */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/801881481173401611"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/801881481173401611"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--zarzz-color);
   }
   /* also zarzz */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/933770995104350258"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/933770995104350258"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--zarzz-color);
   }
   /* lilly */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/718453321727475792"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/718453321727475792"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--lilly-color);
   }
   /* rina */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/894770559295049818"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/894770559295049818"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--rina-color);
   }
   /* bazzy */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1408278092161749035"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1408278092161749035"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--bazzy-color);
   }
   /* nakhi */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1125847724118523925"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1125847724118523925"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--nakhi-color);
   }
   /* salvation */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/657079914079715329"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/657079914079715329"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--salvation-color);
   }
   /* new hyleus */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1038469633960857740"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1038469633960857740"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--hyleus-color);
   }
 
   /* miu */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1094378607046041803"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1094378607046041803"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--miu-color);
   }
   /* alfred doppelganger */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1095416117280911511"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1095416117280911511"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--alfred-doppel-color);
   }
   /* pukicho */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1173046109833285793"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1173046109833285793"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--pukicho-color);
   }
   /* tay */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1094416367228293120"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1094416367228293120"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--tay-color);
   }
   /* tarik doppelganger */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1251505511912702063"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1251505511912702063"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--tarik-doppel-color);
   }
   /* vaporeon */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1175234197967884288"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1175234197967884288"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--vaporeon-color);
   }
   /* ezkli doppelganger */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1095426341354086400"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1095426341354086400"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--ezkli-doppel-color);
   }
   /* dol'utan */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1175210202518270135"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1175210202518270135"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--dolutan-color);
   }
   /* contore */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1105545133442740304"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1105545133442740304"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--contore-color);
   }
 }
 }
 
 @container style(--reactors-list: on) and style(--low-perf: on) {
-.reactorsContainer_b7f4b4 {
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]), /* alfred */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]), /* tarik */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]), /* ezkli */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]), /* pep */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/589545486374010884"]),  /* narox */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/801881481173401611"]),  /* zarzz */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/933770995104350258"]),  /* zarzz */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/718453321727475792"]),  /* lilly */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/894770559295049818"]),  /* rina */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1408278092161749035"]), /* bazzy */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1125847724118523925"]), /* nakhi */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/657079914079715329"]),  /* salvation */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1038469633960857740"]), /* new hyleus */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1095416117280911511"]), /* miu */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1094378607046041803"]), /* alfred doppelganger */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1173046109833285793"]), /* pukicho */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1094416367228293120"]), /* tay */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1251505511912702063"]), /* tarik doppelganger */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1175234197967884288"]), /* vaporeon */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1095426341354086400"]), /* ezkli doppelganger */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1175210202518270135"]), /* dol'utan */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1105545133442740304"])  /* contore */ {
-    > .defaultColor__4bd52 > span {
+.b7f4b43fe1b6e285-reactorsContainer {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]), /* alfred */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]), /* tarik */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]), /* ezkli */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]), /* pep */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/589545486374010884"]),  /* narox */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/801881481173401611"]),  /* zarzz */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/933770995104350258"]),  /* zarzz */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/718453321727475792"]),  /* lilly */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/894770559295049818"]),  /* rina */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1408278092161749035"]), /* bazzy */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1125847724118523925"]), /* nakhi */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/657079914079715329"]),  /* salvation */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1038469633960857740"]), /* new hyleus */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1095416117280911511"]), /* miu */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1094378607046041803"]), /* alfred doppelganger */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1173046109833285793"]), /* pukicho */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1094416367228293120"]), /* tay */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1251505511912702063"]), /* tarik doppelganger */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1175234197967884288"]), /* vaporeon */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1095426341354086400"]), /* ezkli doppelganger */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1175210202518270135"]), /* dol'utan */
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1105545133442740304"])  /* contore */ {
+    > ._4bd5201c86a2042b-defaultColor > span {
       -webkit-background-clip: text;
       background-clip: text;
       background-size: 100px auto;
@@ -892,17 +892,17 @@
     }
 
     &:hover {
-      > .defaultColor__4bd52 > span {
+      > ._4bd5201c86a2042b-defaultColor > span {
         /* animate gradient when hovering */
-        animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+        animation: e5de7811b2777bfa-gradientUsernameAnimation 1.5s linear infinite;
     
         &::after {
           opacity: 0.7 !important;
           transition: opacity .1s ease-in-out;
-          animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+          animation: e5de7811b2777bfa-gradientUsernameAnimation 1.5s linear infinite;
         }
       }
-      &:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) > .defaultColor__4bd52 > span {
+      &:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) > ._4bd5201c86a2042b-defaultColor > span {
         animation: ezkliGradientAnim 1.5s linear infinite !important;
         &::after {
           animation: ezkliGradientAnim 1.5s linear infinite !important;
@@ -912,93 +912,93 @@
   }
 
   /* alfred */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--alfred-color);
   }
   /* tarik */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--tarik-color);
   }
   /* ezkli */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-size: 4em auto;
     background-image: var(--ezkli-color);
   }
   /* pep */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--pep-color);
   }
   /* narox */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/589545486374010884"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/589545486374010884"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--narox-color);
   }
   /* zarzz */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/801881481173401611"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/801881481173401611"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--zarzz-color);
   }
   /* also zarzz */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/933770995104350258"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/933770995104350258"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--zarzz-color);
   }
   /* lilly */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/718453321727475792"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/718453321727475792"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--lilly-color);
   }
   /* rina */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/894770559295049818"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/894770559295049818"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--rina-color);
   }
   /* bazzy */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1408278092161749035"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1408278092161749035"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--bazzy-color);
   }
   /* nakhi */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1125847724118523925"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1125847724118523925"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--nakhi-color);
   }
   /* salvation */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/657079914079715329"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/657079914079715329"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--salvation-color);
   }
   /* new hyleus */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1038469633960857740"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1038469633960857740"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--hyleus-color);
   }
 
   /* miu */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1094378607046041803"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1094378607046041803"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--miu-color);
   }
   /* alfred doppelganger */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1095416117280911511"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1095416117280911511"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--alfred-doppel-color);
   }
   /* pukicho */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1173046109833285793"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1173046109833285793"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--pukicho-color);
   }
   /* tay */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1094416367228293120"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1094416367228293120"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--tay-color);
   }
   /* tarik doppelganger */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1251505511912702063"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1251505511912702063"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--tarik-doppel-color);
   }
   /* vaporeon */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1175234197967884288"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1175234197967884288"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--vaporeon-color);
   }
   /* ezkli doppelganger */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1095426341354086400"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1095426341354086400"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--ezkli-doppel-color);
   }
   /* dol'utan */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1175210202518270135"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1175210202518270135"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--dolutan-color);
   }
   /* contore */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1105545133442740304"]) > .defaultColor__4bd52 > span {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1105545133442740304"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--contore-color);
   }
 }
@@ -1006,29 +1006,29 @@
 
 @container style(--poll-results: on) and style(--low-perf: on) {
 .votersListContainer__01c8c {
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]), /* alfred */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]), /* tarik */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]), /* ezkli */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]), /* pep */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/589545486374010884"]),  /* narox */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/801881481173401611"]),  /* zarzz */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/933770995104350258"]),  /* zarzz */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/718453321727475792"]),  /* lilly */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/894770559295049818"]),  /* rina */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1408278092161749035"]), /* bazzy */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1125847724118523925"]), /* nakhi */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/657079914079715329"]),  /* salvation */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1038469633960857740"]), /* new hyleus */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1095416117280911511"]), /* miu */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1094378607046041803"]), /* alfred doppelganger */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1173046109833285793"]), /* pukicho */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1094416367228293120"]), /* tay */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1251505511912702063"]), /* tarik doppelganger */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1175234197967884288"]), /* vaporeon */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1095426341354086400"]), /* ezkli doppelganger */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1175210202518270135"]), /* dol'utan */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1105545133442740304"])  /* contore */ {
-    > .defaultColor__4bd52 {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]), /* alfred */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]), /* tarik */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]), /* ezkli */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]), /* pep */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/589545486374010884"]),  /* narox */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/801881481173401611"]),  /* zarzz */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/933770995104350258"]),  /* zarzz */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/718453321727475792"]),  /* lilly */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/894770559295049818"]),  /* rina */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1408278092161749035"]), /* bazzy */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1125847724118523925"]), /* nakhi */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/657079914079715329"]),  /* salvation */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1038469633960857740"]), /* new hyleus */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1095416117280911511"]), /* miu */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1094378607046041803"]), /* alfred doppelganger */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1173046109833285793"]), /* pukicho */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1094416367228293120"]), /* tay */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1251505511912702063"]), /* tarik doppelganger */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1175234197967884288"]), /* vaporeon */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1095426341354086400"]), /* ezkli doppelganger */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1175210202518270135"]), /* dol'utan */
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1105545133442740304"])  /* contore */ {
+    > ._4bd5201c86a2042b-defaultColor {
       --display-name: attr(aria-label); /* yoink */
 
       > span {
@@ -1053,17 +1053,17 @@
     }
 
     &:hover {
-      > .defaultColor__4bd52 > span {
+      > ._4bd5201c86a2042b-defaultColor > span {
         /* animate gradient when hovering */
-        animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+        animation: e5de7811b2777bfa-gradientUsernameAnimation 1.5s linear infinite;
     
         &::after {
           opacity: 0.7 !important;
           transition: opacity .1s ease-in-out;
-          animation: gradientUsernameAnimation_e5de78 1.5s linear infinite;
+          animation: e5de7811b2777bfa-gradientUsernameAnimation 1.5s linear infinite;
         }
       }
-      &:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) > .defaultColor__4bd52 > span {
+      &:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) > ._4bd5201c86a2042b-defaultColor > span {
         animation: ezkliGradientAnim 1.5s linear infinite !important;
         &::after {
           animation: ezkliGradientAnim 1.5s linear infinite !important;
@@ -1073,93 +1073,93 @@
   }
 
   /* alfred */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--alfred-color);
   }
   /* tarik */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--tarik-color);
   }
   /* ezkli */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-size: 4em auto;
     background-image: var(--ezkli-color);
   }
   /* pep */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--pep-color);
   }
   /* narox */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/589545486374010884"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/589545486374010884"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--narox-color);
   }
   /* zarzz */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/801881481173401611"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/801881481173401611"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--zarzz-color);
   }
   /* also zarzz */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/933770995104350258"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/933770995104350258"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--zarzz-color);
   }
   /* lilly */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/718453321727475792"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/718453321727475792"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--lilly-color);
   }
   /* rina */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/894770559295049818"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/894770559295049818"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--rina-color);
   }
   /* bazzy */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1408278092161749035"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1408278092161749035"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--bazzy-color);
   }
   /* nakhi */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1125847724118523925"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1125847724118523925"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--nakhi-color);
   }
   /* salvation */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/657079914079715329"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/657079914079715329"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--salvation-color);
   }
   /* new hyleus */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1038469633960857740"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1038469633960857740"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--hyleus-color);
   }
 
   /* miu */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1094378607046041803"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1094378607046041803"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--miu-color);
   }
   /* alfred doppelganger */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1095416117280911511"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1095416117280911511"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--alfred-doppel-color);
   }
   /* pukicho */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1173046109833285793"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1173046109833285793"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--pukicho-color);
   }
   /* tay */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1094416367228293120"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1094416367228293120"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--tay-color);
   }
   /* tarik doppelganger */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1251505511912702063"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1251505511912702063"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--tarik-doppel-color);
   }
   /* vaporeon */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1175234197967884288"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1175234197967884288"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--vaporeon-color);
   }
   /* ezkli doppelganger */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1095426341354086400"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1095426341354086400"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--ezkli-doppel-color);
   }
   /* dol'utan */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1175210202518270135"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1175210202518270135"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--dolutan-color);
   }
   /* contore */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1105545133442740304"]) > .defaultColor__4bd52 > span {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1105545133442740304"]) > ._4bd5201c86a2042b-defaultColor > span {
     background-image: var(--contore-color);
   }
 }
