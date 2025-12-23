@@ -282,10 +282,10 @@ div[data-list-item-id="guildsnav___home"] img {
 ._36d072eab2b2e737-messagesWrapper:has(._36d072eab2b2e737-chatTypingGradientAtBottom),
 ._36d072eab2b2e737-messagesWrapper:has(._36d072eab2b2e737-chatTypingGradientNotAtBottom) {
     ._36d072eab2b2e737-scrollerSpacer {
-        height: 2px; /* originally 40px, needs to be 38px smaller since the scroller is being moved 32px up */
+        height: 8px; /* originally 40px, needs to be 32px smaller since the scroller is being moved 32px up */
     }
     ._36d072eab2b2e737-scroller {
-        bottom: 38px; /* move 40px up so that the typing indicator doesn't get overlayed over message content */
+        bottom: 32px; /* move 32px up so that the typing indicator doesn't get overlayed over message content */
     }
 }
 ._623de82e76ad7f82-embedFull /* fix embeds */ {
@@ -461,7 +461,9 @@ article {
     top: -30px !important;
 }
 
-[class*="wishlistBreadcrumb"] {
+[class*="wishlistBreadcrumb"],
+[class*="overlay"][class*="container"],
+[class*="title"][aria-label="Open Quick Switcher"] {
     display: none;
 }
 
@@ -471,6 +473,7 @@ article {
         background-color: transparent !important;
     }
 }
+
 
 
 
