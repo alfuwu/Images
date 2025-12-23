@@ -28,12 +28,12 @@
   );
 }
 
-.chatContent_f75fb0[aria-label=" (channel)"] .message__5126c,
-.chat_f75fb0:has(.children__9293f .avatar_f75fb0) .chatContent_f75fb0 .message__5126c, /* detect dms properly in case discord fixes the aria-label for dm channels */
-.chat_f75fb0:has(.gdm_f75fb0) .chatContent_f75fb0 .message__5126c /* group dms have a proper channel aria-label, so we need to use another method of detection */ {
-  .contents_c19a55:has(> img[src*="s/1037170273897689189"]) > h3 > span, /* ezkli */
-  .repliedMessage_c19a55:has(> img[src*="s/1037170273897689189"]) {
-    > .username_c19a55 {
+.f75fb00fb7356cbe-chatContent[aria-label=" (channel)"] ._5126c0cd07f243a0-message,
+.f75fb00fb7356cbe-chat:has(._9293f6b2fc12398a-children .f75fb00fb7356cbe-avatar) .f75fb00fb7356cbe-chatContent ._5126c0cd07f243a0-message, /* detect dms properly in case discord fixes the aria-label for dm channels */
+.f75fb00fb7356cbe-chat:has(.f75fb00fb7356cbe-gdm) .f75fb00fb7356cbe-chatContent ._5126c0cd07f243a0-message /* group dms have a proper channel aria-label, so we need to use another method of detection */ {
+  .c19a557985eb7793-contents:has(> img[src*="s/1037170273897689189"]) > h3 > span, /* ezkli */
+  .c19a557985eb7793-repliedMessage:has(> img[src*="s/1037170273897689189"]) {
+    > .c19a557985eb7793-username {
       -webkit-background-clip: text;
       background-clip: text;
       background-size: 4em auto;
@@ -57,8 +57,8 @@
   }
 
   &:hover {
-    .contents_c19a55:has(> img[src*="s/1037170273897689189"]) > h3 > span > .username_c19a55,
-    .repliedMessage_c19a55:has(> img[src*="s/1037170273897689189"]) > .username_c19a55 {
+    .c19a557985eb7793-contents:has(> img[src*="s/1037170273897689189"]) > h3 > span > .c19a557985eb7793-username,
+    .c19a557985eb7793-repliedMessage:has(> img[src*="s/1037170273897689189"]) > .c19a557985eb7793-username {
       animation: ezkliGradientAnim 1.5s linear infinite !important;
       &::after {
         opacity: 0.7 !important;
@@ -71,10 +71,10 @@
 
 @container style(--member-list: on) {
 /* group dm member list */
-.chat_f75fb0:has(.children__9293f .avatar_f75fb0) .container_c8ffbb .member__5d473,
-.chat_f75fb0:has(.gdm_f75fb0) .container_c8ffbb .member__5d473 {
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1037170273897689189"]) /* ezkli */ {
-    .username__703b9 {
+.f75fb00fb7356cbe-chat:has(._9293f6b2fc12398a-children .f75fb00fb7356cbe-avatar) .c8ffbb79449f399c-container ._5d473ecff348c314-member,
+.f75fb00fb7356cbe-chat:has(.f75fb00fb7356cbe-gdm) .c8ffbb79449f399c-container ._5d473ecff348c314-member {
+  ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1037170273897689189"]) /* ezkli */ {
+    ._703b91fc872193e8-username {
       -webkit-background-clip: text;
       background-clip: text;
       background-size: 4em auto;
@@ -96,7 +96,7 @@
   }
 
   &:hover {
-    .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1037170273897689189"]) .username__703b9 {
+    ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar > ._44b0c28be7879b7b-wrapper > ._44b0c28be7879b7b-svg > foreignObject > div > img[src*="s/1037170273897689189"]) ._703b91fc872193e8-username {
       animation: ezkliGradientAnim 1.5s linear infinite !important;
       &::after {
         opacity: 0.7 !important;
@@ -109,10 +109,10 @@
 }
 
 @container style(--reactors-list: on) and stlye(--low-perf: off) {
-.notAppAsidePanel_a3002d:has(> [class*="app"] > div > .layers__960e4 > .layer__960e4 > .container__5e434 > .base__5e434 > .content__5e434 > .page__5e434 > div > .chat_f75fb0 .children__9293f .avatar_f75fb0) .reactorsContainer_b7f4b4,
-.notAppAsidePanel_a3002d:has(> [class*="app"] > div > .layers__960e4 > .layer__960e4 > .container__5e434 > .base__5e434 > .content__5e434 > .page__5e434 > div > .chat_f75fb0 .gdm_f75fb0) .reactorsContainer_b7f4b4 {
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) /* ezkli */ {
-    > .defaultColor__4bd52 > span {
+.a3002d7de5be5280-notAppAsidePanel:has(> [class*="app"] > div > ._960e4207cea8323e-layers > ._960e4207cea8323e-layer > ._5e434347c823b592-container > ._5e434347c823b592-base > ._5e434347c823b592-content > ._5e434347c823b592-page > div > .f75fb00fb7356cbe-chat ._9293f6b2fc12398a-children .f75fb00fb7356cbe-avatar) .b7f4b43fe1b6e285-reactorsContainer,
+.a3002d7de5be5280-notAppAsidePanel:has(> [class*="app"] > div > ._960e4207cea8323e-layers > ._960e4207cea8323e-layer > ._5e434347c823b592-container > ._5e434347c823b592-base > ._5e434347c823b592-content > ._5e434347c823b592-page > div > .f75fb00fb7356cbe-chat .f75fb00fb7356cbe-gdm) .b7f4b43fe1b6e285-reactorsContainer {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) /* ezkli */ {
+    > ._4bd5201c86a2042b-defaultColor > span {
       -webkit-background-clip: text;
       background-clip: text;
       background-size: 4em auto;
@@ -132,7 +132,7 @@
       }
     }
 
-    &:hover > .defaultColor__4bd52 > span {
+    &:hover > ._4bd5201c86a2042b-defaultColor > span {
       animation: ezkliGradientAnim 1.5s linear infinite !important;
       &::after {
         opacity: 0.7 !important;
@@ -145,10 +145,10 @@
 }
 
 @container style(--poll-results: on) and stlye(--low-perf: off) {
-.notAppAsidePanel_a3002d:has(> [class*="app"] > div > .layers__960e4 > .layer__960e4 > .container__5e434 > .base__5e434 > .content__5e434 > .page__5e434 > div > .chat_f75fb0 .children__9293f .avatar_f75fb0) .votersListContainer__01c8c,
-.notAppAsidePanel_a3002d:has(> [class*="app"] > div > .layers__960e4 > .layer__960e4 > .container__5e434 > .base__5e434 > .content__5e434 > .page__5e434 > div > .chat_f75fb0 .gdm_f75fb0) .votersListContainer__01c8c {
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) /* ezkli */ {
-    > .defaultColor__4bd52 {
+.a3002d7de5be5280-notAppAsidePanel:has(> [class*="app"] > div > ._960e4207cea8323e-layers > ._960e4207cea8323e-layer > ._5e434347c823b592-container > ._5e434347c823b592-base > ._5e434347c823b592-content > ._5e434347c823b592-page > div > .f75fb00fb7356cbe-chat ._9293f6b2fc12398a-children .f75fb00fb7356cbe-avatar) .votersListContainer__01c8c,
+.a3002d7de5be5280-notAppAsidePanel:has(> [class*="app"] > div > ._960e4207cea8323e-layers > ._960e4207cea8323e-layer > ._5e434347c823b592-container > ._5e434347c823b592-base > ._5e434347c823b592-content > ._5e434347c823b592-page > div > .f75fb00fb7356cbe-chat .f75fb00fb7356cbe-gdm) .votersListContainer__01c8c {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) /* ezkli */ {
+    > ._4bd5201c86a2042b-defaultColor {
       --display-name: attr(aria-label); /* yoink */
 
       > span {
@@ -173,7 +173,7 @@
       }
     }
 
-    &:hover > .defaultColor__4bd52 > span {
+    &:hover > ._4bd5201c86a2042b-defaultColor > span {
       animation: ezkliGradientAnim 1.5s linear infinite !important;
       &::after {
         opacity: 0.7 !important;
@@ -186,9 +186,9 @@
 }
 
 @container style(--reactors-list: on) and stlye(--low-perf: on) {
-.reactorsContainer_b7f4b4 {
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) /* ezkli */ {
-    > .defaultColor__4bd52 > span {
+.b7f4b43fe1b6e285-reactorsContainer {
+  .b7f4b43fe1b6e285-reactor:has(> .fd297e0eff2da25e-marginReset > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) /* ezkli */ {
+    > ._4bd5201c86a2042b-defaultColor > span {
       -webkit-background-clip: text;
       background-clip: text;
       background-size: 4em auto;
@@ -208,7 +208,7 @@
       }
     }
 
-    &:hover > .defaultColor__4bd52 > span {
+    &:hover > ._4bd5201c86a2042b-defaultColor > span {
       animation: ezkliGradientAnim 1.5s linear infinite !important;
       &::after {
         opacity: 0.7 !important;
@@ -222,8 +222,8 @@
 
 @container style(--poll-results: on) and stlye(--low-perf: on) {
 .votersListContainer__01c8c {
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) /* ezkli */ {
-    > .defaultColor__4bd52 {
+  ._01c8cef726c85956-voter:has(> div._01c8cef726c85956-voterAvatarContainer > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) /* ezkli */ {
+    > ._4bd5201c86a2042b-defaultColor {
       --display-name: attr(aria-label); /* yoink */
 
       > span {
@@ -248,7 +248,7 @@
       }
     }
 
-    &:hover > .defaultColor__4bd52 > span {
+    &:hover > ._4bd5201c86a2042b-defaultColor > span {
       animation: ezkliGradientAnim 1.5s linear infinite !important;
       &::after {
         opacity: 0.7 !important;
