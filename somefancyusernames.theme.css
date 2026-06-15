@@ -31,13 +31,6 @@
     rgb(25, 228, 214),
     rgb(18, 138, 28)
   );
-  --ezkli-color: linear-gradient(
-    to right,
-    rgb(255, 158, 158),
-    rgb(233, 136, 219),
-    rgb(25, 228, 214),
-    rgb(255, 158, 158)
-  );
   --pep-color: linear-gradient(
     to right,
     rgb(71, 67, 165),
@@ -60,13 +53,11 @@
   /* ew hardcoded */
   .contents_c19a55:has(> img[src*="s/1038466644353232967"]) > h3 > span, /* alfred */
   .contents_c19a55:has(> img[src*="s/1112561208873193472"]) > h3 > span, /* tarik */
-  .contents_c19a55:has(> img[src*="s/1037170273897689189"]) > h3 > span, /* ezkli */
   .contents_c19a55:has(> img[src*="s/1338654892641751060"]) > h3 > span, /* pep */
   .contents_c19a55:has(> img[src*="s/718453321727475792"]) > h3 > span,  /* lilly */
 
   .repliedMessage_c19a55:has(> img[src*="s/1038466644353232967"]), /* alfred */
   .repliedMessage_c19a55:has(> img[src*="s/1112561208873193472"]), /* tarik */
-  .repliedMessage_c19a55:has(> img[src*="s/1037170273897689189"]), /* ezkli */
   .repliedMessage_c19a55:has(> img[src*="s/1338654892641751060"]), /* pep */
   .repliedMessage_c19a55:has(> img[src*="s/718453321727475792"])   /* lilly */ {
     > .username_c19a55 {
@@ -115,12 +106,6 @@
   .repliedMessage_c19a55:has(> img[src*="s/1112561208873193472"]) > .username_c19a55 {
     background-image: var(--tarik-color);
   }
-  /* ezkli */
-  .contents_c19a55:has(> img[src*="s/1037170273897689189"]) > h3 > span > .username_c19a55,
-  .repliedMessage_c19a55:has(> img[src*="s/1037170273897689189"]) > .username_c19a55 {
-    background-size: 4em auto;
-    background-image: var(--ezkli-color);
-  }
   /* pep */
   .contents_c19a55:has(> img[src*="s/1338654892641751060"]) > h3 > span > .username_c19a55,
   .repliedMessage_c19a55:has(> img[src*="s/1338654892641751060"]) > .username_c19a55 {
@@ -140,7 +125,6 @@
   /* yes this is ugly and will probably break with any slight redesign of discord's ui but reduces lag a lot ok */
   .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1038466644353232967"]), /* alfred */
   .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1112561208873193472"]), /* tarik */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1037170273897689189"]), /* ezkli */
   .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1338654892641751060"]), /* pep */
   .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/718453321727475792"])   /* lilly */ {
     .username__703b9 {
@@ -182,10 +166,6 @@
   .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1112561208873193472"]) .username__703b9 {
     background-image: var(--tarik-color);
   }
-  /* ezkli */
-  .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1037170273897689189"]) .username__703b9 {
-    background-image: var(--ezkli-color);
-  }
   /* pep */
   .memberInner__5d473:has(> .avatar__91a9d > .wrapper__44b0c > .svg__44b0c > foreignObject > div > img[src*="s/1338654892641751060"]) .username__703b9 {
     background-image: var(--pep-color);
@@ -202,7 +182,6 @@
 .notAppAsidePanel_a3002d:has(> [class*="app"] > div > .layers__960e4 > .layer__960e4 > .container__5e434 > .base__5e434 > .content__5e434 > .page__5e434 > div > .chat_f75fb0 .gdm_f75fb0) .reactorsContainer_b7f4b4 {
   .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]), /* alfred */
   .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]), /* tarik */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]), /* ezkli */
   .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]), /* pep */
   .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/718453321727475792"])   /* lilly */ {
     > .defaultColor__4bd52 > span {
@@ -243,10 +222,6 @@
   /* tarik */
   .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]) > .defaultColor__4bd52 > span {
     background-image: var(--tarik-color);
-  }
-  /* ezkli */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) > .defaultColor__4bd52 > span {
-    background-image: var(--ezkli-color);
   }
   /* pep */
   .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]) > .defaultColor__4bd52 > span {
@@ -264,7 +239,6 @@
 .notAppAsidePanel_a3002d:has(> [class*="app"] > div > .layers__960e4 > .layer__960e4 > .container__5e434 > .base__5e434 > .content__5e434 > .page__5e434 > div > .chat_f75fb0 .gdm_f75fb0) .votersListContainer__01c8c {
   .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]), /* alfred */
   .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]), /* tarik */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]), /* ezkli */
   .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]), /* pep */
   .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/718453321727475792"])   /* lilly */ {
     > .defaultColor__4bd52 {
@@ -311,17 +285,9 @@
   .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]) > .defaultColor__4bd52 > span {
     background-image: var(--tarik-color);
   }
-  /* ezkli */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) > .defaultColor__4bd52 > span {
-    background-image: var(--ezkli-color);
-  }
   /* pep */
   .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]) > .defaultColor__4bd52 > span {
     background-image: var(--pep-color);
-  }
-  /* narox */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/589545486374010884"]) > .defaultColor__4bd52 > span {
-    background-image: var(--narox-color);
   }
   /* lilly */
   .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/718453321727475792"]) > .defaultColor__4bd52 > span {
@@ -334,7 +300,6 @@
 .reactorsContainer_b7f4b4 {
   .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]), /* alfred */
   .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]), /* tarik */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]), /* ezkli */
   .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]), /* pep */
   .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/718453321727475792"])   /* lilly */ {
     > .defaultColor__4bd52 > span {
@@ -376,10 +341,6 @@
   .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]) > .defaultColor__4bd52 > span {
     background-image: var(--tarik-color);
   }
-  /* ezkli */
-  .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) > .defaultColor__4bd52 > span {
-    background-image: var(--ezkli-color);
-  }
   /* pep */
   .reactor_b7f4b4:has(> .marginReset_fd297e > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]) > .defaultColor__4bd52 > span {
     background-image: var(--pep-color);
@@ -395,7 +356,6 @@
 .votersListContainer__01c8c {
   .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1038466644353232967"]), /* alfred */
   .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]), /* tarik */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]), /* ezkli */
   .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]), /* pep */
   .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/718453321727475792"])   /* lilly */ {
     > .defaultColor__4bd52 {
@@ -442,17 +402,9 @@
   .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1112561208873193472"]) > .defaultColor__4bd52 > span {
     background-image: var(--tarik-color);
   }
-  /* ezkli */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1037170273897689189"]) > .defaultColor__4bd52 > span {
-    background-image: var(--ezkli-color);
-  }
   /* pep */
   .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/1338654892641751060"]) > .defaultColor__4bd52 > span {
     background-image: var(--pep-color);
-  }
-  /* narox */
-  .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/589545486374010884"]) > .defaultColor__4bd52 > span {
-    background-image: var(--narox-color);
   }
   /* lilly */
   .voter__01c8c:has(> div.voterAvatarContainer__01c8c > div > svg > foreignObject > div > img[src*="s/718453321727475792"]) > .defaultColor__4bd52 > span {
