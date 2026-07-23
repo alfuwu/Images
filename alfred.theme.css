@@ -461,10 +461,19 @@ article {
     top: -30px !important;
 }
 
+.scrollableContainer__74017 .themedBackground__74017 {
+	background: var(--background-gradient-highest, var(--chat-background-default));
+}
+
 [class*="wishlistBreadcrumb"],
 [class*="overlay"][class*="container"],
 [class*="title"][aria-label="Open Quick Switcher"] {
     display: none;
+}
+
+[aria-label="Open Translate Modal"] {
+	position: relative;
+	right: -10px;
 }
 
 @container not style(--home-image: none) {
