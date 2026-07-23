@@ -461,8 +461,8 @@ article {
     top: -30px !important;
 }
 
-.scrollableContainer__74017 .themedBackground__74017 {
-	background: var(--background-gradient-highest, var(--chat-background-default));
+.channelTextArea_f75fb0 {
+	background: var(--background-gradient-high, var(--background-base-lowest));
 }
 
 [class*="wishlistBreadcrumb"],
