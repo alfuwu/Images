@@ -476,6 +476,15 @@ article {
 	right: -10px;
 }
 
+.childWrapper__6e9f8::before {
+    width: 80% !important;
+    height: 80% !important;
+    --dms-icon-color-before: var(--text-default);
+    --dms-icon-color-after: white !important;
+    /*background: var(--dms-icon-svg-url) top center/110% no-repeat !important;*/
+    /*mask-image: none !important;*/
+}
+
 @container not style(--home-image: none) {
     div[data-list-item-id="guildsnav___home"] > div {
         color: transparent !important;
